@@ -1,8 +1,8 @@
 cff-version: 1.2.0
 message: "If you use PaRLA or this repository, please cite it as below."
-title: "PaRLA: A LoRA Llama for Summarizing Pathology Reports"
+title: "PaRLA: A LoRA Llama 3.3 70B for Summarizing Pathology Reports"
 authors:
-  - family-names: Khajegili
+  - family-names: "Khajegili Mirabadi"
     given-names: Ali
 year: 2026
 date-released: 2026-07-05

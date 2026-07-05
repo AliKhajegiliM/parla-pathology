@@ -22,7 +22,11 @@ SOFTWARE.
 
 ---
 
-Note: This MIT license covers the code in this repository. The PaRLA LoRA
-adapter weights (hosted on Hugging Face) are a derivative of Meta Llama 3.3 and
-are governed by the Meta Llama 3.3 Community License. TCGA pathology report data
-used for external validation is governed by NCI GDC data-use policies.
+Note: This MIT license covers the code in this repository. The project is for
+RESEARCH USE ONLY. The PaRLA LoRA adapter weights (hosted on Hugging Face) are a
+derivative of Meta Llama 3.3 and are governed by the Meta Llama 3.3 Community
+License. The training data is derived from the HISTAI dataset and the TCGA
+pathology reports used for external validation are governed by NCI GDC data-use
+policies. This work is intended to comply with the original HISTAI and TCGA/GDC
+licenses, and users of the model or associated data must comply with those
+original licenses too.

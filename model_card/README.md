@@ -124,6 +124,8 @@ model = PeftModel.from_pretrained(base_model, adapter_id)
 
 **Not a clinical device.** PaRLA is not a substitute for a pathologist, oncologist, or validated decision-support system, and must not drive patient care without expert review. It can omit facts or state unsupported details, especially on ambiguous, fragmented, or OCR-degraded reports. The manual LLM-as-judge scoring is a structured comparative assessment, not a regulatory validation; the survival benchmark measures signal preservation, not deployment readiness. The adapter inherits the limitations and biases of the base Llama 70B model and its training corpus.
 
+**Research use only; respect the source licenses.** This model and its associated data are released for research purposes only. The work is derived from the **HISTAI** (training) and **TCGA** (external validation) pathology datasets and is intended to comply with their original data-use licenses. Anyone using this model or the associated data must likewise comply with the original TCGA (NCI GDC) and HISTAI license terms, in addition to the Meta Llama 3.3 Community License that governs the adapter.
+
 ## Links and citation
 
 - **Training dataset (Hugging Face):** [AliKhajegiliM/PaRLA-SFT](https://huggingface.co/datasets/AliKhajegiliM/PaRLA-SFT) — adapted SFT data (24,370 HISTAI-derived examples)
@@ -134,8 +136,8 @@ model = PeftModel.from_pretrained(base_model, adapter_id)
 
 ```bibtex
 @misc{khajegili2026parla,
-  title        = {PaRLA: A LoRA Llama for Summarizing Pathology Reports},
-  author       = {Khajegili, Ali},
+  title        = {PaRLA: A LoRA Llama 3.3 70B for Summarizing Pathology Reports},
+  author       = {Khajegili Mirabadi, Ali},
   year         = {2026},
   howpublished = {\url{https://huggingface.co/AliKhajegiliM/PaRLA}},
   note         = {Developed as part of the Adaption Labs AutoScientist Challenge}

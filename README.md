@@ -57,4 +57,4 @@ The adapted **SFT training dataset** (24,370 HISTAI-derived examples) is release
 
 ## Citation
 
-See [CITATION.cff](CITATION.cff). Code is released under the MIT License ([LICENSE](LICENSE)); the LoRA adapter follows the Meta Llama 3.3 Community License, and TCGA data follows GDC data-use terms.
+See [CITATION.cff](CITATION.cff). **Research use only.** Code is released under the MIT License ([LICENSE](LICENSE)); the LoRA adapter follows the Meta Llama 3.3 Community License. The work is derived from the HISTAI (training) and TCGA (external validation) datasets and is intended to comply with their original licenses — users of the model or associated data must comply with the original HISTAI and TCGA/GDC license terms too.
