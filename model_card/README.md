@@ -61,7 +61,7 @@ The 500-report cohort was randomly sampled with a fixed seed; all 500 matched GD
 
 ### Generalization 2 — downstream survival prediction
 
-As a quantitative test of whether the abstraction preserves clinically actionable signal, a survival model was trained on embeddings of either the **full report** or the **PaRLA summary**, both encoded with the *same* 4-bit base Llama 70B (so the only variable is the representation). Metric is 5-fold test C-index (0–100; 50 ≈ random). Five cancer datasets are shown:
+As a quantitative test of whether the abstraction preserves clinically actionable signal, both the **full report** and the **PaRLA summary** were encoded as **mean-pooled token embeddings** from the *same* 4-bit base Llama 70B, then fed to the **same Cox proportional-hazards survival model** trained under **5-fold cross-validation** with **identical hyperparameters, configuration, and random seed** for both arms. Only the input representation differs, so any change in C-index is attributable to the representation alone. Metric is test C-index (0–100; 50 ≈ random). Five cancer datasets are shown:
 
 ![Survival C-index by cancer](assets/survival_test_cindex_by_cancer.svg)
 

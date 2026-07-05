@@ -37,7 +37,7 @@ Three distinct evaluations, in increasing order of distribution shift:
 ## External Validation 2 — downstream survival
 
 - Two representations of each report were embedded with the **same 4-bit base Llama 70B encoder**: (a) the full report text, and (b) the PaRLA-generated summary. The encoder is held constant, so the only variable is the representation.
-- A survival model was trained and evaluated across **5 folds** per cancer dataset (`seed256`). Metric: **test C-index** (reported on a 0–100 scale; 50 ≈ random ranking).
+- Both representations were **mean-pooled token embeddings** and fed to the **same Cox proportional-hazards survival model**, trained under **5-fold cross-validation** with **identical hyperparameters, configuration, and random seed** for both arms: Cox loss, AdamW, lr 0.001, weight decay 0.01, 100 epochs, batch size 32, hidden dim 128, feature size 8192, seed 1. Only the input representation differs. Metric: **test C-index** (0–100; 50 ≈ random ranking).
 - Per-fold and per-cancer outputs for the five cancer datasets are in `results/survival/`.
 
 ## Reproducibility notes
