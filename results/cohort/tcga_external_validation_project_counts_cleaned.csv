@@ -1,0 +1,33 @@
+project_id,n_reports,percent,project_name
+TCGA-BRCA,59,11.8,Breast Invasive Carcinoma
+TCGA-KIRC,32,6.4,Kidney Renal Clear Cell Carcinoma
+TCGA-LUAD,31,6.2,Lung Adenocarcinoma
+TCGA-LUSC,29,5.8,Lung Squamous Cell Carcinoma
+TCGA-HNSC,29,5.8,Head and Neck Squamous Cell Carcinoma
+TCGA-PRAD,27,5.4,Prostate Adenocarcinoma
+TCGA-COAD,26,5.2,Colon Adenocarcinoma
+TCGA-STAD,24,4.8,Stomach Adenocarcinoma
+TCGA-LGG,24,4.8,Brain Lower Grade Glioma
+TCGA-THCA,22,4.4,Thyroid Carcinoma
+TCGA-BLCA,20,4.0,Bladder Urothelial Carcinoma
+TCGA-GBM,18,3.6,Glioblastoma Multiforme
+TCGA-UCEC,17,3.4,Uterine Corpus Endometrial Carcinoma
+TCGA-OV,15,3.0,Ovarian Serous Cystadenocarcinoma
+TCGA-KIRP,15,3.0,Kidney Renal Papillary Cell Carcinoma
+TCGA-PCPG,14,2.8,Pheochromocytoma and Paraganglioma
+TCGA-LIHC,13,2.6,Liver Hepatocellular Carcinoma
+TCGA-SARC,13,2.6,Sarcoma
+TCGA-CESC,13,2.6,Cervical Squamous Cell Carcinoma and Endocervical Adenocarcinoma
+TCGA-PAAD,11,2.2,Pancreatic Adenocarcinoma
+TCGA-READ,7,1.4,Rectum Adenocarcinoma
+TCGA-TGCT,6,1.2,Testicular Germ Cell Tumors
+TCGA-ESCA,6,1.2,Esophageal Carcinoma
+TCGA-SKCM,5,1.0,Skin Cutaneous Melanoma
+TCGA-UCS,5,1.0,Uterine Carcinosarcoma
+TCGA-THYM,4,0.8,Thymoma
+TCGA-DLBC,4,0.8,Lymphoid Neoplasm Diffuse Large B-cell Lymphoma
+TCGA-KICH,3,0.6,Kidney Chromophobe
+TCGA-MESO,3,0.6,Mesothelioma
+TCGA-ACC,2,0.4,Adrenocortical Carcinoma
+TCGA-UVM,2,0.4,Uveal Melanoma
+TCGA-CHOL,1,0.2,Cholangiocarcinoma

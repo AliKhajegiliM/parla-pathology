@@ -1,0 +1,4 @@
+Outcome,winner_key,Count,Win rate (%),n_total
+PaRLA,after,419,83.8,500
+Llama 70B,before,33,6.6,500
+Tie,tie,48,9.6,500

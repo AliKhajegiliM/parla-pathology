@@ -1,0 +1,6 @@
+timestamp,fold,dataset,branch,text_pool,ocr_pool,text_proj,ocr_proj,loss_fn,opt,lr,reg,epochs,batch_size,hidden_dim,feat_size,second_feat,seed,val_cindex,test_cindex
+2026-06-14T21:34:15,0,blca,text,mean,att,False,True,cox,adamw,0.001,0.01,100,32,128,8192,1024,1,0.6229338842975206,0.5922480620155038
+2026-06-14T21:34:52,1,blca,text,mean,att,False,True,cox,adamw,0.001,0.01,100,32,128,8192,1024,1,0.7231160033869602,0.6053719008264463
+2026-06-14T21:36:25,2,blca,text,mean,att,False,True,cox,adamw,0.001,0.01,100,32,128,8192,1024,1,0.6617210682492581,0.7256562235393734
+2026-06-14T21:37:25,3,blca,text,mean,att,False,True,cox,adamw,0.001,0.01,100,32,128,8192,1024,1,0.6719939117199392,0.5756676557863502
+2026-06-14T21:38:25,4,blca,text,mean,att,False,True,cox,adamw,0.001,0.01,100,32,128,8192,1024,1,0.6134366925064599,0.563165905631659

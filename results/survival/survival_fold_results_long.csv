@@ -1,0 +1,51 @@
+group,source,cancer,cancer_label,fold,val_cindex,test_cindex
+Full Report,all_tokens/model_after_bs32,blca,Bladder,0,0.6229338842975206,0.5922480620155038
+Full Report,all_tokens/model_after_bs32,blca,Bladder,1,0.7231160033869602,0.6053719008264463
+Full Report,all_tokens/model_after_bs32,blca,Bladder,2,0.6617210682492581,0.7256562235393734
+Full Report,all_tokens/model_after_bs32,blca,Bladder,3,0.6719939117199392,0.5756676557863502
+Full Report,all_tokens/model_after_bs32,blca,Bladder,4,0.6134366925064599,0.563165905631659
+Full Report,all_tokens/model_after_bs32,brca,Breast,0,0.6768844221105528,0.5451248992747784
+Full Report,all_tokens/model_after_bs32,brca,Breast,1,0.658502119642016,0.6251256281407035
+Full Report,all_tokens/model_after_bs32,brca,Breast,2,0.7524752475247525,0.6156382477626001
+Full Report,all_tokens/model_after_bs32,brca,Breast,3,0.6785714285714286,0.6467326732673268
+Full Report,all_tokens/model_after_bs32,brca,Breast,4,0.6474617244157937,0.6071428571428571
+Full Report,all_tokens/model_after_bs32,kirckirp,Kidney,0,0.8108779679734953,0.7701120797011208
+Full Report,all_tokens/model_after_bs32,kirckirp,Kidney,1,0.7857811038353602,0.8180563224737714
+Full Report,all_tokens/model_after_bs32,kirckirp,Kidney,2,0.7700460829493088,0.7602899906454631
+Full Report,all_tokens/model_after_bs32,kirckirp,Kidney,3,0.7632517838939857,0.7018433179723502
+Full Report,all_tokens/model_after_bs32,kirckirp,Kidney,4,0.7952677459526775,0.7186544342507645
+Full Report,all_tokens/model_after_bs32,luad,Lung,0,0.659047619047619,0.5534709193245778
+Full Report,all_tokens/model_after_bs32,luad,Lung,1,0.7447447447447447,0.6295238095238095
+Full Report,all_tokens/model_after_bs32,luad,Lung,2,0.7183967112024666,0.6636636636636637
+Full Report,all_tokens/model_after_bs32,luad,Lung,3,0.6802646085997794,0.6608427543679343
+Full Report,all_tokens/model_after_bs32,luad,Lung,4,0.7176360225140713,0.6714443219404631
+Full Report,all_tokens/model_after_bs32,sarc,Sarcoma,0,0.6460807600950119,0.6158940397350994
+Full Report,all_tokens/model_after_bs32,sarc,Sarcoma,1,0.5298507462686567,0.4536817102137767
+Full Report,all_tokens/model_after_bs32,sarc,Sarcoma,2,0.6443057722308893,0.5727611940298507
+Full Report,all_tokens/model_after_bs32,sarc,Sarcoma,3,0.6468401486988847,0.6349453978159126
+Full Report,all_tokens/model_after_bs32,sarc,Sarcoma,4,0.6274834437086093,0.587360594795539
+Prognostic Summary by PaRLA,generated_tokens/model_after_base_bs32,blca,Bladder,0,0.7288223140495868,0.5007751937984496
+Prognostic Summary by PaRLA,generated_tokens/model_after_base_bs32,blca,Bladder,1,0.6782387806943269,0.6399793388429752
+Prognostic Summary by PaRLA,generated_tokens/model_after_base_bs32,blca,Bladder,2,0.6735905044510386,0.6782387806943269
+Prognostic Summary by PaRLA,generated_tokens/model_after_base_bs32,blca,Bladder,3,0.697869101978691,0.6023738872403561
+Prognostic Summary by PaRLA,generated_tokens/model_after_base_bs32,blca,Bladder,4,0.5917312661498708,0.7313546423135464
+Prognostic Summary by PaRLA,generated_tokens/model_after_base_bs32,brca,Breast,0,0.7773869346733668,0.6712328767123288
+Prognostic Summary by PaRLA,generated_tokens/model_after_base_bs32,brca,Breast,1,0.7338671691003297,0.6432160804020101
+Prognostic Summary by PaRLA,generated_tokens/model_after_base_bs32,brca,Breast,2,0.7801980198019802,0.701365991521432
+Prognostic Summary by PaRLA,generated_tokens/model_after_base_bs32,brca,Breast,3,0.7192622950819673,0.6067326732673267
+Prognostic Summary by PaRLA,generated_tokens/model_after_base_bs32,brca,Breast,4,0.6921837228041902,0.6009953161592506
+Prognostic Summary by PaRLA,generated_tokens/model_after_base_bs32,kirckirp,Kidney,0,0.8144671452236334,0.785305105853051
+Prognostic Summary by PaRLA,generated_tokens/model_after_base_bs32,kirckirp,Kidney,1,0.7301216089803555,0.7926559911651021
+Prognostic Summary by PaRLA,generated_tokens/model_after_base_bs32,kirckirp,Kidney,2,0.7967741935483871,0.7282507015902713
+Prognostic Summary by PaRLA,generated_tokens/model_after_base_bs32,kirckirp,Kidney,3,0.7217125382262997,0.7797235023041474
+Prognostic Summary by PaRLA,generated_tokens/model_after_base_bs32,kirckirp,Kidney,4,0.8059775840597758,0.6839959225280327
+Prognostic Summary by PaRLA,generated_tokens/model_after_base_bs32,luad,Lung,0,0.6361904761904762,0.7636022514071295
+Prognostic Summary by PaRLA,generated_tokens/model_after_base_bs32,luad,Lung,1,0.6686686686686687,0.6409523809523809
+Prognostic Summary by PaRLA,generated_tokens/model_after_base_bs32,luad,Lung,2,0.7091469681397738,0.6376376376376376
+Prognostic Summary by PaRLA,generated_tokens/model_after_base_bs32,luad,Lung,3,0.7023153252480706,0.6875642343268242
+Prognostic Summary by PaRLA,generated_tokens/model_after_base_bs32,luad,Lung,4,0.7401500938086304,0.7078280044101434
+Prognostic Summary by PaRLA,generated_tokens/model_after_base_bs32,sarc,Sarcoma,0,0.6270783847980997,0.6639072847682119
+Prognostic Summary by PaRLA,generated_tokens/model_after_base_bs32,sarc,Sarcoma,1,0.6921641791044776,0.5130641330166271
+Prognostic Summary by PaRLA,generated_tokens/model_after_base_bs32,sarc,Sarcoma,2,0.7004680187207488,0.6921641791044776
+Prognostic Summary by PaRLA,generated_tokens/model_after_base_bs32,sarc,Sarcoma,3,0.7527881040892194,0.6583463338533542
+Prognostic Summary by PaRLA,generated_tokens/model_after_base_bs32,sarc,Sarcoma,4,0.6125827814569537,0.5966542750929368

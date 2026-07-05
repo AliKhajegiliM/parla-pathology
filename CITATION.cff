@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+message: "If you use PaRLA or this repository, please cite it as below."
+title: "PaRLA: A LoRA Llama for Summarizing Pathology Reports"
+authors:
+  - family-names: Khajegili
+    given-names: Ali
+year: 2026
+date-released: 2026-07-05
+url: "https://huggingface.co/AliKhajegiliM/PaRLA"
+repository-code: "https://github.com/AliKhajegiliM/parla-pathology"
+license: MIT
+keywords:
+  - pathology
+  - oncology
+  - large-language-models
+  - lora
+  - survival-analysis
+  - clinical-information-extraction
+notes: "Developed as part of the Adaption Labs AutoScientist Challenge (Healthcare)."

@@ -1,0 +1,501 @@
+report_id,tss_code,tss_source_site,tss_study_name,tss_bcr,project_id,project_name,primary_site,disease_type,cleaned_center
+TCGA-05-4382,05,Indivumed,Lung adenocarcinoma,IGC,TCGA-LUAD,Lung Adenocarcinoma,Bronchus and lung,Adenomas and Adenocarcinomas,Indivumed
+TCGA-05-4390,05,Indivumed,Lung adenocarcinoma,IGC,TCGA-LUAD,Lung Adenocarcinoma,Bronchus and lung,Adenomas and Adenocarcinomas,Indivumed
+TCGA-05-4424,05,Indivumed,Lung adenocarcinoma,IGC,TCGA-LUAD,Lung Adenocarcinoma,Bronchus and lung,Adenomas and Adenocarcinomas,Indivumed
+TCGA-05-5425,05,Indivumed,Lung adenocarcinoma,IGC,TCGA-LUAD,Lung Adenocarcinoma,Bronchus and lung,Adenomas and Adenocarcinomas,Indivumed
+TCGA-06-0127,06,Henry Ford Hospital,Glioblastoma multiforme,IGC,TCGA-GBM,Glioblastoma Multiforme,Brain,Gliomas,Henry Ford Hospital
+TCGA-06-0139,06,Henry Ford Hospital,Glioblastoma multiforme,IGC,TCGA-GBM,Glioblastoma Multiforme,Brain,Gliomas,Henry Ford Hospital
+TCGA-06-0142,06,Henry Ford Hospital,Glioblastoma multiforme,IGC,TCGA-GBM,Glioblastoma Multiforme,Brain,Gliomas,Henry Ford Hospital
+TCGA-06-0209,06,Henry Ford Hospital,Glioblastoma multiforme,IGC,TCGA-GBM,Glioblastoma Multiforme,Brain,Gliomas,Henry Ford Hospital
+TCGA-06-0412,06,Henry Ford Hospital,Glioblastoma multiforme,IGC,TCGA-GBM,Glioblastoma Multiforme,Brain,Gliomas,Henry Ford Hospital
+TCGA-06-0878,06,Henry Ford Hospital,Glioblastoma multiforme,IGC,TCGA-GBM,Glioblastoma Multiforme,Brain,Gliomas,Henry Ford Hospital
+TCGA-06-5856,06,Henry Ford Hospital,Glioblastoma multiforme,IGC,TCGA-GBM,Glioblastoma Multiforme,Brain,Gliomas,Henry Ford Hospital
+TCGA-06-6391,06,Henry Ford Hospital,Glioblastoma multiforme,IGC,TCGA-GBM,Glioblastoma Multiforme,Brain,Gliomas,Henry Ford Hospital
+TCGA-09-0366,09,UCSF,Ovarian serous cystadenocarcinoma,IGC,TCGA-OV,Ovarian Serous Cystadenocarcinoma,Retroperitoneum and peritoneum,"Cystic, Mucinous and Serous Neoplasms",University of California San Francisco
+TCGA-09-2048,09,UCSF,Ovarian serous cystadenocarcinoma,IGC,TCGA-OV,Ovarian Serous Cystadenocarcinoma,Ovary,"Cystic, Mucinous and Serous Neoplasms",University of California San Francisco
+TCGA-12-3648,12,Duke,Glioblastoma multiforme,IGC,TCGA-GBM,Glioblastoma Multiforme,Brain,Gliomas,Duke
+TCGA-18-3408,18,Princess Margaret Hospital (Canada),Lung squamous cell carcinoma,IGC,TCGA-LUSC,Lung Squamous Cell Carcinoma,Bronchus and lung,Squamous Cell Neoplasms,Princess Margaret Hospital (Canada)
+TCGA-19-A60I,19,Case Western,Glioblastoma multiforme,IGC,TCGA-GBM,Glioblastoma Multiforme,Brain,Gliomas,Case Western
+TCGA-21-1079,21,Fox Chase Cancer Center,Lung squamous cell carcinoma,IGC,TCGA-LUSC,Lung Squamous Cell Carcinoma,Bronchus and lung,Squamous Cell Neoplasms,Fox Chase Cancer Center
+TCGA-22-1016,22,Mayo Clinic - Rochester,Lung squamous cell carcinoma,IGC,TCGA-LUSC,Lung Squamous Cell Carcinoma,Bronchus and lung,Squamous Cell Neoplasms,Mayo Clinic
+TCGA-22-5477,22,Mayo Clinic - Rochester,Lung squamous cell carcinoma,IGC,TCGA-LUSC,Lung Squamous Cell Carcinoma,Bronchus and lung,Squamous Cell Neoplasms,Mayo Clinic
+TCGA-22-5481,22,Mayo Clinic - Rochester,Lung squamous cell carcinoma,IGC,TCGA-LUSC,Lung Squamous Cell Carcinoma,Bronchus and lung,Squamous Cell Neoplasms,Mayo Clinic
+TCGA-23-1118,23,Cedars Sinai,Ovarian serous cystadenocarcinoma,IGC,TCGA-OV,Ovarian Serous Cystadenocarcinoma,Ovary,"Cystic, Mucinous and Serous Neoplasms",Cedars Sinai
+TCGA-24-1419,24,Washington University,Ovarian serous cystadenocarcinoma,IGC,TCGA-OV,Ovarian Serous Cystadenocarcinoma,Ovary,"Cystic, Mucinous and Serous Neoplasms",Washington University
+TCGA-24-1558,24,Washington University,Ovarian serous cystadenocarcinoma,IGC,TCGA-OV,Ovarian Serous Cystadenocarcinoma,Ovary,"Cystic, Mucinous and Serous Neoplasms",Washington University
+TCGA-24-1927,24,Washington University,Ovarian serous cystadenocarcinoma,IGC,TCGA-OV,Ovarian Serous Cystadenocarcinoma,Ovary,"Cystic, Mucinous and Serous Neoplasms",Washington University
+TCGA-24-2288,24,Washington University,Ovarian serous cystadenocarcinoma,IGC,TCGA-OV,Ovarian Serous Cystadenocarcinoma,Ovary,"Cystic, Mucinous and Serous Neoplasms",Washington University
+TCGA-24-2289,24,Washington University,Ovarian serous cystadenocarcinoma,IGC,TCGA-OV,Ovarian Serous Cystadenocarcinoma,Ovary,"Cystic, Mucinous and Serous Neoplasms",Washington University
+TCGA-28-2499,28,Cedars Sinai,Glioblastoma multiforme,IGC,TCGA-GBM,Glioblastoma Multiforme,Brain,Gliomas,Cedars Sinai
+TCGA-28-5213,28,Cedars Sinai,Glioblastoma multiforme,IGC,TCGA-GBM,Glioblastoma Multiforme,Brain,Gliomas,Cedars Sinai
+TCGA-29-1703,29,Duke,Ovarian serous cystadenocarcinoma,IGC,TCGA-OV,Ovarian Serous Cystadenocarcinoma,Ovary,"Cystic, Mucinous and Serous Neoplasms",Duke
+TCGA-29-1768,29,Duke,Ovarian serous cystadenocarcinoma,IGC,TCGA-OV,Ovarian Serous Cystadenocarcinoma,Ovary,"Cystic, Mucinous and Serous Neoplasms",Duke
+TCGA-29-2425,29,Duke,Ovarian serous cystadenocarcinoma,IGC,TCGA-OV,Ovarian Serous Cystadenocarcinoma,Ovary,"Cystic, Mucinous and Serous Neoplasms",Duke
+TCGA-29-2432,29,Duke,Ovarian serous cystadenocarcinoma,IGC,TCGA-OV,Ovarian Serous Cystadenocarcinoma,Ovary,"Cystic, Mucinous and Serous Neoplasms",Duke
+TCGA-2G-AAF4,2G,Erasmus MC,Testicular Germ Cell Tumors,NCH,TCGA-TGCT,Testicular Germ Cell Tumors,Testis,Germ Cell Neoplasms,Erasmus MC
+TCGA-2G-AAFE,2G,Erasmus MC,Testicular Germ Cell Tumors,NCH,TCGA-TGCT,Testicular Germ Cell Tumors,Testis,Germ Cell Neoplasms,Erasmus MC
+TCGA-2G-AAGW,2G,Erasmus MC,Testicular Germ Cell Tumors,NCH,TCGA-TGCT,Testicular Germ Cell Tumors,Testis,Germ Cell Neoplasms,Erasmus MC
+TCGA-2H-A9GH,2H,Erasmus MC,Esophageal carcinoma,NCH,TCGA-ESCA,Esophageal Carcinoma,Esophagus,Adenomas and Adenocarcinomas,Erasmus MC
+TCGA-2H-A9GI,2H,Erasmus MC,Esophageal carcinoma,NCH,TCGA-ESCA,Esophageal Carcinoma,Esophagus,Adenomas and Adenocarcinomas,Erasmus MC
+TCGA-2J-AABP,2J,Mayo Clinic,Pancreatic adenocarcinoma,NCH,TCGA-PAAD,Pancreatic Adenocarcinoma,Pancreas,"Epithelial Neoplasms, NOS",Mayo Clinic
+TCGA-2Y-A9GY,2Y,Moffitt Cancer Center,Liver hepatocellular carcinoma,NCH,TCGA-LIHC,Liver Hepatocellular Carcinoma,Liver and intrahepatic bile ducts,Adenomas and Adenocarcinomas,Moffitt Cancer Center
+TCGA-2Y-A9H8,2Y,Moffitt Cancer Center,Liver hepatocellular carcinoma,NCH,TCGA-LIHC,Liver Hepatocellular Carcinoma,Liver and intrahepatic bile ducts,Adenomas and Adenocarcinomas,Moffitt Cancer Center
+TCGA-32-1986,32,St. Joseph's Hospital (AZ),Glioblastoma multiforme,IGC,TCGA-GBM,Glioblastoma Multiforme,Brain,Gliomas,St. Joseph's Hospital (AZ)
+TCGA-32-2634,32,St. Joseph's Hospital (AZ),Glioblastoma multiforme,IGC,TCGA-GBM,Glioblastoma Multiforme,Brain,Gliomas,St. Joseph's Hospital (AZ)
+TCGA-32-4208,32,St. Joseph's Hospital (AZ),Glioblastoma multiforme,IGC,TCGA-GBM,Glioblastoma Multiforme,Brain,Gliomas,St. Joseph's Hospital (AZ)
+TCGA-34-5927,34,University of Pittsburgh,Lung squamous cell carcinoma,IGC,TCGA-LUSC,Lung Squamous Cell Carcinoma,Bronchus and lung,Squamous Cell Neoplasms,University of Pittsburgh
+TCGA-37-A5EN,37,Cureline,Lung squamous cell carcinoma,IGC,TCGA-LUSC,Lung Squamous Cell Carcinoma,Bronchus and lung,Squamous Cell Neoplasms,Cureline
+TCGA-38-A44F,38,UNC,Lung adenocarcinoma,IGC,TCGA-LUAD,Lung Adenocarcinoma,Bronchus and lung,Acinar Cell Neoplasms,University of North Carolina
+TCGA-3A-A9IL,3A,Moffitt Cancer Center,Pancreatic adenocarcinoma,NCH,TCGA-PAAD,Pancreatic Adenocarcinoma,Pancreas,Adenomas and Adenocarcinomas,Moffitt Cancer Center
+TCGA-3B-A9HQ,3B,Moffitt Cancer Center,Sarcoma,NCH,TCGA-SARC,Sarcoma,Retroperitoneum and peritoneum,Myomatous Neoplasms,Moffitt Cancer Center
+TCGA-3B-A9HU,3B,Moffitt Cancer Center,Sarcoma,NCH,TCGA-SARC,Sarcoma,Retroperitoneum and peritoneum,Myomatous Neoplasms,Moffitt Cancer Center
+TCGA-3B-A9HX,3B,Moffitt Cancer Center,Sarcoma,NCH,TCGA-SARC,Sarcoma,Retroperitoneum and peritoneum,Myomatous Neoplasms,Moffitt Cancer Center
+TCGA-3B-A9I0,3B,Moffitt Cancer Center,Sarcoma,NCH,TCGA-SARC,Sarcoma,Retroperitoneum and peritoneum,Myomatous Neoplasms,Moffitt Cancer Center
+TCGA-3M-AB47,3M,University of Kansas Medical Center,Stomach adenocarcinoma,NCH,TCGA-STAD,Stomach Adenocarcinoma,Stomach,Adenomas and Adenocarcinomas,University of Kansas Medical Center
+TCGA-3X-AAV9,3X,Alberta Health Services,Cholangiocarcinoma,NCH,TCGA-CHOL,Cholangiocarcinoma,Liver and intrahepatic bile ducts,Adenomas and Adenocarcinomas,Alberta Health Services
+TCGA-43-7658,43,Christiana Healthcare,Lung squamous cell carcinoma,IGC,TCGA-LUSC,Lung Squamous Cell Carcinoma,Bronchus and lung,Squamous Cell Neoplasms,Christiana Care
+TCGA-43-8118,43,Christiana Healthcare,Lung squamous cell carcinoma,IGC,TCGA-LUSC,Lung Squamous Cell Carcinoma,Bronchus and lung,Adenomas and Adenocarcinomas,Christiana Care
+TCGA-44-6146,44,Christiana Healthcare,Lung adenocarcinoma,IGC,TCGA-LUAD,Lung Adenocarcinoma,Bronchus and lung,"Cystic, Mucinous and Serous Neoplasms",Christiana Care
+TCGA-44-7667,44,Christiana Healthcare,Lung adenocarcinoma,IGC,TCGA-LUAD,Lung Adenocarcinoma,Bronchus and lung,Adenomas and Adenocarcinomas,Christiana Care
+TCGA-44-7672,44,Christiana Healthcare,Lung adenocarcinoma,IGC,TCGA-LUAD,Lung Adenocarcinoma,Bronchus and lung,Adenomas and Adenocarcinomas,Christiana Care
+TCGA-44-A47F,44,Christiana Healthcare,Lung adenocarcinoma,IGC,TCGA-LUAD,Lung Adenocarcinoma,Bronchus and lung,Adenomas and Adenocarcinomas,Christiana Care
+TCGA-46-3769,46,St. Joseph's Medical Center (MD),Lung squamous cell carcinoma,IGC,TCGA-LUSC,Lung Squamous Cell Carcinoma,Bronchus and lung,Squamous Cell Neoplasms,St. Joseph's Medical Center (MD)
+TCGA-46-6026,46,St. Joseph's Medical Center (MD),Lung squamous cell carcinoma,IGC,TCGA-LUSC,Lung Squamous Cell Carcinoma,Bronchus and lung,Squamous Cell Neoplasms,St. Joseph's Medical Center (MD)
+TCGA-49-4486,49,Johns Hopkins,Lung adenocarcinoma,IGC,TCGA-LUAD,Lung Adenocarcinoma,Bronchus and lung,Adenomas and Adenocarcinomas,Johns Hopkins
+TCGA-49-4490,49,Johns Hopkins,Lung adenocarcinoma,IGC,TCGA-LUAD,Lung Adenocarcinoma,Bronchus and lung,Adenomas and Adenocarcinomas,Johns Hopkins
+TCGA-49-AARE,49,Johns Hopkins,Lung adenocarcinoma,IGC,TCGA-LUAD,Lung Adenocarcinoma,Bronchus and lung,Adenomas and Adenocarcinomas,Johns Hopkins
+TCGA-4K-AAAL,4K,"Proteogenex, Inc.",Testicular Germ Cell Tumors,NCH,TCGA-TGCT,Testicular Germ Cell Tumors,Testis,Germ Cell Neoplasms,"Proteogenex, Inc."
+TCGA-4V-A9QR,4V,Hospital Louis Pradel,Thymoma,NCH,TCGA-THYM,Thymoma,Thymus,Thymic Epithelial Neoplasms,Hospital Louis Pradel
+TCGA-4X-A9F9,4X,Yale University,Thymoma,NCH,TCGA-THYM,Thymoma,Thymus,Thymic Epithelial Neoplasms,Yale University
+TCGA-4X-A9FC,4X,Yale University,Thymoma,NCH,TCGA-THYM,Thymoma,Thymus,Thymic Epithelial Neoplasms,Yale University
+TCGA-4Z-AA7O,4Z,Barretos Cancer Hospital,Bladder Urothelial Carcinoma,NCH,TCGA-BLCA,Bladder Urothelial Carcinoma,Bladder,Transitional Cell Papillomas and Carcinomas,Barretos Cancer Hospital
+TCGA-50-8460,50,University of Pittsburgh,Lung adenocarcinoma,IGC,TCGA-LUAD,Lung Adenocarcinoma,Bronchus and lung,Adenomas and Adenocarcinomas,University of Pittsburgh
+TCGA-55-7815,55,International Genomics Consortium,Lung adenocarcinoma,IGC,TCGA-LUAD,Lung Adenocarcinoma,Bronchus and lung,Adenomas and Adenocarcinomas,International Genomics Consortium
+TCGA-55-8097,55,International Genomics Consortium,Lung adenocarcinoma,IGC,TCGA-LUAD,Lung Adenocarcinoma,Bronchus and lung,Adenomas and Adenocarcinomas,International Genomics Consortium
+TCGA-55-8302,55,International Genomics Consortium,Lung adenocarcinoma,IGC,TCGA-LUAD,Lung Adenocarcinoma,Bronchus and lung,Adenomas and Adenocarcinomas,International Genomics Consortium
+TCGA-56-8083,56,International Genomics Consortium,Lung squamous cell carcinoma,IGC,TCGA-LUSC,Lung Squamous Cell Carcinoma,Bronchus and lung,Squamous Cell Neoplasms,International Genomics Consortium
+TCGA-58-A46N,58,Thoraxklinik at University Hospital Heidelberg,Lung squamous cell carcinoma,IGC,TCGA-LUSC,Lung Squamous Cell Carcinoma,Bronchus and lung,Squamous Cell Neoplasms,Thoraxklinik at University Hospital Heidelberg
+TCGA-5L-AAT0,5L,University of Sao Paulo,Breast invasive carcinoma,NCH,TCGA-BRCA,Breast Invasive Carcinoma,Breast,Ductal and Lobular Neoplasms,University of Sao Paulo
+TCGA-5P-A9K6,5P,University Hospital Erlangen,Kidney renal papillary cell carcinoma,NCH,TCGA-KIRP,Kidney Renal Papillary Cell Carcinoma,Kidney,Adenomas and Adenocarcinomas,University Hospital Erlangen
+TCGA-61-1900,61,University of Pittsburgh,Ovarian serous cystadenocarcinoma,IGC,TCGA-OV,Ovarian Serous Cystadenocarcinoma,Ovary,"Cystic, Mucinous and Serous Neoplasms",University of Pittsburgh
+TCGA-61-2088,61,University of Pittsburgh,Ovarian serous cystadenocarcinoma,IGC,TCGA-OV,Ovarian Serous Cystadenocarcinoma,Ovary,"Cystic, Mucinous and Serous Neoplasms",University of Pittsburgh
+TCGA-61-2102,61,University of Pittsburgh,Ovarian serous cystadenocarcinoma,IGC,TCGA-OV,Ovarian Serous Cystadenocarcinoma,Ovary,"Cystic, Mucinous and Serous Neoplasms",University of Pittsburgh
+TCGA-62-A472,62,Thoraxklinik at University Hospital Heidelberg,Lung adenocarcinoma,IGC,TCGA-LUAD,Lung Adenocarcinoma,Bronchus and lung,Adenomas and Adenocarcinomas,Thoraxklinik at University Hospital Heidelberg
+TCGA-63-A5MH,63,Ontario Institute for Cancer Research,Lung squamous cell carcinoma,IGC,TCGA-LUSC,Lung Squamous Cell Carcinoma,Bronchus and lung,Squamous Cell Neoplasms,Ontario Institute for Cancer Research
+TCGA-63-A5MR,63,Ontario Institute for Cancer Research,Lung squamous cell carcinoma,IGC,TCGA-LUSC,Lung Squamous Cell Carcinoma,Bronchus and lung,Squamous Cell Neoplasms,Ontario Institute for Cancer Research
+TCGA-66-2788,66,Indivumed,Lung squamous cell carcinoma,IGC,TCGA-LUSC,Lung Squamous Cell Carcinoma,Bronchus and lung,Squamous Cell Neoplasms,Indivumed
+TCGA-66-2795,66,Indivumed,Lung squamous cell carcinoma,IGC,TCGA-LUSC,Lung Squamous Cell Carcinoma,Bronchus and lung,Squamous Cell Neoplasms,Indivumed
+TCGA-67-3770,67,St Joseph's Medical Center (MD),Lung adenocarcinoma,IGC,TCGA-LUAD,Lung Adenocarcinoma,Bronchus and lung,Adenomas and Adenocarcinomas,St. Joseph's Medical Center (MD)
+TCGA-68-7755,68,Washington University - Cleveland Clinic,Lung squamous cell carcinoma,IGC,TCGA-LUSC,Lung Squamous Cell Carcinoma,Bronchus and lung,Squamous Cell Neoplasms,Washington University - Cleveland Clinic
+TCGA-68-8250,68,Washington University - Cleveland Clinic,Lung squamous cell carcinoma,IGC,TCGA-LUSC,Lung Squamous Cell Carcinoma,Bronchus and lung,Squamous Cell Neoplasms,Washington University - Cleveland Clinic
+TCGA-73-4658,73,Roswell Park,Lung adenocarcinoma,IGC,TCGA-LUAD,Lung Adenocarcinoma,Bronchus and lung,Adenomas and Adenocarcinomas,Roswell Park
+TCGA-74-6577,74,Swedish Neurosciences,Glioblastoma multiforme,IGC,TCGA-GBM,Glioblastoma Multiforme,Brain,Gliomas,Swedish Neurosciences
+TCGA-76-6283,76,Thomas Jefferson University,Glioblastoma multiforme,IGC,TCGA-GBM,Glioblastoma Multiforme,Brain,Gliomas,Thomas Jefferson University
+TCGA-77-6844,77,Prince Charles Hospital,Lung squamous cell carcinoma,IGC,TCGA-LUSC,Lung Squamous Cell Carcinoma,Bronchus and lung,Squamous Cell Neoplasms,Prince Charles Hospital
+TCGA-77-6845,77,Prince Charles Hospital,Lung squamous cell carcinoma,IGC,TCGA-LUSC,Lung Squamous Cell Carcinoma,Bronchus and lung,Squamous Cell Neoplasms,Prince Charles Hospital
+TCGA-77-7463,77,Prince Charles Hospital,Lung squamous cell carcinoma,IGC,TCGA-LUSC,Lung Squamous Cell Carcinoma,Bronchus and lung,Squamous Cell Neoplasms,Prince Charles Hospital
+TCGA-77-8130,77,Prince Charles Hospital,Lung squamous cell carcinoma,IGC,TCGA-LUSC,Lung Squamous Cell Carcinoma,Bronchus and lung,Squamous Cell Neoplasms,Prince Charles Hospital
+TCGA-78-7145,78,Prince Charles Hospital,Lung adenocarcinoma,IGC,TCGA-LUAD,Lung Adenocarcinoma,Bronchus and lung,Adenomas and Adenocarcinomas,Prince Charles Hospital
+TCGA-78-7155,78,Prince Charles Hospital,Lung adenocarcinoma,IGC,TCGA-LUAD,Lung Adenocarcinoma,Bronchus and lung,Adenomas and Adenocarcinomas,Prince Charles Hospital
+TCGA-78-7536,78,Prince Charles Hospital,Lung adenocarcinoma,IGC,TCGA-LUAD,Lung Adenocarcinoma,Bronchus and lung,Adenomas and Adenocarcinomas,Prince Charles Hospital
+TCGA-78-7539,78,Prince Charles Hospital,Lung adenocarcinoma,IGC,TCGA-LUAD,Lung Adenocarcinoma,Bronchus and lung,Adenomas and Adenocarcinomas,Prince Charles Hospital
+TCGA-85-7696,85,Asterand,Lung squamous cell carcinoma,IGC,TCGA-LUSC,Lung Squamous Cell Carcinoma,Bronchus and lung,Squamous Cell Neoplasms,Asterand
+TCGA-85-8049,85,Asterand,Lung squamous cell carcinoma,IGC,TCGA-LUSC,Lung Squamous Cell Carcinoma,Bronchus and lung,Squamous Cell Neoplasms,Asterand
+TCGA-85-8666,85,Asterand,Lung squamous cell carcinoma,IGC,TCGA-LUSC,Lung Squamous Cell Carcinoma,Bronchus and lung,Squamous Cell Neoplasms,Asterand
+TCGA-85-A4QR,85,Asterand,Lung squamous cell carcinoma,IGC,TCGA-LUSC,Lung Squamous Cell Carcinoma,Bronchus and lung,Squamous Cell Neoplasms,Asterand
+TCGA-86-7701,86,Asterand,Lung adenocarcinoma,IGC,TCGA-LUAD,Lung Adenocarcinoma,Bronchus and lung,Adenomas and Adenocarcinomas,Asterand
+TCGA-86-7714,86,Asterand,Lung adenocarcinoma,IGC,TCGA-LUAD,Lung Adenocarcinoma,Bronchus and lung,Adenomas and Adenocarcinomas,Asterand
+TCGA-86-8054,86,Asterand,Lung adenocarcinoma,IGC,TCGA-LUAD,Lung Adenocarcinoma,Bronchus and lung,Acinar Cell Neoplasms,Asterand
+TCGA-90-7767,90,ABS - IUPUI,Lung squamous cell carcinoma,IGC,TCGA-LUSC,Lung Squamous Cell Carcinoma,Bronchus and lung,Squamous Cell Neoplasms,ABS - IUPUI
+TCGA-91-6835,91,ABS - IUPUI,Lung adenocarcinoma,IGC,TCGA-LUAD,Lung Adenocarcinoma,Bronchus and lung,Adenomas and Adenocarcinomas,ABS - IUPUI
+TCGA-91-6848,91,ABS - IUPUI,Lung adenocarcinoma,IGC,TCGA-LUAD,Lung Adenocarcinoma,Bronchus and lung,Adenomas and Adenocarcinomas,ABS - IUPUI
+TCGA-95-7948,95,Washington University - Emory,Lung adenocarcinoma,IGC,TCGA-LUAD,Lung Adenocarcinoma,Bronchus and lung,Adenomas and Adenocarcinomas,Washington University - Emory
+TCGA-99-7458,99,Washington University - Alabama,Lung adenocarcinoma,IGC,TCGA-LUAD,Lung Adenocarcinoma,Bronchus and lung,Adenomas and Adenocarcinomas,Washington University - Alabama
+TCGA-A1-A0SH,A1,UCSF,Breast invasive carcinoma,NCH,TCGA-BRCA,Breast Invasive Carcinoma,Breast,Ductal and Lobular Neoplasms,University of California San Francisco
+TCGA-A2-A0CW,A2,Walter Reed,Breast invasive carcinoma,NCH,TCGA-BRCA,Breast Invasive Carcinoma,Breast,Ductal and Lobular Neoplasms,Walter Reed
+TCGA-A2-A0EM,A2,Walter Reed,Breast invasive carcinoma,NCH,TCGA-BRCA,Breast Invasive Carcinoma,Breast,Ductal and Lobular Neoplasms,Walter Reed
+TCGA-A2-A0YM,A2,Walter Reed,Breast invasive carcinoma,NCH,TCGA-BRCA,Breast Invasive Carcinoma,Breast,Ductal and Lobular Neoplasms,Walter Reed
+TCGA-A2-A0YT,A2,Walter Reed,Breast invasive carcinoma,NCH,TCGA-BRCA,Breast Invasive Carcinoma,Breast,Ductal and Lobular Neoplasms,Walter Reed
+TCGA-A2-A25C,A2,Walter Reed,Breast invasive carcinoma,NCH,TCGA-BRCA,Breast Invasive Carcinoma,Breast,Ductal and Lobular Neoplasms,Walter Reed
+TCGA-A3-3317,A3,International Genomics Consortium,Kidney renal clear cell carcinoma,IGC,TCGA-KIRC,Kidney Renal Clear Cell Carcinoma,Kidney,Adenomas and Adenocarcinomas,International Genomics Consortium
+TCGA-A3-3328,A3,International Genomics Consortium,Kidney renal clear cell carcinoma,IGC,TCGA-KIRC,Kidney Renal Clear Cell Carcinoma,Kidney,Adenomas and Adenocarcinomas,International Genomics Consortium
+TCGA-A3-3362,A3,International Genomics Consortium,Kidney renal clear cell carcinoma,IGC,TCGA-KIRC,Kidney Renal Clear Cell Carcinoma,Kidney,Adenomas and Adenocarcinomas,International Genomics Consortium
+TCGA-A4-7584,A4,International Genomics Consortium,Kidney renal papillary cell carcinoma,IGC,TCGA-KIRP,Kidney Renal Papillary Cell Carcinoma,Kidney,Adenomas and Adenocarcinomas,International Genomics Consortium
+TCGA-A4-7996,A4,International Genomics Consortium,Kidney renal papillary cell carcinoma,IGC,TCGA-KIRP,Kidney Renal Papillary Cell Carcinoma,Kidney,Adenomas and Adenocarcinomas,International Genomics Consortium
+TCGA-A4-A5Y1,A4,International Genomics Consortium,Kidney renal papillary cell carcinoma,IGC,TCGA-KIRP,Kidney Renal Papillary Cell Carcinoma,Kidney,Adenomas and Adenocarcinomas,International Genomics Consortium
+TCGA-A4-A6HP,A4,International Genomics Consortium,Kidney renal papillary cell carcinoma,IGC,TCGA-KIRP,Kidney Renal Papillary Cell Carcinoma,Kidney,Adenomas and Adenocarcinomas,International Genomics Consortium
+TCGA-A5-A0R7,A5,Cedars Sinai,Uterine Corpus Endometrial Carcinoma,NCH,TCGA-UCEC,Uterine Corpus Endometrial Carcinoma,Corpus uteri,Adenomas and Adenocarcinomas,Cedars Sinai
+TCGA-A6-5667,A6,Christiana Healthcare,Colon adenocarcinoma,IGC,TCGA-COAD,Colon Adenocarcinoma,Colon,Adenomas and Adenocarcinomas,Christiana Care
+TCGA-A6-A567,A6,Christiana Healthcare,Colon adenocarcinoma,IGC,TCGA-COAD,Colon Adenocarcinoma,Colon,Adenomas and Adenocarcinomas,Christiana Care
+TCGA-A7-A13D,A7,Christiana Healthcare,Breast invasive carcinoma,NCH,TCGA-BRCA,Breast Invasive Carcinoma,Breast,Ductal and Lobular Neoplasms,Christiana Care
+TCGA-A7-A4SF,A7,Christiana Healthcare,Breast invasive carcinoma,NCH,TCGA-BRCA,Breast Invasive Carcinoma,Breast,Ductal and Lobular Neoplasms,Christiana Care
+TCGA-A8-A06X,A8,Indivumed,Breast invasive carcinoma,NCH,TCGA-BRCA,Breast Invasive Carcinoma,Breast,Ductal and Lobular Neoplasms,Indivumed
+TCGA-A8-A07F,A8,Indivumed,Breast invasive carcinoma,NCH,TCGA-BRCA,Breast Invasive Carcinoma,Breast,Ductal and Lobular Neoplasms,Indivumed
+TCGA-A8-A0A2,A8,Indivumed,Breast invasive carcinoma,NCH,TCGA-BRCA,Breast Invasive Carcinoma,Breast,Ductal and Lobular Neoplasms,Indivumed
+TCGA-AA-3519,AA,Indivumed,Colon adenocarcinoma,IGC,TCGA-COAD,Colon Adenocarcinoma,Colon,Adenomas and Adenocarcinomas,Indivumed
+TCGA-AA-3684,AA,Indivumed,Colon adenocarcinoma,IGC,TCGA-COAD,Colon Adenocarcinoma,Colon,"Cystic, Mucinous and Serous Neoplasms",Indivumed
+TCGA-AA-3819,AA,Indivumed,Colon adenocarcinoma,IGC,TCGA-COAD,Colon Adenocarcinoma,Colon,Adenomas and Adenocarcinomas,Indivumed
+TCGA-AA-3872,AA,Indivumed,Colon adenocarcinoma,IGC,TCGA-COAD,Colon Adenocarcinoma,Colon,Adenomas and Adenocarcinomas,Indivumed
+TCGA-AA-3877,AA,Indivumed,Colon adenocarcinoma,IGC,TCGA-COAD,Colon Adenocarcinoma,Colon,"Cystic, Mucinous and Serous Neoplasms",Indivumed
+TCGA-AA-3941,AA,Indivumed,Colon adenocarcinoma,IGC,TCGA-COAD,Colon Adenocarcinoma,Colon,Adenomas and Adenocarcinomas,Indivumed
+TCGA-AA-3950,AA,Indivumed,Colon adenocarcinoma,IGC,TCGA-COAD,Colon Adenocarcinoma,Colon,"Cystic, Mucinous and Serous Neoplasms",Indivumed
+TCGA-AA-A00O,AA,Indivumed,Colon adenocarcinoma,IGC,TCGA-COAD,Colon Adenocarcinoma,Colon,Adenomas and Adenocarcinomas,Indivumed
+TCGA-AA-A00U,AA,Indivumed,Colon adenocarcinoma,IGC,TCGA-COAD,Colon Adenocarcinoma,Colon,Adenomas and Adenocarcinomas,Indivumed
+TCGA-AA-A017,AA,Indivumed,Colon adenocarcinoma,IGC,TCGA-COAD,Colon Adenocarcinoma,Colon,Adenomas and Adenocarcinomas,Indivumed
+TCGA-AA-A01S,AA,Indivumed,Colon adenocarcinoma,IGC,TCGA-COAD,Colon Adenocarcinoma,Colon,Adenomas and Adenocarcinomas,Indivumed
+TCGA-AA-A01V,AA,Indivumed,Colon adenocarcinoma,IGC,TCGA-COAD,Colon Adenocarcinoma,Colon,Adenomas and Adenocarcinomas,Indivumed
+TCGA-AA-A02F,AA,Indivumed,Colon adenocarcinoma,IGC,TCGA-COAD,Colon Adenocarcinoma,Colon,"Epithelial Neoplasms, NOS",Indivumed
+TCGA-AC-A23G,AC,International Genomics Consortium,Breast invasive carcinoma,NCH,TCGA-BRCA,Breast Invasive Carcinoma,Breast,Ductal and Lobular Neoplasms,International Genomics Consortium
+TCGA-AC-A2BM,AC,International Genomics Consortium,Breast invasive carcinoma,NCH,TCGA-BRCA,Breast Invasive Carcinoma,Breast,Ductal and Lobular Neoplasms,International Genomics Consortium
+TCGA-AC-A3OD,AC,International Genomics Consortium,Breast invasive carcinoma,NCH,TCGA-BRCA,Breast Invasive Carcinoma,Breast,Ductal and Lobular Neoplasms,International Genomics Consortium
+TCGA-AC-A3TM,AC,International Genomics Consortium,Breast invasive carcinoma,NCH,TCGA-BRCA,Breast Invasive Carcinoma,Breast,Ductal and Lobular Neoplasms,International Genomics Consortium
+TCGA-AC-A7VB,AC,International Genomics Consortium,Breast invasive carcinoma,NCH,TCGA-BRCA,Breast Invasive Carcinoma,Breast,Ductal and Lobular Neoplasms,International Genomics Consortium
+TCGA-AD-A5EK,AD,International Genomics Consortium,Colon adenocarcinoma,IGC,TCGA-COAD,Colon Adenocarcinoma,Colon,Adenomas and Adenocarcinomas,International Genomics Consortium
+TCGA-AF-2689,AF,Christiana Healthcare,Rectum adenocarcinoma,IGC,TCGA-READ,Rectum Adenocarcinoma,Rectosigmoid junction,Adenomas and Adenocarcinomas,Christiana Care
+TCGA-AF-6672,AF,Christiana Healthcare,Rectum adenocarcinoma,IGC,TCGA-READ,Rectum Adenocarcinoma,Rectosigmoid junction,Adenomas and Adenocarcinomas,Christiana Care
+TCGA-AG-3609,AG,Indivumed,Rectum adenocarcinoma,IGC,TCGA-READ,Rectum Adenocarcinoma,Rectosigmoid junction,Adenomas and Adenocarcinomas,Indivumed
+TCGA-AG-A025,AG,Indivumed,Rectum adenocarcinoma,IGC,TCGA-READ,Rectum Adenocarcinoma,Rectum,Adenomas and Adenocarcinomas,Indivumed
+TCGA-AK-3434,AK,Fox Chase,Kidney renal clear cell carcinoma,IGC,TCGA-KIRC,Kidney Renal Clear Cell Carcinoma,Kidney,Adenomas and Adenocarcinomas,Fox Chase
+TCGA-AN-A0XU,AN,Cureline,Breast invasive carcinoma,NCH,TCGA-BRCA,Breast Invasive Carcinoma,Breast,Ductal and Lobular Neoplasms,Cureline
+TCGA-AO-A0JB,AO,MSKCC,Breast invasive carcinoma,NCH,TCGA-BRCA,Breast Invasive Carcinoma,Breast,Ductal and Lobular Neoplasms,Memorial Sloan Kettering Cancer Center
+TCGA-AO-A124,AO,MSKCC,Breast invasive carcinoma,NCH,TCGA-BRCA,Breast Invasive Carcinoma,Breast,Ductal and Lobular Neoplasms,Memorial Sloan Kettering Cancer Center
+TCGA-AQ-A04J,AQ,UNC,Breast invasive carcinoma,NCH,TCGA-BRCA,Breast Invasive Carcinoma,Breast,Ductal and Lobular Neoplasms,University of North Carolina
+TCGA-AR-A24Q,AR,Mayo,Breast invasive carcinoma,NCH,TCGA-BRCA,Breast Invasive Carcinoma,Breast,Ductal and Lobular Neoplasms,Mayo Clinic
+TCGA-AX-A2HK,AX,Gynecologic Oncology Group,Uterine Corpus Endometrial Carcinoma,NCH,TCGA-UCEC,Uterine Corpus Endometrial Carcinoma,Corpus uteri,Adenomas and Adenocarcinomas,Gynecologic Oncology Group
+TCGA-AX-A2IN,AX,Gynecologic Oncology Group,Uterine Corpus Endometrial Carcinoma,NCH,TCGA-UCEC,Uterine Corpus Endometrial Carcinoma,Corpus uteri,Adenomas and Adenocarcinomas,Gynecologic Oncology Group
+TCGA-AX-A3FV,AX,Gynecologic Oncology Group,Uterine Corpus Endometrial Carcinoma,NCH,TCGA-UCEC,Uterine Corpus Endometrial Carcinoma,Corpus uteri,Adenomas and Adenocarcinomas,Gynecologic Oncology Group
+TCGA-AY-5543,AY,UNC,Colon adenocarcinoma,IGC,TCGA-COAD,Colon Adenocarcinoma,Colon,Adenomas and Adenocarcinomas,University of North Carolina
+TCGA-AY-A54L,AY,UNC,Colon adenocarcinoma,IGC,TCGA-COAD,Colon Adenocarcinoma,Colon,Adenomas and Adenocarcinomas,University of North Carolina
+TCGA-AY-A69D,AY,UNC,Colon adenocarcinoma,IGC,TCGA-COAD,Colon Adenocarcinoma,Colon,Adenomas and Adenocarcinomas,University of North Carolina
+TCGA-B0-4691,B0,University of Pittsburgh,Kidney renal clear cell carcinoma,IGC,TCGA-KIRC,Kidney Renal Clear Cell Carcinoma,Kidney,Adenomas and Adenocarcinomas,University of Pittsburgh
+TCGA-B0-4710,B0,University of Pittsburgh,Kidney renal clear cell carcinoma,IGC,TCGA-KIRC,Kidney Renal Clear Cell Carcinoma,Kidney,Adenomas and Adenocarcinomas,University of Pittsburgh
+TCGA-B0-5697,B0,University of Pittsburgh,Kidney renal clear cell carcinoma,IGC,TCGA-KIRC,Kidney Renal Clear Cell Carcinoma,Kidney,Adenomas and Adenocarcinomas,University of Pittsburgh
+TCGA-B2-5636,B2,Christiana Healthcare,Kidney renal clear cell carcinoma,IGC,TCGA-KIRC,Kidney Renal Clear Cell Carcinoma,Kidney,Adenomas and Adenocarcinomas,Christiana Care
+TCGA-B4-5843,B4,Cureline,Kidney renal clear cell carcinoma,IGC,TCGA-KIRC,Kidney Renal Clear Cell Carcinoma,Kidney,Adenomas and Adenocarcinomas,Cureline
+TCGA-B4-5844,B4,Cureline,Kidney renal clear cell carcinoma,IGC,TCGA-KIRC,Kidney Renal Clear Cell Carcinoma,Kidney,Adenomas and Adenocarcinomas,Cureline
+TCGA-B5-A11E,B5,Duke,Uterine Corpus Endometrial Carcinoma,NCH,TCGA-UCEC,Uterine Corpus Endometrial Carcinoma,Corpus uteri,Adenomas and Adenocarcinomas,Duke
+TCGA-B6-A0IB,B6,Duke,Breast invasive carcinoma,NCH,TCGA-BRCA,Breast Invasive Carcinoma,Breast,Ductal and Lobular Neoplasms,Duke
+TCGA-B6-A0RE,B6,Duke,Breast invasive carcinoma,NCH,TCGA-BRCA,Breast Invasive Carcinoma,Breast,Ductal and Lobular Neoplasms,Duke
+TCGA-B8-4143,B8,UNC,Kidney renal clear cell carcinoma,IGC,TCGA-KIRC,Kidney Renal Clear Cell Carcinoma,Kidney,Adenomas and Adenocarcinomas,University of North Carolina
+TCGA-BA-4075,BA,UNC,Head and Neck squamous cell carcinoma,IGC,TCGA-HNSC,Head and Neck Squamous Cell Carcinoma,Other and unspecified parts of tongue,Squamous Cell Neoplasms,University of North Carolina
+TCGA-BA-5152,BA,UNC,Head and Neck squamous cell carcinoma,IGC,TCGA-HNSC,Head and Neck Squamous Cell Carcinoma,"Other and ill-defined sites in lip, oral cavity and pharynx",Squamous Cell Neoplasms,University of North Carolina
+TCGA-BA-5555,BA,UNC,Head and Neck squamous cell carcinoma,IGC,TCGA-HNSC,Head and Neck Squamous Cell Carcinoma,Larynx,Squamous Cell Neoplasms,University of North Carolina
+TCGA-BA-6869,BA,UNC,Head and Neck squamous cell carcinoma,IGC,TCGA-HNSC,Head and Neck Squamous Cell Carcinoma,Larynx,Squamous Cell Neoplasms,University of North Carolina
+TCGA-BA-A6DE,BA,UNC,Head and Neck squamous cell carcinoma,IGC,TCGA-HNSC,Head and Neck Squamous Cell Carcinoma,Other and unspecified parts of tongue,Squamous Cell Neoplasms,University of North Carolina
+TCGA-BB-4227,BB,Johns Hopkins,Head and Neck squamous cell carcinoma,IGC,TCGA-HNSC,Head and Neck Squamous Cell Carcinoma,Hypopharynx,Squamous Cell Neoplasms,Johns Hopkins
+TCGA-BB-8596,BB,Johns Hopkins,Head and Neck squamous cell carcinoma,IGC,TCGA-HNSC,Head and Neck Squamous Cell Carcinoma,Hypopharynx,Squamous Cell Neoplasms,Johns Hopkins
+TCGA-BB-A5HY,BB,Johns Hopkins,Head and Neck squamous cell carcinoma,IGC,TCGA-HNSC,Head and Neck Squamous Cell Carcinoma,Hypopharynx,Squamous Cell Neoplasms,Johns Hopkins
+TCGA-BC-4072,BC,UNC,Liver hepatocellular carcinoma,NCH,TCGA-LIHC,Liver Hepatocellular Carcinoma,Liver and intrahepatic bile ducts,Adenomas and Adenocarcinomas,University of North Carolina
+TCGA-BC-A10Z,BC,UNC,Liver hepatocellular carcinoma,NCH,TCGA-LIHC,Liver Hepatocellular Carcinoma,Liver and intrahepatic bile ducts,Adenomas and Adenocarcinomas,University of North Carolina
+TCGA-BC-A3KF,BC,UNC,Liver hepatocellular carcinoma,NCH,TCGA-LIHC,Liver Hepatocellular Carcinoma,Liver and intrahepatic bile ducts,Adenomas and Adenocarcinomas,University of North Carolina
+TCGA-BF-AAP6,BF,Cureline,Skin Cutaneous Melanoma,NCH,TCGA-SKCM,Skin Cutaneous Melanoma,Skin,Nevi and Melanomas,Cureline
+TCGA-BG-A0M4,BG,University of Pittsburgh,Uterine Corpus Endometrial Carcinoma,NCH,TCGA-UCEC,Uterine Corpus Endometrial Carcinoma,Corpus uteri,Adenomas and Adenocarcinomas,University of Pittsburgh
+TCGA-BG-A0MH,BG,University of Pittsburgh,Uterine Corpus Endometrial Carcinoma,NCH,TCGA-UCEC,Uterine Corpus Endometrial Carcinoma,Corpus uteri,Adenomas and Adenocarcinomas,University of Pittsburgh
+TCGA-BG-A0MT,BG,University of Pittsburgh,Uterine Corpus Endometrial Carcinoma,NCH,TCGA-UCEC,Uterine Corpus Endometrial Carcinoma,Corpus uteri,Adenomas and Adenocarcinomas,University of Pittsburgh
+TCGA-BG-A18A,BG,University of Pittsburgh,Uterine Corpus Endometrial Carcinoma,NCH,TCGA-UCEC,Uterine Corpus Endometrial Carcinoma,Corpus uteri,Adenomas and Adenocarcinomas,University of Pittsburgh
+TCGA-BG-A222,BG,University of Pittsburgh,Uterine Corpus Endometrial Carcinoma,NCH,TCGA-UCEC,Uterine Corpus Endometrial Carcinoma,Corpus uteri,Adenomas and Adenocarcinomas,University of Pittsburgh
+TCGA-BH-A0B1,BH,University of Pittsburgh,Breast invasive carcinoma,NCH,TCGA-BRCA,Breast Invasive Carcinoma,Breast,Ductal and Lobular Neoplasms,University of Pittsburgh
+TCGA-BH-A0BM,BH,University of Pittsburgh,Breast invasive carcinoma,NCH,TCGA-BRCA,Breast Invasive Carcinoma,Breast,Ductal and Lobular Neoplasms,University of Pittsburgh
+TCGA-BH-A0BR,BH,University of Pittsburgh,Breast invasive carcinoma,NCH,TCGA-BRCA,Breast Invasive Carcinoma,Breast,Ductal and Lobular Neoplasms,University of Pittsburgh
+TCGA-BH-A0BS,BH,University of Pittsburgh,Breast invasive carcinoma,NCH,TCGA-BRCA,Breast Invasive Carcinoma,Breast,Ductal and Lobular Neoplasms,University of Pittsburgh
+TCGA-BH-A0DI,BH,University of Pittsburgh,Breast invasive carcinoma,NCH,TCGA-BRCA,Breast Invasive Carcinoma,Breast,Ductal and Lobular Neoplasms,University of Pittsburgh
+TCGA-BH-A18I,BH,University of Pittsburgh,Breast invasive carcinoma,NCH,TCGA-BRCA,Breast Invasive Carcinoma,Breast,Ductal and Lobular Neoplasms,University of Pittsburgh
+TCGA-BH-A18K,BH,University of Pittsburgh,Breast invasive carcinoma,NCH,TCGA-BRCA,Breast Invasive Carcinoma,Breast,Ductal and Lobular Neoplasms,University of Pittsburgh
+TCGA-BH-A1F2,BH,University of Pittsburgh,Breast invasive carcinoma,NCH,TCGA-BRCA,Breast Invasive Carcinoma,Breast,Ductal and Lobular Neoplasms,University of Pittsburgh
+TCGA-BH-A1F6,BH,University of Pittsburgh,Breast invasive carcinoma,NCH,TCGA-BRCA,Breast Invasive Carcinoma,Breast,Ductal and Lobular Neoplasms,University of Pittsburgh
+TCGA-BH-A204,BH,University of Pittsburgh,Breast invasive carcinoma,NCH,TCGA-BRCA,Breast Invasive Carcinoma,Breast,Ductal and Lobular Neoplasms,University of Pittsburgh
+TCGA-BJ-A3F0,BJ,University of Pittsburgh,Thyroid carcinoma,IGC,TCGA-THCA,Thyroid Carcinoma,Thyroid gland,Adenomas and Adenocarcinomas,University of Pittsburgh
+TCGA-BJ-A3PU,BJ,University of Pittsburgh,Thyroid carcinoma,IGC,TCGA-THCA,Thyroid Carcinoma,Thyroid gland,Adenomas and Adenocarcinomas,University of Pittsburgh
+TCGA-BM-6198,BM,UNC,Rectum adenocarcinoma,IGC,TCGA-READ,Rectum Adenocarcinoma,Rectum,Adenomas and Adenocarcinomas,University of North Carolina
+TCGA-BP-4332,BP,MSKCC,Kidney renal clear cell carcinoma,IGC,TCGA-KIRC,Kidney Renal Clear Cell Carcinoma,Kidney,Adenomas and Adenocarcinomas,Memorial Sloan Kettering Cancer Center
+TCGA-BP-4335,BP,MSKCC,Kidney renal clear cell carcinoma,IGC,TCGA-KIRC,Kidney Renal Clear Cell Carcinoma,Kidney,Adenomas and Adenocarcinomas,Memorial Sloan Kettering Cancer Center
+TCGA-BP-4768,BP,MSKCC,Kidney renal clear cell carcinoma,IGC,TCGA-KIRC,Kidney Renal Clear Cell Carcinoma,Kidney,Adenomas and Adenocarcinomas,Memorial Sloan Kettering Cancer Center
+TCGA-BP-4807,BP,MSKCC,Kidney renal clear cell carcinoma,IGC,TCGA-KIRC,Kidney Renal Clear Cell Carcinoma,Kidney,Adenomas and Adenocarcinomas,Memorial Sloan Kettering Cancer Center
+TCGA-BP-4967,BP,MSKCC,Kidney renal clear cell carcinoma,IGC,TCGA-KIRC,Kidney Renal Clear Cell Carcinoma,Kidney,Adenomas and Adenocarcinomas,Memorial Sloan Kettering Cancer Center
+TCGA-BP-4975,BP,MSKCC,Kidney renal clear cell carcinoma,IGC,TCGA-KIRC,Kidney Renal Clear Cell Carcinoma,Kidney,Adenomas and Adenocarcinomas,Memorial Sloan Kettering Cancer Center
+TCGA-BP-5000,BP,MSKCC,Kidney renal clear cell carcinoma,IGC,TCGA-KIRC,Kidney Renal Clear Cell Carcinoma,Kidney,Adenomas and Adenocarcinomas,Memorial Sloan Kettering Cancer Center
+TCGA-BP-5186,BP,MSKCC,Kidney renal clear cell carcinoma,IGC,TCGA-KIRC,Kidney Renal Clear Cell Carcinoma,Kidney,Adenomas and Adenocarcinomas,Memorial Sloan Kettering Cancer Center
+TCGA-BQ-5885,BQ,MSKCC,Kidney renal papillary cell carcinoma,IGC,TCGA-KIRP,Kidney Renal Papillary Cell Carcinoma,Kidney,Adenomas and Adenocarcinomas,Memorial Sloan Kettering Cancer Center
+TCGA-BQ-5888,BQ,MSKCC,Kidney renal papillary cell carcinoma,IGC,TCGA-KIRP,Kidney Renal Papillary Cell Carcinoma,Kidney,Adenomas and Adenocarcinomas,Memorial Sloan Kettering Cancer Center
+TCGA-BQ-5894,BQ,MSKCC,Kidney renal papillary cell carcinoma,IGC,TCGA-KIRP,Kidney Renal Papillary Cell Carcinoma,Kidney,Adenomas and Adenocarcinomas,Memorial Sloan Kettering Cancer Center
+TCGA-BR-4188,BR,Asterand,Stomach adenocarcinoma,IGC,TCGA-STAD,Stomach Adenocarcinoma,Stomach,Adenomas and Adenocarcinomas,Asterand
+TCGA-BR-6452,BR,Asterand,Stomach adenocarcinoma,IGC,TCGA-STAD,Stomach Adenocarcinoma,Stomach,Adenomas and Adenocarcinomas,Asterand
+TCGA-BR-6566,BR,Asterand,Stomach adenocarcinoma,IGC,TCGA-STAD,Stomach Adenocarcinoma,Stomach,Adenomas and Adenocarcinomas,Asterand
+TCGA-BR-6709,BR,Asterand,Stomach adenocarcinoma,IGC,TCGA-STAD,Stomach Adenocarcinoma,Stomach,Adenomas and Adenocarcinomas,Asterand
+TCGA-BR-6803,BR,Asterand,Stomach adenocarcinoma,IGC,TCGA-STAD,Stomach Adenocarcinoma,Stomach,Adenomas and Adenocarcinomas,Asterand
+TCGA-BR-7716,BR,Asterand,Stomach adenocarcinoma,IGC,TCGA-STAD,Stomach Adenocarcinoma,Stomach,Adenomas and Adenocarcinomas,Asterand
+TCGA-BR-8078,BR,Asterand,Stomach adenocarcinoma,IGC,TCGA-STAD,Stomach Adenocarcinoma,Stomach,Adenomas and Adenocarcinomas,Asterand
+TCGA-BR-8285,BR,Asterand,Stomach adenocarcinoma,IGC,TCGA-STAD,Stomach Adenocarcinoma,Stomach,Adenomas and Adenocarcinomas,Asterand
+TCGA-BR-8368,BR,Asterand,Stomach adenocarcinoma,IGC,TCGA-STAD,Stomach Adenocarcinoma,Stomach,Adenomas and Adenocarcinomas,Asterand
+TCGA-BR-8373,BR,Asterand,Stomach adenocarcinoma,IGC,TCGA-STAD,Stomach Adenocarcinoma,Stomach,Adenomas and Adenocarcinomas,Asterand
+TCGA-BT-A20O,BT,University of Pittsburgh,Bladder Urothelial Carcinoma,NCH,TCGA-BLCA,Bladder Urothelial Carcinoma,Bladder,Transitional Cell Papillomas and Carcinomas,University of Pittsburgh
+TCGA-C5-A1BQ,C5,Medical College of Wisconsin,Cervical squamous cell carcinoma and endocervical adenocarcinoma,NCH,TCGA-CESC,Cervical Squamous Cell Carcinoma and Endocervical Adenocarcinoma,Cervix uteri,Squamous Cell Neoplasms,Medical College of Wisconsin
+TCGA-C5-A7XC,C5,Medical College of Wisconsin,Cervical squamous cell carcinoma and endocervical adenocarcinoma,NCH,TCGA-CESC,Cervical Squamous Cell Carcinoma and Endocervical Adenocarcinoma,Cervix uteri,Squamous Cell Neoplasms,Medical College of Wisconsin
+TCGA-CG-5720,CG,Indivumed,Stomach adenocarcinoma,IGC,TCGA-STAD,Stomach Adenocarcinoma,Stomach,Adenomas and Adenocarcinomas,Indivumed
+TCGA-CG-5722,CG,Indivumed,Stomach adenocarcinoma,IGC,TCGA-STAD,Stomach Adenocarcinoma,Stomach,Adenomas and Adenocarcinomas,Indivumed
+TCGA-CH-5738,CH,Indivumed,Prostate adenocarcinoma,IGC,TCGA-PRAD,Prostate Adenocarcinoma,Prostate gland,Acinar Cell Neoplasms,Indivumed
+TCGA-CH-5754,CH,Indivumed,Prostate adenocarcinoma,IGC,TCGA-PRAD,Prostate Adenocarcinoma,Prostate gland,Acinar Cell Neoplasms,Indivumed
+TCGA-CH-5769,CH,Indivumed,Prostate adenocarcinoma,IGC,TCGA-PRAD,Prostate Adenocarcinoma,Prostate gland,Acinar Cell Neoplasms,Indivumed
+TCGA-CI-6620,CI,University of Pittsburgh,Rectum adenocarcinoma,IGC,TCGA-READ,Rectum Adenocarcinoma,Rectum,Adenomas and Adenocarcinomas,University of Pittsburgh
+TCGA-CJ-4637,CJ,MD Anderson Cancer Center,Kidney renal clear cell carcinoma,IGC,TCGA-KIRC,Kidney Renal Clear Cell Carcinoma,Kidney,Adenomas and Adenocarcinomas,MD Anderson Cancer Center
+TCGA-CJ-4639,CJ,MD Anderson Cancer Center,Kidney renal clear cell carcinoma,IGC,TCGA-KIRC,Kidney Renal Clear Cell Carcinoma,Kidney,Adenomas and Adenocarcinomas,MD Anderson Cancer Center
+TCGA-CJ-4640,CJ,MD Anderson Cancer Center,Kidney renal clear cell carcinoma,IGC,TCGA-KIRC,Kidney Renal Clear Cell Carcinoma,Kidney,Adenomas and Adenocarcinomas,MD Anderson Cancer Center
+TCGA-CJ-4871,CJ,MD Anderson Cancer Center,Kidney renal clear cell carcinoma,IGC,TCGA-KIRC,Kidney Renal Clear Cell Carcinoma,Kidney,Adenomas and Adenocarcinomas,MD Anderson Cancer Center
+TCGA-CJ-4873,CJ,MD Anderson Cancer Center,Kidney renal clear cell carcinoma,IGC,TCGA-KIRC,Kidney Renal Clear Cell Carcinoma,Kidney,Adenomas and Adenocarcinomas,MD Anderson Cancer Center
+TCGA-CJ-4891,CJ,MD Anderson Cancer Center,Kidney renal clear cell carcinoma,IGC,TCGA-KIRC,Kidney Renal Clear Cell Carcinoma,Kidney,Adenomas and Adenocarcinomas,MD Anderson Cancer Center
+TCGA-CJ-4900,CJ,MD Anderson Cancer Center,Kidney renal clear cell carcinoma,IGC,TCGA-KIRC,Kidney Renal Clear Cell Carcinoma,Kidney,Adenomas and Adenocarcinomas,MD Anderson Cancer Center
+TCGA-CJ-5680,CJ,MD Anderson Cancer Center,Kidney renal clear cell carcinoma,IGC,TCGA-KIRC,Kidney Renal Clear Cell Carcinoma,Kidney,Adenomas and Adenocarcinomas,MD Anderson Cancer Center
+TCGA-CM-4743,CM,MSKCC,Colon adenocarcinoma,IGC,TCGA-COAD,Colon Adenocarcinoma,Colon,Adenomas and Adenocarcinomas,Memorial Sloan Kettering Cancer Center
+TCGA-CN-4731,CN,University of Pittsburgh,Head and Neck squamous cell carcinoma,IGC,TCGA-HNSC,Head and Neck Squamous Cell Carcinoma,"Other and ill-defined sites in lip, oral cavity and pharynx",Squamous Cell Neoplasms,University of Pittsburgh
+TCGA-CN-6022,CN,University of Pittsburgh,Head and Neck squamous cell carcinoma,IGC,TCGA-HNSC,Head and Neck Squamous Cell Carcinoma,Larynx,Squamous Cell Neoplasms,University of Pittsburgh
+TCGA-CN-A49B,CN,University of Pittsburgh,Head and Neck squamous cell carcinoma,IGC,TCGA-HNSC,Head and Neck Squamous Cell Carcinoma,Larynx,Squamous Cell Neoplasms,University of Pittsburgh
+TCGA-CN-A6UY,CN,University of Pittsburgh,Head and Neck squamous cell carcinoma,IGC,TCGA-HNSC,Head and Neck Squamous Cell Carcinoma,Base of tongue,Squamous Cell Neoplasms,University of Pittsburgh
+TCGA-CQ-5324,CQ,"University Health Network, Toronto",Head and Neck squamous cell carcinoma,IGC,TCGA-HNSC,Head and Neck Squamous Cell Carcinoma,"Other and ill-defined sites in lip, oral cavity and pharynx",Squamous Cell Neoplasms,University Health Network
+TCGA-CQ-5332,CQ,"University Health Network, Toronto",Head and Neck squamous cell carcinoma,IGC,TCGA-HNSC,Head and Neck Squamous Cell Carcinoma,"Other and ill-defined sites in lip, oral cavity and pharynx",Squamous Cell Neoplasms,University Health Network
+TCGA-CQ-5333,CQ,"University Health Network, Toronto",Head and Neck squamous cell carcinoma,IGC,TCGA-HNSC,Head and Neck Squamous Cell Carcinoma,Other and unspecified parts of tongue,Squamous Cell Neoplasms,University Health Network
+TCGA-CQ-6222,CQ,"University Health Network, Toronto",Head and Neck squamous cell carcinoma,IGC,TCGA-HNSC,Head and Neck Squamous Cell Carcinoma,Other and unspecified parts of tongue,Squamous Cell Neoplasms,University Health Network
+TCGA-CR-7367,CR,Vanderbilt University,Head and Neck squamous cell carcinoma,IGC,TCGA-HNSC,Head and Neck Squamous Cell Carcinoma,"Other and ill-defined sites in lip, oral cavity and pharynx",Squamous Cell Neoplasms,Vanderbilt University
+TCGA-CV-5440,CV,MD Anderson Cancer Center,Head and Neck squamous cell carcinoma,IGC,TCGA-HNSC,Head and Neck Squamous Cell Carcinoma,Larynx,Squamous Cell Neoplasms,MD Anderson Cancer Center
+TCGA-CV-5970,CV,MD Anderson Cancer Center,Head and Neck squamous cell carcinoma,IGC,TCGA-HNSC,Head and Neck Squamous Cell Carcinoma,Other and unspecified parts of tongue,Squamous Cell Neoplasms,MD Anderson Cancer Center
+TCGA-CV-7091,CV,MD Anderson Cancer Center,Head and Neck squamous cell carcinoma,IGC,TCGA-HNSC,Head and Neck Squamous Cell Carcinoma,"Other and ill-defined sites in lip, oral cavity and pharynx",Squamous Cell Neoplasms,MD Anderson Cancer Center
+TCGA-CV-7248,CV,MD Anderson Cancer Center,Head and Neck squamous cell carcinoma,IGC,TCGA-HNSC,Head and Neck Squamous Cell Carcinoma,Larynx,Squamous Cell Neoplasms,MD Anderson Cancer Center
+TCGA-CV-7254,CV,MD Anderson Cancer Center,Head and Neck squamous cell carcinoma,IGC,TCGA-HNSC,Head and Neck Squamous Cell Carcinoma,"Other and ill-defined sites in lip, oral cavity and pharynx",Squamous Cell Neoplasms,MD Anderson Cancer Center
+TCGA-CV-A45O,CV,MD Anderson Cancer Center,Head and Neck squamous cell carcinoma,IGC,TCGA-HNSC,Head and Neck Squamous Cell Carcinoma,Gum,Squamous Cell Neoplasms,MD Anderson Cancer Center
+TCGA-CV-A45Q,CV,MD Anderson Cancer Center,Head and Neck squamous cell carcinoma,IGC,TCGA-HNSC,Head and Neck Squamous Cell Carcinoma,Other and unspecified parts of mouth,Squamous Cell Neoplasms,MD Anderson Cancer Center
+TCGA-CV-A6JO,CV,MD Anderson Cancer Center,Head and Neck squamous cell carcinoma,IGC,TCGA-HNSC,Head and Neck Squamous Cell Carcinoma,Other and unspecified parts of tongue,Squamous Cell Neoplasms,MD Anderson Cancer Center
+TCGA-CW-6087,CW,Mayo Clinic - Rochester,Kidney renal clear cell carcinoma,IGC,TCGA-KIRC,Kidney Renal Clear Cell Carcinoma,Kidney,Adenomas and Adenocarcinomas,Mayo Clinic
+TCGA-CZ-4863,CZ,Harvard,Kidney renal clear cell carcinoma,IGC,TCGA-KIRC,Kidney Renal Clear Cell Carcinoma,Kidney,Adenomas and Adenocarcinomas,Harvard
+TCGA-CZ-5455,CZ,Harvard,Kidney renal clear cell carcinoma,IGC,TCGA-KIRC,Kidney Renal Clear Cell Carcinoma,Kidney,Adenomas and Adenocarcinomas,Harvard
+TCGA-CZ-5462,CZ,Harvard,Kidney renal clear cell carcinoma,IGC,TCGA-KIRC,Kidney Renal Clear Cell Carcinoma,Kidney,Adenomas and Adenocarcinomas,Harvard
+TCGA-CZ-5989,CZ,Harvard,Kidney renal clear cell carcinoma,IGC,TCGA-KIRC,Kidney Renal Clear Cell Carcinoma,Kidney,Adenomas and Adenocarcinomas,Harvard
+TCGA-D1-A0ZS,D1,Mayo Clinic,Uterine Corpus Endometrial Carcinoma,NCH,TCGA-UCEC,Uterine Corpus Endometrial Carcinoma,Corpus uteri,Adenomas and Adenocarcinomas,Mayo Clinic
+TCGA-D1-A174,D1,Mayo Clinic,Uterine Corpus Endometrial Carcinoma,NCH,TCGA-UCEC,Uterine Corpus Endometrial Carcinoma,Corpus uteri,Adenomas and Adenocarcinomas,Mayo Clinic
+TCGA-D1-A17H,D1,Mayo Clinic,Uterine Corpus Endometrial Carcinoma,NCH,TCGA-UCEC,Uterine Corpus Endometrial Carcinoma,Corpus uteri,Adenomas and Adenocarcinomas,Mayo Clinic
+TCGA-D5-6533,D5,Greater Poland Cancer Center,Colon adenocarcinoma,IGC,TCGA-COAD,Colon Adenocarcinoma,Colon,Adenomas and Adenocarcinomas,Greater Poland Cancer Center
+TCGA-D5-6922,D5,Greater Poland Cancer Center,Colon adenocarcinoma,IGC,TCGA-COAD,Colon Adenocarcinoma,Colon,Adenomas and Adenocarcinomas,Greater Poland Cancer Center
+TCGA-D7-6525,D7,Greater Poland Cancer Center,Stomach adenocarcinoma,IGC,TCGA-STAD,Stomach Adenocarcinoma,Stomach,Adenomas and Adenocarcinomas,Greater Poland Cancer Center
+TCGA-D7-6528,D7,Greater Poland Cancer Center,Stomach adenocarcinoma,IGC,TCGA-STAD,Stomach Adenocarcinoma,Stomach,Adenomas and Adenocarcinomas,Greater Poland Cancer Center
+TCGA-D7-A6EV,D7,Greater Poland Cancer Center,Stomach adenocarcinoma,IGC,TCGA-STAD,Stomach Adenocarcinoma,Stomach,Adenomas and Adenocarcinomas,Greater Poland Cancer Center
+TCGA-D8-A140,D8,Greater Poland Cancer Center,Breast invasive carcinoma,NCH,TCGA-BRCA,Breast Invasive Carcinoma,Breast,Ductal and Lobular Neoplasms,Greater Poland Cancer Center
+TCGA-D8-A1X8,D8,Greater Poland Cancer Center,Breast invasive carcinoma,NCH,TCGA-BRCA,Breast Invasive Carcinoma,Breast,Ductal and Lobular Neoplasms,Greater Poland Cancer Center
+TCGA-D8-A27K,D8,Greater Poland Cancer Center,Breast invasive carcinoma,NCH,TCGA-BRCA,Breast Invasive Carcinoma,Breast,Ductal and Lobular Neoplasms,Greater Poland Cancer Center
+TCGA-D8-A27M,D8,Greater Poland Cancer Center,Breast invasive carcinoma,NCH,TCGA-BRCA,Breast Invasive Carcinoma,Breast,Ductal and Lobular Neoplasms,Greater Poland Cancer Center
+TCGA-D8-A27R,D8,Greater Poland Cancer Center,Breast invasive carcinoma,NCH,TCGA-BRCA,Breast Invasive Carcinoma,Breast,Ductal and Lobular Neoplasms,Greater Poland Cancer Center
+TCGA-D8-A4Z1,D8,Greater Poland Cancer Center,Breast invasive carcinoma,NCH,TCGA-BRCA,Breast Invasive Carcinoma,Breast,Ductal and Lobular Neoplasms,Greater Poland Cancer Center
+TCGA-D9-A3Z4,D9,Greater Poland Cancer Center,Skin Cutaneous Melanoma,NCH,TCGA-SKCM,Skin Cutaneous Melanoma,Skin,Nevi and Melanomas,Greater Poland Cancer Center
+TCGA-DB-5275,DB,Mayo Clinic - Rochester,Brain Lower Grade Glioma,IGC,TCGA-LGG,Brain Lower Grade Glioma,Brain,Gliomas,Mayo Clinic
+TCGA-DB-A4XC,DB,Mayo Clinic - Rochester,Brain Lower Grade Glioma,IGC,TCGA-LGG,Brain Lower Grade Glioma,Brain,Gliomas,Mayo Clinic
+TCGA-DB-A64L,DB,Mayo Clinic - Rochester,Brain Lower Grade Glioma,IGC,TCGA-LGG,Brain Lower Grade Glioma,Brain,Gliomas,Mayo Clinic
+TCGA-DD-AAE7,DD,Mayo Clinic - Rochester,Liver hepatocellular carcinoma,NCH,TCGA-LIHC,Liver Hepatocellular Carcinoma,Liver and intrahepatic bile ducts,Adenomas and Adenocarcinomas,Mayo Clinic
+TCGA-DD-AAE8,DD,Mayo Clinic - Rochester,Liver hepatocellular carcinoma,NCH,TCGA-LIHC,Liver Hepatocellular Carcinoma,Liver and intrahepatic bile ducts,Adenomas and Adenocarcinomas,Mayo Clinic
+TCGA-DE-A0Y3,DE,University of North Carolina,Thyroid carcinoma,NCH,TCGA-THCA,Thyroid Carcinoma,Thyroid gland,Adenomas and Adenocarcinomas,University of North Carolina
+TCGA-DF-A2KZ,DF,Ontario Institute for Cancer Research,Uterine Corpus Endometrial Carcinoma,NCH,TCGA-UCEC,Uterine Corpus Endometrial Carcinoma,Corpus uteri,Adenomas and Adenocarcinomas,Ontario Institute for Cancer Research
+TCGA-DG-A2KM,DG,Ontario Institute for Cancer Research,Cervical squamous cell carcinoma and endocervical adenocarcinoma,NCH,TCGA-CESC,Cervical Squamous Cell Carcinoma and Endocervical Adenocarcinoma,Cervix uteri,Squamous Cell Neoplasms,Ontario Institute for Cancer Research
+TCGA-DH-5140,DH,University of Florida,Brain Lower Grade Glioma,IGC,TCGA-LGG,Brain Lower Grade Glioma,Brain,Gliomas,University of Florida
+TCGA-DJ-A13R,DJ,Memorial Sloan Kettering,Thyroid carcinoma,NCH,TCGA-THCA,Thyroid Carcinoma,Thyroid gland,Adenomas and Adenocarcinomas,Memorial Sloan Kettering Cancer Center
+TCGA-DJ-A1QF,DJ,Memorial Sloan Kettering,Thyroid carcinoma,NCH,TCGA-THCA,Thyroid Carcinoma,Thyroid gland,Adenomas and Adenocarcinomas,Memorial Sloan Kettering Cancer Center
+TCGA-DJ-A1QL,DJ,Memorial Sloan Kettering,Thyroid carcinoma,NCH,TCGA-THCA,Thyroid Carcinoma,Thyroid gland,Adenomas and Adenocarcinomas,Memorial Sloan Kettering Cancer Center
+TCGA-DJ-A2PT,DJ,Memorial Sloan Kettering,Thyroid carcinoma,NCH,TCGA-THCA,Thyroid Carcinoma,Thyroid gland,Adenomas and Adenocarcinomas,Memorial Sloan Kettering Cancer Center
+TCGA-DJ-A2PY,DJ,Memorial Sloan Kettering,Thyroid carcinoma,NCH,TCGA-THCA,Thyroid Carcinoma,Thyroid gland,Adenomas and Adenocarcinomas,Memorial Sloan Kettering Cancer Center
+TCGA-DJ-A2Q2,DJ,Memorial Sloan Kettering,Thyroid carcinoma,NCH,TCGA-THCA,Thyroid Carcinoma,Thyroid gland,Adenomas and Adenocarcinomas,Memorial Sloan Kettering Cancer Center
+TCGA-DJ-A3UU,DJ,Memorial Sloan Kettering,Thyroid carcinoma,NCH,TCGA-THCA,Thyroid Carcinoma,Thyroid gland,Adenomas and Adenocarcinomas,Memorial Sloan Kettering Cancer Center
+TCGA-DK-A1AB,DK,Memorial Sloan Kettering,Bladder Urothelial Carcinoma,NCH,TCGA-BLCA,Bladder Urothelial Carcinoma,Bladder,Transitional Cell Papillomas and Carcinomas,Memorial Sloan Kettering Cancer Center
+TCGA-DK-A1AC,DK,Memorial Sloan Kettering,Bladder Urothelial Carcinoma,NCH,TCGA-BLCA,Bladder Urothelial Carcinoma,Bladder,Transitional Cell Papillomas and Carcinomas,Memorial Sloan Kettering Cancer Center
+TCGA-DK-AA6M,DK,Memorial Sloan Kettering,Bladder Urothelial Carcinoma,NCH,TCGA-BLCA,Bladder Urothelial Carcinoma,Bladder,Transitional Cell Papillomas and Carcinomas,Memorial Sloan Kettering Cancer Center
+TCGA-DK-AA6P,DK,Memorial Sloan Kettering,Bladder Urothelial Carcinoma,NCH,TCGA-BLCA,Bladder Urothelial Carcinoma,Bladder,Transitional Cell Papillomas and Carcinomas,Memorial Sloan Kettering Cancer Center
+TCGA-DO-A1JZ,DO,Medical College of Georgia,Thyroid carcinoma,NCH,TCGA-THCA,Thyroid Carcinoma,Thyroid gland,Adenomas and Adenocarcinomas,Medical College of Georgia
+TCGA-DS-A0VM,DS,Cedars Sinai,Cervical squamous cell carcinoma and endocervical adenocarcinoma,NCH,TCGA-CESC,Cervical Squamous Cell Carcinoma and Endocervical Adenocarcinoma,Cervix uteri,Squamous Cell Neoplasms,Cedars Sinai
+TCGA-DU-7012,DU,Henry Ford Hospital,Brain Lower Grade Glioma,IGC,TCGA-LGG,Brain Lower Grade Glioma,Brain,Gliomas,Henry Ford Hospital
+TCGA-DU-7302,DU,Henry Ford Hospital,Brain Lower Grade Glioma,IGC,TCGA-LGG,Brain Lower Grade Glioma,Brain,Gliomas,Henry Ford Hospital
+TCGA-DU-A76L,DU,Henry Ford Hospital,Brain Lower Grade Glioma,IGC,TCGA-LGG,Brain Lower Grade Glioma,Brain,Gliomas,Henry Ford Hospital
+TCGA-DX-A1L3,DX,Memorial Sloan Kettering,Sarcoma,NCH,TCGA-SARC,Sarcoma,Retroperitoneum and peritoneum,Lipomatous Neoplasms,Memorial Sloan Kettering Cancer Center
+TCGA-DX-A3LS,DX,Memorial Sloan Kettering,Sarcoma,NCH,TCGA-SARC,Sarcoma,Retroperitoneum and peritoneum,Lipomatous Neoplasms,Memorial Sloan Kettering Cancer Center
+TCGA-DX-A3U8,DX,Memorial Sloan Kettering,Sarcoma,NCH,TCGA-SARC,Sarcoma,Retroperitoneum and peritoneum,Myomatous Neoplasms,Memorial Sloan Kettering Cancer Center
+TCGA-DX-A6B7,DX,Memorial Sloan Kettering,Sarcoma,NCH,TCGA-SARC,Sarcoma,Retroperitoneum and peritoneum,Myomatous Neoplasms,Memorial Sloan Kettering Cancer Center
+TCGA-DX-A8BN,DX,Memorial Sloan Kettering,Sarcoma,NCH,TCGA-SARC,Sarcoma,"Connective, subcutaneous and other soft tissues","Soft Tissue Tumors and Sarcomas, NOS",Memorial Sloan Kettering Cancer Center
+TCGA-DX-AB2E,DX,Memorial Sloan Kettering,Sarcoma,NCH,TCGA-SARC,Sarcoma,"Connective, subcutaneous and other soft tissues",Fibromatous Neoplasms,Memorial Sloan Kettering Cancer Center
+TCGA-DX-AB2T,DX,Memorial Sloan Kettering,Sarcoma,NCH,TCGA-SARC,Sarcoma,"Connective, subcutaneous and other soft tissues",Fibromatous Neoplasms,Memorial Sloan Kettering Cancer Center
+TCGA-E1-A7YO,E1,Duke,Brain Lower Grade Glioma,IGC,TCGA-LGG,Brain Lower Grade Glioma,Brain,Gliomas,Duke
+TCGA-E2-A14Q,E2,Roswell Park,Breast invasive carcinoma,NCH,TCGA-BRCA,Breast Invasive Carcinoma,Breast,Ductal and Lobular Neoplasms,Roswell Park
+TCGA-E2-A14W,E2,Roswell Park,Breast invasive carcinoma,NCH,TCGA-BRCA,Breast Invasive Carcinoma,Breast,Ductal and Lobular Neoplasms,Roswell Park
+TCGA-E2-A1IF,E2,Roswell Park,Breast invasive carcinoma,NCH,TCGA-BRCA,Breast Invasive Carcinoma,Breast,Ductal and Lobular Neoplasms,Roswell Park
+TCGA-E2-A1IO,E2,Roswell Park,Breast invasive carcinoma,NCH,TCGA-BRCA,Breast Invasive Carcinoma,Breast,Ductal and Lobular Neoplasms,Roswell Park
+TCGA-E2-A573,E2,Roswell Park,Breast invasive carcinoma,NCH,TCGA-BRCA,Breast Invasive Carcinoma,Breast,Ductal and Lobular Neoplasms,Roswell Park
+TCGA-E5-A4TZ,E5,Roswell Park,Bladder Urothelial Carcinoma,NCH,TCGA-BLCA,Bladder Urothelial Carcinoma,Bladder,Transitional Cell Papillomas and Carcinomas,Roswell Park
+TCGA-E7-A4XJ,E7,Asterand,Bladder Urothelial Carcinoma,NCH,TCGA-BLCA,Bladder Urothelial Carcinoma,Bladder,Transitional Cell Papillomas and Carcinomas,Asterand
+TCGA-E7-A519,E7,Asterand,Bladder Urothelial Carcinoma,NCH,TCGA-BLCA,Bladder Urothelial Carcinoma,Bladder,Transitional Cell Papillomas and Carcinomas,Asterand
+TCGA-E9-A1NG,E9,Asterand,Breast invasive carcinoma,NCH,TCGA-BRCA,Breast Invasive Carcinoma,Breast,Ductal and Lobular Neoplasms,Asterand
+TCGA-E9-A248,E9,Asterand,Breast invasive carcinoma,NCH,TCGA-BRCA,Breast Invasive Carcinoma,Breast,Ductal and Lobular Neoplasms,Asterand
+TCGA-E9-A249,E9,Asterand,Breast invasive carcinoma,NCH,TCGA-BRCA,Breast Invasive Carcinoma,Breast,Ductal and Lobular Neoplasms,Asterand
+TCGA-E9-A3X8,E9,Asterand,Breast invasive carcinoma,NCH,TCGA-BRCA,Breast Invasive Carcinoma,Breast,Ductal and Lobular Neoplasms,Asterand
+TCGA-EB-A4IS,EB,Asterand,Skin Cutaneous Melanoma,NCH,TCGA-SKCM,Skin Cutaneous Melanoma,Skin,Nevi and Melanomas,Asterand
+TCGA-ED-A459,ED,Asterand,Liver hepatocellular carcinoma,NCH,TCGA-LIHC,Liver Hepatocellular Carcinoma,Liver and intrahepatic bile ducts,Adenomas and Adenocarcinomas,Asterand
+TCGA-EJ-5495,EJ,University of Pittsburgh,Prostate adenocarcinoma,IGC,TCGA-PRAD,Prostate Adenocarcinoma,Prostate gland,Acinar Cell Neoplasms,University of Pittsburgh
+TCGA-EJ-5496,EJ,University of Pittsburgh,Prostate adenocarcinoma,IGC,TCGA-PRAD,Prostate Adenocarcinoma,Prostate gland,Acinar Cell Neoplasms,University of Pittsburgh
+TCGA-EJ-7317,EJ,University of Pittsburgh,Prostate adenocarcinoma,IGC,TCGA-PRAD,Prostate Adenocarcinoma,Prostate gland,Acinar Cell Neoplasms,University of Pittsburgh
+TCGA-EJ-7783,EJ,University of Pittsburgh,Prostate adenocarcinoma,IGC,TCGA-PRAD,Prostate Adenocarcinoma,Prostate gland,Acinar Cell Neoplasms,University of Pittsburgh
+TCGA-EJ-A65G,EJ,University of Pittsburgh,Prostate adenocarcinoma,IGC,TCGA-PRAD,Prostate Adenocarcinoma,Prostate gland,Adenomas and Adenocarcinomas,University of Pittsburgh
+TCGA-EJ-A7NG,EJ,University of Pittsburgh,Prostate adenocarcinoma,IGC,TCGA-PRAD,Prostate Adenocarcinoma,Prostate gland,Adenomas and Adenocarcinomas,University of Pittsburgh
+TCGA-EK-A2PI,EK,Gynecologic Oncology Group,Cervical squamous cell carcinoma and endocervical adenocarcinoma,NCH,TCGA-CESC,Cervical Squamous Cell Carcinoma and Endocervical Adenocarcinoma,Cervix uteri,Squamous Cell Neoplasms,Gynecologic Oncology Group
+TCGA-EK-A2RK,EK,Gynecologic Oncology Group,Cervical squamous cell carcinoma and endocervical adenocarcinoma,NCH,TCGA-CESC,Cervical Squamous Cell Carcinoma and Endocervical Adenocarcinoma,Cervix uteri,Squamous Cell Neoplasms,Gynecologic Oncology Group
+TCGA-EL-A3GU,EL,MD Anderson,Thyroid carcinoma,NCH,TCGA-THCA,Thyroid Carcinoma,Thyroid gland,Adenomas and Adenocarcinomas,MD Anderson Cancer Center
+TCGA-EL-A3MX,EL,MD Anderson,Thyroid carcinoma,NCH,TCGA-THCA,Thyroid Carcinoma,Thyroid gland,Adenomas and Adenocarcinomas,MD Anderson Cancer Center
+TCGA-EL-A3N3,EL,MD Anderson,Thyroid carcinoma,NCH,TCGA-THCA,Thyroid Carcinoma,Thyroid gland,Adenomas and Adenocarcinomas,MD Anderson Cancer Center
+TCGA-EM-A3FN,EM,University Health Network,Thyroid carcinoma,NCH,TCGA-THCA,Thyroid Carcinoma,Thyroid gland,Adenomas and Adenocarcinomas,University Health Network
+TCGA-EO-A3KX,EO,University Health Network,Uterine Corpus Endometrial Carcinoma,NCH,TCGA-UCEC,Uterine Corpus Endometrial Carcinoma,Corpus uteri,Adenomas and Adenocarcinomas,University Health Network
+TCGA-ET-A3BV,ET,Johns Hopkins,Thyroid carcinoma,NCH,TCGA-THCA,Thyroid Carcinoma,Thyroid gland,Adenomas and Adenocarcinomas,Johns Hopkins
+TCGA-ET-A3DV,ET,Johns Hopkins,Thyroid carcinoma,NCH,TCGA-THCA,Thyroid Carcinoma,Thyroid gland,Adenomas and Adenocarcinomas,Johns Hopkins
+TCGA-EV-5901,EV,CHI-Penrose Colorado,Kidney renal papillary cell carcinoma,IGC,TCGA-KIRP,Kidney Renal Papillary Cell Carcinoma,Kidney,Adenomas and Adenocarcinomas,CHI-Penrose Colorado
+TCGA-EW-A1OV,EW,University of Miami,Breast invasive carcinoma,NCH,TCGA-BRCA,Breast Invasive Carcinoma,Breast,Ductal and Lobular Neoplasms,University of Miami
+TCGA-EW-A1P6,EW,University of Miami,Breast invasive carcinoma,NCH,TCGA-BRCA,Breast Invasive Carcinoma,Breast,Ductal and Lobular Neoplasms,University of Miami
+TCGA-EW-A1PD,EW,University of Miami,Breast invasive carcinoma,NCH,TCGA-BRCA,Breast Invasive Carcinoma,Breast,Ductal and Lobular Neoplasms,University of Miami
+TCGA-EW-A2FW,EW,University of Miami,Breast invasive carcinoma,NCH,TCGA-BRCA,Breast Invasive Carcinoma,Breast,Ductal and Lobular Neoplasms,University of Miami
+TCGA-EW-A6SC,EW,University of Miami,Breast invasive carcinoma,NCH,TCGA-BRCA,Breast Invasive Carcinoma,Breast,Ductal and Lobular Neoplasms,University of Miami
+TCGA-EY-A1GE,EY,University of North Carolina,Uterine Corpus Endometrial Carcinoma,NCH,TCGA-UCEC,Uterine Corpus Endometrial Carcinoma,Corpus uteri,Adenomas and Adenocarcinomas,University of North Carolina
+TCGA-EY-A1GS,EY,University of North Carolina,Uterine Corpus Endometrial Carcinoma,NCH,TCGA-UCEC,Uterine Corpus Endometrial Carcinoma,Corpus uteri,"Cystic, Mucinous and Serous Neoplasms",University of North Carolina
+TCGA-F2-7276,F2,UNC,Pancreatic adenocarcinoma,IGC,TCGA-PAAD,Pancreatic Adenocarcinoma,Pancreas,Adenomas and Adenocarcinomas,University of North Carolina
+TCGA-F4-6460,F4,Asterand,Colon adenocarcinoma,IGC,TCGA-COAD,Colon Adenocarcinoma,Colon,Adenomas and Adenocarcinomas,Asterand
+TCGA-F4-6703,F4,Asterand,Colon adenocarcinoma,IGC,TCGA-COAD,Colon Adenocarcinoma,Colon,Adenomas and Adenocarcinomas,Asterand
+TCGA-F4-6807,F4,Asterand,Colon adenocarcinoma,IGC,TCGA-COAD,Colon Adenocarcinoma,Colon,Adenomas and Adenocarcinomas,Asterand
+TCGA-FA-8693,FA,Asterand,Lymphoid Neoplasm Diffuse Large B-cell Lymphoma,IGC,TCGA-DLBC,Lymphoid Neoplasm Diffuse Large B-cell Lymphoma,Stomach,Mature B-Cell Lymphomas,Asterand
+TCGA-FA-A6HN,FA,Asterand,Lymphoid Neoplasm Diffuse Large B-cell Lymphoma,IGC,TCGA-DLBC,Lymphoid Neoplasm Diffuse Large B-cell Lymphoma,Lymph nodes,Mature B-Cell Lymphomas,Asterand
+TCGA-FB-A545,FB,Asterand,Pancreatic adenocarcinoma,IGC,TCGA-PAAD,Pancreatic Adenocarcinoma,Pancreas,Ductal and Lobular Neoplasms,Asterand
+TCGA-FB-AAQ1,FB,Asterand,Pancreatic adenocarcinoma,IGC,TCGA-PAAD,Pancreatic Adenocarcinoma,Pancreas,Ductal and Lobular Neoplasms,Asterand
+TCGA-FD-A3B5,FD,BLN - University Of Chicago,Bladder Urothelial Carcinoma,NCH,TCGA-BLCA,Bladder Urothelial Carcinoma,Bladder,Transitional Cell Papillomas and Carcinomas,BLN - University Of Chicago
+TCGA-FD-A5C0,FD,BLN - University Of Chicago,Bladder Urothelial Carcinoma,NCH,TCGA-BLCA,Bladder Urothelial Carcinoma,Bladder,Transitional Cell Papillomas and Carcinomas,BLN - University Of Chicago
+TCGA-FD-A6TH,FD,BLN - University Of Chicago,Bladder Urothelial Carcinoma,NCH,TCGA-BLCA,Bladder Urothelial Carcinoma,Bladder,Transitional Cell Papillomas and Carcinomas,BLN - University Of Chicago
+TCGA-FE-A233,FE,Ohio State University,Thyroid carcinoma,NCH,TCGA-THCA,Thyroid Carcinoma,Thyroid gland,Adenomas and Adenocarcinomas,Ohio State University
+TCGA-FP-A4BF,FP,International Genomics Consortium,Stomach adenocarcinoma,IGC,TCGA-STAD,Stomach Adenocarcinoma,Stomach,"Cystic, Mucinous and Serous Neoplasms",International Genomics Consortium
+TCGA-FR-A3R1,FR,University of North Carolina,Skin Cutaneous Melanoma,NCH,TCGA-SKCM,Skin Cutaneous Melanoma,Skin,Nevi and Melanomas,University of North Carolina
+TCGA-FU-A5XV,FU,International Genomics Consortium,Cervical squamous cell carcinoma and endocervical adenocarcinoma,NCH,TCGA-CESC,Cervical Squamous Cell Carcinoma and Endocervical Adenocarcinoma,Cervix uteri,Squamous Cell Neoplasms,International Genomics Consortium
+TCGA-FY-A3RA,FY,International Genomics Consortium,Thyroid carcinoma,NCH,TCGA-THCA,Thyroid Carcinoma,Thyroid gland,Adenomas and Adenocarcinomas,International Genomics Consortium
+TCGA-FY-A40L,FY,International Genomics Consortium,Thyroid carcinoma,NCH,TCGA-THCA,Thyroid Carcinoma,Thyroid gland,Adenomas and Adenocarcinomas,International Genomics Consortium
+TCGA-FZ-5924,FZ,University of Pittsburgh,Pancreatic adenocarcinoma,IGC,TCGA-PAAD,Pancreatic Adenocarcinoma,Pancreas,Ductal and Lobular Neoplasms,University of Pittsburgh
+TCGA-G2-A2EC,G2,MD Anderson,Bladder Urothelial Carcinoma,NCH,TCGA-BLCA,Bladder Urothelial Carcinoma,Bladder,Transitional Cell Papillomas and Carcinomas,MD Anderson Cancer Center
+TCGA-G2-A3IB,G2,MD Anderson,Bladder Urothelial Carcinoma,NCH,TCGA-BLCA,Bladder Urothelial Carcinoma,Bladder,Transitional Cell Papillomas and Carcinomas,MD Anderson Cancer Center
+TCGA-G2-A3VY,G2,MD Anderson,Bladder Urothelial Carcinoma,NCH,TCGA-BLCA,Bladder Urothelial Carcinoma,Bladder,Transitional Cell Papillomas and Carcinomas,MD Anderson Cancer Center
+TCGA-G3-A5SJ,G3,Alberta Health Services,Liver hepatocellular carcinoma,NCH,TCGA-LIHC,Liver Hepatocellular Carcinoma,Liver and intrahepatic bile ducts,Adenomas and Adenocarcinomas,Alberta Health Services
+TCGA-G5-6235,G5,Roswell Park,Rectum adenocarcinoma,IGC,TCGA-READ,Rectum Adenocarcinoma,Rectosigmoid junction,Adenomas and Adenocarcinomas,Roswell Park
+TCGA-G7-6792,G7,Roswell Park,Kidney renal papillary cell carcinoma,IGC,TCGA-KIRP,Kidney Renal Papillary Cell Carcinoma,Kidney,Adenomas and Adenocarcinomas,Roswell Park
+TCGA-G9-6362,G9,Roswell Park,Prostate adenocarcinoma,IGC,TCGA-PRAD,Prostate Adenocarcinoma,Prostate gland,Acinar Cell Neoplasms,Roswell Park
+TCGA-G9-6377,G9,Roswell Park,Prostate adenocarcinoma,IGC,TCGA-PRAD,Prostate Adenocarcinoma,Prostate gland,Acinar Cell Neoplasms,Roswell Park
+TCGA-G9-7525,G9,Roswell Park,Prostate adenocarcinoma,IGC,TCGA-PRAD,Prostate Adenocarcinoma,Prostate gland,Acinar Cell Neoplasms,Roswell Park
+TCGA-G9-A9S4,G9,Roswell Park,Prostate adenocarcinoma,IGC,TCGA-PRAD,Prostate Adenocarcinoma,Prostate gland,Adenomas and Adenocarcinomas,Roswell Park
+TCGA-GL-A59T,GL,ABS - IUPUI,Kidney renal papillary cell carcinoma,IGC,TCGA-KIRP,Kidney Renal Papillary Cell Carcinoma,Kidney,Adenomas and Adenocarcinomas,ABS - IUPUI
+TCGA-GM-A2DD,GM,MD Anderson,Breast invasive carcinoma,NCH,TCGA-BRCA,Breast Invasive Carcinoma,Breast,Ductal and Lobular Neoplasms,MD Anderson Cancer Center
+TCGA-GR-A4D5,GR,University of Nebraska Medical Center (UNMC),Lymphoid Neoplasm Diffuse Large B-cell Lymphoma,IGC,TCGA-DLBC,Lymphoid Neoplasm Diffuse Large B-cell Lymphoma,Lymph nodes,Mature B-Cell Lymphomas,University of Nebraska Medical Center (UNMC)
+TCGA-GS-A9TU,GS,Fundacio Clinic per a la Recerca Biomedica,Lymphoid Neoplasm Diffuse Large B-cell Lymphoma,IGC,TCGA-DLBC,Lymphoid Neoplasm Diffuse Large B-cell Lymphoma,Lymph nodes,Mature B-Cell Lymphomas,Fundacio Clinic per a la Recerca Biomedica
+TCGA-GV-A3QI,GV,BLN - Cleveland Clinic,Bladder Urothelial Carcinoma,NCH,TCGA-BLCA,Bladder Urothelial Carcinoma,Bladder,Transitional Cell Papillomas and Carcinomas,BLN - Cleveland Clinic
+TCGA-HC-7738,HC,International Genomics Consortium,Prostate adenocarcinoma,IGC,TCGA-PRAD,Prostate Adenocarcinoma,Prostate gland,Acinar Cell Neoplasms,International Genomics Consortium
+TCGA-HC-8212,HC,International Genomics Consortium,Prostate adenocarcinoma,IGC,TCGA-PRAD,Prostate Adenocarcinoma,Prostate gland,Acinar Cell Neoplasms,International Genomics Consortium
+TCGA-HC-8265,HC,International Genomics Consortium,Prostate adenocarcinoma,IGC,TCGA-PRAD,Prostate Adenocarcinoma,Prostate gland,Acinar Cell Neoplasms,International Genomics Consortium
+TCGA-HC-A4ZV,HC,International Genomics Consortium,Prostate adenocarcinoma,IGC,TCGA-PRAD,Prostate Adenocarcinoma,Prostate gland,Adenomas and Adenocarcinomas,International Genomics Consortium
+TCGA-HF-A5NB,HF,Ontario Institute for Cancer Research (OICR),Stomach adenocarcinoma,IGC,TCGA-STAD,Stomach Adenocarcinoma,Stomach,"Cystic, Mucinous and Serous Neoplasms",Ontario Institute for Cancer Research
+TCGA-HT-7474,HT,Case Western - St Joes,Brain Lower Grade Glioma,IGC,TCGA-LGG,Brain Lower Grade Glioma,Brain,Gliomas,Case Western - St Joes
+TCGA-HT-7479,HT,Case Western - St Joes,Brain Lower Grade Glioma,IGC,TCGA-LGG,Brain Lower Grade Glioma,Brain,Gliomas,Case Western - St Joes
+TCGA-HT-7686,HT,Case Western - St Joes,Brain Lower Grade Glioma,IGC,TCGA-LGG,Brain Lower Grade Glioma,Brain,Gliomas,Case Western - St Joes
+TCGA-HT-7860,HT,Case Western - St Joes,Brain Lower Grade Glioma,IGC,TCGA-LGG,Brain Lower Grade Glioma,Brain,Gliomas,Case Western - St Joes
+TCGA-HT-8109,HT,Case Western - St Joes,Brain Lower Grade Glioma,IGC,TCGA-LGG,Brain Lower Grade Glioma,Brain,Gliomas,Case Western - St Joes
+TCGA-HT-8110,HT,Case Western - St Joes,Brain Lower Grade Glioma,IGC,TCGA-LGG,Brain Lower Grade Glioma,Brain,Gliomas,Case Western - St Joes
+TCGA-HT-A616,HT,Case Western - St Joes,Brain Lower Grade Glioma,IGC,TCGA-LGG,Brain Lower Grade Glioma,Brain,Gliomas,Case Western - St Joes
+TCGA-HV-A5A5,HV,National Cancer Center Korea,Pancreatic adenocarcinoma,IGC,TCGA-PAAD,Pancreatic Adenocarcinoma,Pancreas,Ductal and Lobular Neoplasms,National Cancer Center Korea
+TCGA-HW-8321,HW,MSKCC,Brain Lower Grade Glioma,IGC,TCGA-LGG,Brain Lower Grade Glioma,Brain,Gliomas,Memorial Sloan Kettering Cancer Center
+TCGA-HW-A5KK,HW,MSKCC,Brain Lower Grade Glioma,IGC,TCGA-LGG,Brain Lower Grade Glioma,Brain,Gliomas,Memorial Sloan Kettering Cancer Center
+TCGA-HZ-7289,HZ,International Genomics Consortium,Pancreatic adenocarcinoma,IGC,TCGA-PAAD,Pancreatic Adenocarcinoma,Pancreas,Adenomas and Adenocarcinomas,International Genomics Consortium
+TCGA-HZ-A77P,HZ,International Genomics Consortium,Pancreatic adenocarcinoma,IGC,TCGA-PAAD,Pancreatic Adenocarcinoma,Pancreas,Adenomas and Adenocarcinomas,International Genomics Consortium
+TCGA-IB-AAUN,IB,Alberta Health Services,Pancreatic adenocarcinoma,IGC,TCGA-PAAD,Pancreatic Adenocarcinoma,Pancreas,Ductal and Lobular Neoplasms,Alberta Health Services
+TCGA-IB-AAUT,IB,Alberta Health Services,Pancreatic adenocarcinoma,IGC,TCGA-PAAD,Pancreatic Adenocarcinoma,Pancreas,"Cystic, Mucinous and Serous Neoplasms",Alberta Health Services
+TCGA-IR-A3LH,IR,Memorial Sloan Kettering,Cervical squamous cell carcinoma and endocervical adenocarcinoma,NCH,TCGA-CESC,Cervical Squamous Cell Carcinoma and Endocervical Adenocarcinoma,Cervix uteri,Squamous Cell Neoplasms,Memorial Sloan Kettering Cancer Center
+TCGA-J1-A4AH,J1,ABS - Lahey Clinic,Lung squamous cell carcinoma,IGC,TCGA-LUSC,Lung Squamous Cell Carcinoma,Bronchus and lung,Squamous Cell Neoplasms,ABS - Lahey Clinic
+TCGA-J4-A83K,J4,ABS - Lahey Clinic,Prostate adenocarcinoma,IGC,TCGA-PRAD,Prostate Adenocarcinoma,Prostate gland,Adenomas and Adenocarcinomas,ABS - Lahey Clinic
+TCGA-JW-A5VL,JW,BLN - Baylor,Cervical squamous cell carcinoma and endocervical adenocarcinoma,NCH,TCGA-CESC,Cervical Squamous Cell Carcinoma and Endocervical Adenocarcinoma,Cervix uteri,Squamous Cell Neoplasms,BLN - Baylor
+TCGA-JW-A69B,JW,BLN - Baylor,Cervical squamous cell carcinoma and endocervical adenocarcinoma,NCH,TCGA-CESC,Cervical Squamous Cell Carcinoma and Endocervical Adenocarcinoma,Cervix uteri,Adenomas and Adenocarcinomas,BLN - Baylor
+TCGA-K7-A5RF,K7,ABS - Lahey Clinic,Liver hepatocellular carcinoma,NCH,TCGA-LIHC,Liver Hepatocellular Carcinoma,Liver and intrahepatic bile ducts,Adenomas and Adenocarcinomas,ABS - Lahey Clinic
+TCGA-KC-A7F5,KC,Cornell Medical College,Prostate adenocarcinoma,IGC,TCGA-PRAD,Prostate Adenocarcinoma,Prostate gland,Adenomas and Adenocarcinomas,Cornell Medical College
+TCGA-KK-A5A1,KK,MD Anderson Cancer Center,Prostate adenocarcinoma,IGC,TCGA-PRAD,Prostate Adenocarcinoma,Prostate gland,Adenomas and Adenocarcinomas,MD Anderson Cancer Center
+TCGA-KM-8440,KM,NCI Urologic Oncology Branch,Kidney Chromophobe,IGC,TCGA-KICH,Kidney Chromophobe,Kidney,Adenomas and Adenocarcinomas,NCI Urologic Oncology Branch
+TCGA-KM-A7QJ,KM,NCI Urologic Oncology Branch,Kidney Chromophobe,IGC,TCGA-KICH,Kidney Chromophobe,Kidney,Adenomas and Adenocarcinomas,NCI Urologic Oncology Branch
+TCGA-KS-A4IC,KS,University Of Michigan,Thyroid carcinoma,NCH,TCGA-THCA,Thyroid Carcinoma,Thyroid gland,Adenomas and Adenocarcinomas,University of Michigan
+TCGA-KS-A4ID,KS,University Of Michigan,Thyroid carcinoma,NCH,TCGA-THCA,Thyroid Carcinoma,Thyroid gland,Adenomas and Adenocarcinomas,University of Michigan
+TCGA-KU-A66S,KU,Hartford,Head and Neck squamous cell carcinoma,IGC,TCGA-HNSC,Head and Neck Squamous Cell Carcinoma,Larynx,Squamous Cell Neoplasms,Hartford
+TCGA-L5-A43C,L5,University of Michigan,Esophageal carcinoma,NCH,TCGA-ESCA,Esophageal Carcinoma,Esophagus,"Cystic, Mucinous and Serous Neoplasms",University of Michigan
+TCGA-L5-A8NT,L5,University of Michigan,Esophageal carcinoma,NCH,TCGA-ESCA,Esophageal Carcinoma,Esophagus,Adenomas and Adenocarcinomas,University of Michigan
+TCGA-LL-A5YO,LL,Candler,Breast invasive carcinoma,NCH,TCGA-BRCA,Breast Invasive Carcinoma,Breast,Ductal and Lobular Neoplasms,Candler
+TCGA-MQ-A4LP,MQ,Washington University - NYU,Mesothelioma,NCH,TCGA-MESO,Mesothelioma,"Heart, mediastinum, and pleura",Mesothelial Neoplasms,Washington University - NYU
+TCGA-MX-A5UG,MX,MSKCC,Stomach adenocarcinoma,NCH,TCGA-STAD,Stomach Adenocarcinoma,Stomach,Adenomas and Adenocarcinomas,Memorial Sloan Kettering Cancer Center
+TCGA-N6-A4V9,N6,University of Pittsburgh,Uterine Carcinosarcoma,NCH,TCGA-UCS,Uterine Carcinosarcoma,Corpus uteri,Complex Mixed and Stromal Neoplasms,University of Pittsburgh
+TCGA-NA-A4QX,,Duke University,Uterine Carcinosarcoma,NCH,TCGA-UCS,Uterine Carcinosarcoma,"Uterus, NOS",Complex Mixed and Stromal Neoplasms,Duke University
+TCGA-NA-A4R0,,Duke University,Uterine Carcinosarcoma,NCH,TCGA-UCS,Uterine Carcinosarcoma,Corpus uteri,Complex Mixed and Stromal Neoplasms,Duke University
+TCGA-NF-A4X2,NF,Mayo Clinic - Rochester,Uterine Carcinosarcoma,NCH,TCGA-UCS,Uterine Carcinosarcoma,"Uterus, NOS",Complex Mixed and Stromal Neoplasms,Mayo Clinic
+TCGA-NF-A5CP,NF,Mayo Clinic - Rochester,Uterine Carcinosarcoma,NCH,TCGA-UCS,Uterine Carcinosarcoma,"Uterus, NOS",Complex Mixed and Stromal Neoplasms,Mayo Clinic
+TCGA-NH-A8F8,NH,Candler,Colon adenocarcinoma,NCH,TCGA-COAD,Colon Adenocarcinoma,Colon,Adenomas and Adenocarcinomas,Candler
+TCGA-NJ-A55O,NJ,Washington University - Rush University,Lung adenocarcinoma,NCH,TCGA-LUAD,Lung Adenocarcinoma,Bronchus and lung,"Cystic, Mucinous and Serous Neoplasms",Washington University - Rush University
+TCGA-OL-A66J,OL,University of Chicago,Breast invasive carcinoma,NCH,TCGA-BRCA,Breast Invasive Carcinoma,Breast,Ductal and Lobular Neoplasms,University of Chicago
+TCGA-OL-A66K,OL,University of Chicago,Breast invasive carcinoma,NCH,TCGA-BRCA,Breast Invasive Carcinoma,Breast,Ductal and Lobular Neoplasms,University of Chicago
+TCGA-OR-A5JR,OR,University of Michigan,Adrenocortical carcinoma,NCH,TCGA-ACC,Adrenocortical Carcinoma,Adrenal gland,Adenomas and Adenocarcinomas,University of Michigan
+TCGA-OR-A5KQ,OR,University of Michigan,Adrenocortical carcinoma,NCH,TCGA-ACC,Adrenocortical Carcinoma,Adrenal gland,Adenomas and Adenocarcinomas,University of Michigan
+TCGA-P4-AAVO,P4,MD Anderson Cancer Center,Kidney renal papillary cell carcinoma,NCH,TCGA-KIRP,Kidney Renal Papillary Cell Carcinoma,Kidney,Adenomas and Adenocarcinomas,MD Anderson Cancer Center
+TCGA-P5-A5EX,P5,Cureline,Brain Lower Grade Glioma,NCH,TCGA-LGG,Brain Lower Grade Glioma,Brain,Gliomas,Cureline
+TCGA-QC-A7B5,QC,Emory University,Sarcoma,NCH,TCGA-SARC,Sarcoma,"Connective, subcutaneous and other soft tissues","Soft Tissue Tumors and Sarcomas, NOS",Emory University
+TCGA-QR-A6GX,QR,National Institutes of Health,Pheochromocytoma and Paraganglioma,NCH,TCGA-PCPG,Pheochromocytoma and Paraganglioma,Adrenal gland,Paragangliomas and Glomus Tumors,National Institutes of Health
+TCGA-QR-A6H2,QR,National Institutes of Health,Pheochromocytoma and Paraganglioma,NCH,TCGA-PCPG,Pheochromocytoma and Paraganglioma,Adrenal gland,Paragangliomas and Glomus Tumors,National Institutes of Health
+TCGA-QR-A706,QR,National Institutes of Health,Pheochromocytoma and Paraganglioma,NCH,TCGA-PCPG,Pheochromocytoma and Paraganglioma,"Connective, subcutaneous and other soft tissues",Paragangliomas and Glomus Tumors,National Institutes of Health
+TCGA-QR-A707,QR,National Institutes of Health,Pheochromocytoma and Paraganglioma,NCH,TCGA-PCPG,Pheochromocytoma and Paraganglioma,Adrenal gland,Paragangliomas and Glomus Tumors,National Institutes of Health
+TCGA-QR-A70W,QR,National Institutes of Health,Pheochromocytoma and Paraganglioma,NCH,TCGA-PCPG,Pheochromocytoma and Paraganglioma,Adrenal gland,Paragangliomas and Glomus Tumors,National Institutes of Health
+TCGA-QT-A5XL,QT,University of North Carolina,Pheochromocytoma and Paraganglioma,NCH,TCGA-PCPG,Pheochromocytoma and Paraganglioma,Adrenal gland,Paragangliomas and Glomus Tumors,University of North Carolina
+TCGA-R8-A6MO,R8,MD Anderson,Brain Lower Grade Glioma,NCH,TCGA-LGG,Brain Lower Grade Glioma,Brain,Gliomas,MD Anderson Cancer Center
+TCGA-RD-A8N5,RD,Peter MacCallum Cancer Center,Stomach adenocarcinoma,NCH,TCGA-STAD,Stomach Adenocarcinoma,Stomach,"Cystic, Mucinous and Serous Neoplasms",Peter MacCallum Cancer Center
+TCGA-RR-A6KC,RR,St. Joseph's Hospital AZ,Glioblastoma multiforme,NCH,TCGA-GBM,Glioblastoma Multiforme,Brain,Gliomas,St. Joseph's Hospital (AZ)
+TCGA-RW-A7CZ,RW,Michigan University,Pheochromocytoma and Paraganglioma,NCH,TCGA-PCPG,Pheochromocytoma and Paraganglioma,Retroperitoneum and peritoneum,Paragangliomas and Glomus Tumors,University of Michigan
+TCGA-RY-A83Y,RY,University of California San Francisco,Brain Lower Grade Glioma,NCH,TCGA-LGG,Brain Lower Grade Glioma,Brain,Gliomas,University of California San Francisco
+TCGA-S7-A7WO,S7,University Hospital Motol,Pheochromocytoma and Paraganglioma,NCH,TCGA-PCPG,Pheochromocytoma and Paraganglioma,Adrenal gland,Paragangliomas and Glomus Tumors,University Hospital Motol
+TCGA-S7-A7WR,S7,University Hospital Motol,Pheochromocytoma and Paraganglioma,NCH,TCGA-PCPG,Pheochromocytoma and Paraganglioma,Adrenal gland,Paragangliomas and Glomus Tumors,University Hospital Motol
+TCGA-S9-A6TY,S9,Dept of Neurosurgery at University of Heidelberg,Brain Lower Grade Glioma,NCH,TCGA-LGG,Brain Lower Grade Glioma,Brain,Gliomas,Dept of Neurosurgery at University of Heidelberg
+TCGA-S9-A6UB,S9,Dept of Neurosurgery at University of Heidelberg,Brain Lower Grade Glioma,NCH,TCGA-LGG,Brain Lower Grade Glioma,Brain,Gliomas,Dept of Neurosurgery at University of Heidelberg
+TCGA-SC-A6LQ,SC,Memorial Sloan Kettering,Mesothelioma,NCH,TCGA-MESO,Mesothelioma,"Heart, mediastinum, and pleura",Mesothelial Neoplasms,Memorial Sloan Kettering Cancer Center
+TCGA-SQ-A6I4,SQ,International Genomics Consortium,Pheochromocytoma and Paraganglioma,NCH,TCGA-PCPG,Pheochromocytoma and Paraganglioma,Adrenal gland,Paragangliomas and Glomus Tumors,International Genomics Consortium
+TCGA-SR-A6MT,SR,Tufts Medical Center,Pheochromocytoma and Paraganglioma,NCH,TCGA-PCPG,Pheochromocytoma and Paraganglioma,Adrenal gland,Paragangliomas and Glomus Tumors,Tufts Medical Center
+TCGA-SR-A6N0,SR,Tufts Medical Center,Pheochromocytoma and Paraganglioma,NCH,TCGA-PCPG,Pheochromocytoma and Paraganglioma,Adrenal gland,Paragangliomas and Glomus Tumors,Tufts Medical Center
+TCGA-SW-A7EB,SW,Global Bioclinical-Moldova,Stomach adenocarcinoma,NCH,TCGA-STAD,Stomach Adenocarcinoma,Stomach,"Cystic, Mucinous and Serous Neoplasms",Global Bioclinical-Moldova
+TCGA-SX-A7SS,SX,Mayo Clinic Arizona,Kidney renal papillary cell carcinoma,NCH,TCGA-KIRP,Kidney Renal Papillary Cell Carcinoma,Kidney,Adenomas and Adenocarcinomas,Mayo Clinic Arizona
+TCGA-TM-A84J,TM,The University of New South Wales,Brain Lower Grade Glioma,NCH,TCGA-LGG,Brain Lower Grade Glioma,Brain,Gliomas,The University of New South Wales
+TCGA-TN-A7HJ,TN,Ohio State University,Head and Neck squamous cell carcinoma,NCH,TCGA-HNSC,Head and Neck Squamous Cell Carcinoma,Larynx,Squamous Cell Neoplasms,Ohio State University
+TCGA-TQ-A7RS,TQ,University of Sao Paulo,Brain Lower Grade Glioma,NCH,TCGA-LGG,Brain Lower Grade Glioma,Brain,Gliomas,University of Sao Paulo
+TCGA-UB-A7MB,UB,UCSF,Liver hepatocellular carcinoma,NCH,TCGA-LIHC,Liver Hepatocellular Carcinoma,Liver and intrahepatic bile ducts,Adenomas and Adenocarcinomas,University of California San Francisco
+TCGA-UD-AAC1,UD,University of Western Australia,Mesothelioma,NCH,TCGA-MESO,Mesothelioma,"Heart, mediastinum, and pleura",Mesothelial Neoplasms,University of Western Australia
+TCGA-UF-A71B,UF,Barretos Cancer Hospital,Head and Neck squamous cell carcinoma,NCH,TCGA-HNSC,Head and Neck Squamous Cell Carcinoma,Gum,Squamous Cell Neoplasms,Barretos Cancer Hospital
+TCGA-UF-A7JD,UF,Barretos Cancer Hospital,Head and Neck squamous cell carcinoma,NCH,TCGA-HNSC,Head and Neck Squamous Cell Carcinoma,Other and unspecified parts of mouth,Squamous Cell Neoplasms,Barretos Cancer Hospital
+TCGA-UN-AAZ9,UN,Boston Medical Center,Kidney renal papillary cell carcinoma,NCH,TCGA-KIRP,Kidney Renal Papillary Cell Carcinoma,Kidney,Adenomas and Adenocarcinomas,Boston Medical Center
+TCGA-UW-A7GJ,UW,University of North Carolina,Kidney Chromophobe,NCH,TCGA-KICH,Kidney Chromophobe,Kidney,Adenomas and Adenocarcinomas,University of North Carolina
+TCGA-UZ-A9PN,UZ,University of California San Francisco,Kidney renal papillary cell carcinoma,NCH,TCGA-KIRP,Kidney Renal Papillary Cell Carcinoma,Kidney,Adenomas and Adenocarcinomas,University of California San Francisco
+TCGA-V1-A8WW,V1,University of California San Francisco,Prostate adenocarcinoma,NCH,TCGA-PRAD,Prostate Adenocarcinoma,Prostate gland,Adenomas and Adenocarcinomas,University of California San Francisco
+TCGA-V1-A9OH,V1,University of California San Francisco,Prostate adenocarcinoma,NCH,TCGA-PRAD,Prostate Adenocarcinoma,Prostate gland,Adenomas and Adenocarcinomas,University of California San Francisco
+TCGA-V4-A9EA,V4,Institut Curie,Uveal Melanoma,NCH,TCGA-UVM,Uveal Melanoma,Eye and adnexa,Nevi and Melanomas,Institut Curie
+TCGA-V7-A7HQ,V7,Medical College of Georgia,Breast invasive carcinoma,NCH,TCGA-BRCA,Breast Invasive Carcinoma,Breast,Ductal and Lobular Neoplasms,Medical College of Georgia
+TCGA-VQ-A8DU,VQ,Barretos Cancer Hospital,Stomach adenocarcinoma,NCH,TCGA-STAD,Stomach Adenocarcinoma,Stomach,Adenomas and Adenocarcinomas,Barretos Cancer Hospital
+TCGA-VQ-A8PC,VQ,Barretos Cancer Hospital,Stomach adenocarcinoma,NCH,TCGA-STAD,Stomach Adenocarcinoma,Stomach,"Cystic, Mucinous and Serous Neoplasms",Barretos Cancer Hospital
+TCGA-VQ-A8PO,VQ,Barretos Cancer Hospital,Stomach adenocarcinoma,NCH,TCGA-STAD,Stomach Adenocarcinoma,Stomach,"Cystic, Mucinous and Serous Neoplasms",Barretos Cancer Hospital
+TCGA-VR-A8ET,VR,Barretos Cancer Hospital,Esophageal carcinoma,NCH,TCGA-ESCA,Esophageal Carcinoma,Esophagus,Squamous Cell Neoplasms,Barretos Cancer Hospital
+TCGA-VS-A94Z,VS,Barretos Cancer Hospital,Cervical squamous cell carcinoma and endocervical adenocarcinoma,NCH,TCGA-CESC,Cervical Squamous Cell Carcinoma and Endocervical Adenocarcinoma,Cervix uteri,Squamous Cell Neoplasms,Barretos Cancer Hospital
+TCGA-VS-A959,VS,Barretos Cancer Hospital,Cervical squamous cell carcinoma and endocervical adenocarcinoma,NCH,TCGA-CESC,Cervical Squamous Cell Carcinoma and Endocervical Adenocarcinoma,Cervix uteri,Squamous Cell Neoplasms,Barretos Cancer Hospital
+TCGA-W4-A7U4,W4,University of North Carolina,Testicular Germ Cell Tumors,NCH,TCGA-TGCT,Testicular Germ Cell Tumors,Testis,Germ Cell Neoplasms,University of North Carolina
+TCGA-WB-A819,WB,Erasmus MC,Pheochromocytoma and Paraganglioma,NCH,TCGA-PCPG,Pheochromocytoma and Paraganglioma,Adrenal gland,Paragangliomas and Glomus Tumors,Erasmus MC
+TCGA-WB-A81J,WB,Erasmus MC,Pheochromocytoma and Paraganglioma,NCH,TCGA-PCPG,Pheochromocytoma and Paraganglioma,Adrenal gland,Paragangliomas and Glomus Tumors,Erasmus MC
+TCGA-XF-A9SJ,XF,University of Southern California,Bladder Urothelial Carcinoma,NCH,TCGA-BLCA,Bladder Urothelial Carcinoma,Bladder,Transitional Cell Papillomas and Carcinomas,University of Southern California
+TCGA-XF-AAN7,XF,University of Southern California,Bladder Urothelial Carcinoma,NCH,TCGA-BLCA,Bladder Urothelial Carcinoma,Bladder,Transitional Cell Papillomas and Carcinomas,University of Southern California
+TCGA-XK-AAIV,XK,Mayo Clinic Arizona,Prostate adenocarcinoma,NCH,TCGA-PRAD,Prostate Adenocarcinoma,Prostate gland,Adenomas and Adenocarcinomas,Mayo Clinic Arizona
+TCGA-XR-A8TD,XR,University of Sao Paulo,Liver hepatocellular carcinoma,NCH,TCGA-LIHC,Liver Hepatocellular Carcinoma,Liver and intrahepatic bile ducts,Adenomas and Adenocarcinomas,University of Sao Paulo
+TCGA-XV-A9VZ,XV,Capital Biosciences,Skin Cutaneous Melanoma,NCH,TCGA-SKCM,Skin Cutaneous Melanoma,Skin,Nevi and Melanomas,Capital Biosciences
+TCGA-Y6-A8TL,Y6,University of Arizona,Prostate adenocarcinoma,NCH,TCGA-PRAD,Prostate Adenocarcinoma,Prostate gland,Adenomas and Adenocarcinomas,University of Arizona
+TCGA-YL-A8HK,YL,PROCURE Biobank,Prostate adenocarcinoma,NCH,TCGA-PRAD,Prostate Adenocarcinoma,Prostate gland,Adenomas and Adenocarcinomas,PROCURE Biobank
+TCGA-YL-A9WY,YL,PROCURE Biobank,Prostate adenocarcinoma,NCH,TCGA-PRAD,Prostate Adenocarcinoma,Prostate gland,Adenomas and Adenocarcinomas,PROCURE Biobank
+TCGA-YT-A95F,YT,Barretos Cancer Hospital,Thymoma,NCH,TCGA-THYM,Thymoma,"Heart, mediastinum, and pleura",Thymic Epithelial Neoplasms,Barretos Cancer Hospital
+TCGA-YZ-A982,YZ,The Ohio State University,Uveal Melanoma,NCH,TCGA-UVM,Uveal Melanoma,Eye and adnexa,Nevi and Melanomas,Ohio State University
+TCGA-Z4-AAPG,Z4,Cureline,Sarcoma,NCH,TCGA-SARC,Sarcoma,Retroperitoneum and peritoneum,"Soft Tissue Tumors and Sarcomas, NOS",Cureline
+TCGA-Z6-A9VB,Z6,Cureline,Esophageal carcinoma,NCH,TCGA-ESCA,Esophageal Carcinoma,Esophagus,Squamous Cell Neoplasms,Cureline
+TCGA-ZF-A9R1,ZF,University of Sheffield,Bladder Urothelial Carcinoma,NCH,TCGA-BLCA,Bladder Urothelial Carcinoma,Bladder,Transitional Cell Papillomas and Carcinomas,University of Sheffield
+TCGA-ZF-A9RC,ZF,University of Sheffield,Bladder Urothelial Carcinoma,NCH,TCGA-BLCA,Bladder Urothelial Carcinoma,Bladder,Transitional Cell Papillomas and Carcinomas,University of Sheffield
+TCGA-ZG-A9ND,ZG,University Medical Center Hamburg-Eppendorf,Prostate adenocarcinoma,NCH,TCGA-PRAD,Prostate Adenocarcinoma,Prostate gland,Adenomas and Adenocarcinomas,University Medical Center Hamburg-Eppendorf
+TCGA-ZJ-AAX4,ZJ,NCI HRE Branch,Cervical squamous cell carcinoma and endocervical adenocarcinoma,NCH,TCGA-CESC,Cervical Squamous Cell Carcinoma and Endocervical Adenocarcinoma,Cervix uteri,Squamous Cell Neoplasms,NCI HRE Branch
+TCGA-ZM-AA0B,ZM,University of Ulm,Testicular Germ Cell Tumors,NCH,TCGA-TGCT,Testicular Germ Cell Tumors,Testis,Germ Cell Neoplasms,University of Ulm
+TCGA-ZS-A9CG,ZS,Tayside Tissue Bank,Liver hepatocellular carcinoma,NCH,TCGA-LIHC,Liver Hepatocellular Carcinoma,Liver and intrahepatic bile ducts,Adenomas and Adenocarcinomas,Tayside Tissue Bank

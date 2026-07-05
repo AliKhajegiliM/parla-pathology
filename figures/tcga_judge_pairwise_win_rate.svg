@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="484.096992pt" height="303.912246pt" viewBox="0 0 484.096992 303.912246" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-07-05T16:12:47.506400</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.11.0, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 303.912246 
+L 484.096992 303.912246 
+L 484.096992 0 
+L 0 0 
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 43.899492 279.965957 
+L 476.896992 279.965957 
+L 476.896992 34.664355 
+L 43.899492 34.664355 
+z
+" style="fill: #ffffff"/>
+   </g>
+   <g id="matplotlib.axis_1">
+    <g id="xtick_1">
+     <g id="text_1">
+      <text style="font-size: 9px; font-family: 'Arial'; text-anchor: middle; fill: #111111" x="116.065742" y="294.818203" transform="rotate(-0 116.065742 294.818203)">PaRLA</text>
+     </g>
+    </g>
+    <g id="xtick_2">
+     <g id="text_2">
+      <text style="font-size: 9px; font-family: 'Arial'; text-anchor: middle; fill: #111111" x="260.398242" y="294.818203" transform="rotate(-0 260.398242 294.818203)">Llama 70B</text>
+     </g>
+    </g>
+    <g id="xtick_3">
+     <g id="text_3">
+      <text style="font-size: 9px; font-family: 'Arial'; text-anchor: middle; fill: #111111" x="404.730742" y="294.818203" transform="rotate(-0 404.730742 294.818203)">Tie</text>
+     </g>
+    </g>
+   </g>
+   <g id="matplotlib.axis_2">
+    <g id="ytick_1">
+     <g id="line2d_1">
+      <path d="M 43.899492 279.965957 
+L 476.896992 279.965957 
+" clip-path="url(#p3b6242c804)" style="fill: none; stroke: #d9d9d9; stroke-width: 0.6; stroke-linecap: round"/>
+     </g>
+     <g id="text_4">
+      <text style="font-size: 9px; font-family: 'Arial'; text-anchor: end; fill: #111111" x="35.599492" y="283.24208" transform="rotate(-0 35.599492 283.24208)">0</text>
+     </g>
+    </g>
+    <g id="ytick_2">
+     <g id="line2d_2">
+      <path d="M 43.899492 230.905637 
+L 476.896992 230.905637 
+" clip-path="url(#p3b6242c804)" style="fill: none; stroke: #d9d9d9; stroke-width: 0.6; stroke-linecap: round"/>
+     </g>
+     <g id="text_5">
+      <text style="font-size: 9px; font-family: 'Arial'; text-anchor: end; fill: #111111" x="35.599492" y="234.18176" transform="rotate(-0 35.599492 234.18176)">20</text>
+     </g>
+    </g>
+    <g id="ytick_3">
+     <g id="line2d_3">
+      <path d="M 43.899492 181.845316 
+L 476.896992 181.845316 
+" clip-path="url(#p3b6242c804)" style="fill: none; stroke: #d9d9d9; stroke-width: 0.6; stroke-linecap: round"/>
+     </g>
+     <g id="text_6">
+      <text style="font-size: 9px; font-family: 'Arial'; text-anchor: end; fill: #111111" x="35.599492" y="185.121439" transform="rotate(-0 35.599492 185.121439)">40</text>
+     </g>
+    </g>
+    <g id="ytick_4">
+     <g id="line2d_4">
+      <path d="M 43.899492 132.784996 
+L 476.896992 132.784996 
+" clip-path="url(#p3b6242c804)" style="fill: none; stroke: #d9d9d9; stroke-width: 0.6; stroke-linecap: round"/>
+     </g>
+     <g id="text_7">
+      <text style="font-size: 9px; font-family: 'Arial'; text-anchor: end; fill: #111111" x="35.599492" y="136.061119" transform="rotate(-0 35.599492 136.061119)">60</text>
+     </g>
+    </g>
+    <g id="ytick_5">
+     <g id="line2d_5">
+      <path d="M 43.899492 83.724676 
+L 476.896992 83.724676 
+" clip-path="url(#p3b6242c804)" style="fill: none; stroke: #d9d9d9; stroke-width: 0.6; stroke-linecap: round"/>
+     </g>
+     <g id="text_8">
+      <text style="font-size: 9px; font-family: 'Arial'; text-anchor: end; fill: #111111" x="35.599492" y="87.000799" transform="rotate(-0 35.599492 87.000799)">80</text>
+     </g>
+    </g>
+    <g id="ytick_6">
+     <g id="line2d_6">
+      <path d="M 43.899492 34.664355 
+L 476.896992 34.664355 
+" clip-path="url(#p3b6242c804)" style="fill: none; stroke: #d9d9d9; stroke-width: 0.6; stroke-linecap: round"/>
+     </g>
+     <g id="text_9">
+      <text style="font-size: 9px; font-family: 'Arial'; text-anchor: end; fill: #111111" x="35.599492" y="37.940479" transform="rotate(-0 35.599492 37.940479)">100</text>
+     </g>
+    </g>
+    <g id="text_10">
+     <text style="font-size: 10px; font-family: 'Arial'; text-anchor: middle; fill: #111111" x="14.480273" y="157.315156" transform="rotate(-90 14.480273 157.315156)">Win rate (%)</text>
+    </g>
+   </g>
+   <g id="patch_3">
+    <path d="M 71.322667 279.965957 
+L 160.808817 279.965957 
+L 160.808817 74.403215 
+L 71.322667 74.403215 
+z
+" clip-path="url(#p3b6242c804)" style="fill: #166c9c"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 215.655167 279.965957 
+L 305.141317 279.965957 
+L 305.141317 263.776051 
+L 215.655167 263.776051 
+z
+" clip-path="url(#p3b6242c804)" style="fill: #c9c9c9"/>
+   </g>
+   <g id="patch_5">
+    <path d="M 359.987667 279.965957 
+L 449.473817 279.965957 
+L 449.473817 256.417003 
+L 359.987667 256.417003 
+z
+" clip-path="url(#p3b6242c804)" style="fill: #7a7a7a"/>
+   </g>
+   <g id="line2d_7">
+    <path clip-path="url(#p3b6242c804)" style="fill: none; stroke: #424242; stroke-width: 1.8; stroke-linecap: round"/>
+   </g>
+   <g id="line2d_8">
+    <path clip-path="url(#p3b6242c804)" style="fill: none; stroke: #424242; stroke-width: 1.8; stroke-linecap: round"/>
+   </g>
+   <g id="line2d_9">
+    <path clip-path="url(#p3b6242c804)" style="fill: none; stroke: #424242; stroke-width: 1.8; stroke-linecap: round"/>
+   </g>
+   <g id="patch_6">
+    <path d="M 43.899492 279.965957 
+L 43.899492 34.664355 
+" style="fill: none; stroke: #222222; stroke-width: 0.9; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="patch_7">
+    <path d="M 43.899492 279.965957 
+L 476.896992 279.965957 
+" style="fill: none; stroke: #222222; stroke-width: 0.9; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="text_11">
+    <text style="font-size: 9.5px; font-family: 'Arial'; text-anchor: middle; fill: #555555" x="260.398242" y="27.759056" transform="rotate(-0 260.398242 27.759056)">TCGA external validation set  ·  n = 500 reports</text>
+   </g>
+   <g id="text_12">
+    <text style="font-weight: 700; font-size: 10px; font-family: 'Arial'; text-anchor: middle; fill: #111111" x="116.065742" y="61.996055" transform="rotate(-0 116.065742 61.996055)">83.8%</text>
+   </g>
+   <g id="text_13">
+    <text style="font-size: 8.5px; font-family: 'Arial'; text-anchor: middle; fill: #555555" x="116.065742" y="68.444269" transform="rotate(-0 116.065742 68.444269)">n=419</text>
+   </g>
+   <g id="text_14">
+    <text style="font-weight: 700; font-size: 10px; font-family: 'Arial'; text-anchor: middle; fill: #111111" x="260.398242" y="251.368892" transform="rotate(-0 260.398242 251.368892)">6.6%</text>
+   </g>
+   <g id="text_15">
+    <text style="font-size: 8.5px; font-family: 'Arial'; text-anchor: middle; fill: #555555" x="260.398242" y="257.817106" transform="rotate(-0 260.398242 257.817106)">n=33</text>
+   </g>
+   <g id="text_16">
+    <text style="font-weight: 700; font-size: 10px; font-family: 'Arial'; text-anchor: middle; fill: #111111" x="404.730742" y="244.009844" transform="rotate(-0 404.730742 244.009844)">9.6%</text>
+   </g>
+   <g id="text_17">
+    <text style="font-size: 8.5px; font-family: 'Arial'; text-anchor: middle; fill: #555555" x="404.730742" y="250.458058" transform="rotate(-0 404.730742 250.458058)">n=48</text>
+   </g>
+   <g id="text_18">
+    <text style="font-weight: 700; font-size: 13px; font-family: 'Arial'; text-anchor: middle; fill: #111111" x="260.398242" y="16.664355" transform="rotate(-0 260.398242 16.664355)">Pairwise win rate — GPT-5.5 Extra High (Codex) judge</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="p3b6242c804">
+   <rect x="43.899492" y="34.664355" width="432.9975" height="245.301602"/>
+  </clipPath>
+ </defs>
+</svg>

@@ -1,0 +1,26 @@
+# Large / regenerable / sensitive artifacts — not committed
+*.pt                     # survival model checkpoints (regenerable; large)
+*.pth
+.plot_deps/              # vendored virtualenv (use requirements.txt instead)
+.matplotlib_cache/
+__pycache__/
+*.pyc
+.venv/
+venv/
+figenv/
+
+# Raw inputs hosted externally (open-access on GDC); documented in data/README.md
+original_reports/        # raw TCGA Chandra OCR text
+gen_chandra_*.jsonl      # full base/PaRLA generations
+aligned_sample_500.jsonl # aligned raw report text + generations
+
+# Regenerable binary renders (SVG is the committed source of truth)
+*.png
+*.pdf
+
+# OS / editor
+.DS_Store
+.idea/
+.vscode/
+*.env
+.env

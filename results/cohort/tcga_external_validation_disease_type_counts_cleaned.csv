@@ -1,0 +1,20 @@
+disease_type,n_reports,percent
+Adenomas and Adenocarcinomas,201,40.2
+Squamous Cell Neoplasms,71,14.2
+Ductal and Lobular Neoplasms,64,12.8
+Gliomas,42,8.4
+"Cystic, Mucinous and Serous Neoplasms",29,5.8
+Transitional Cell Papillomas and Carcinomas,20,4.0
+Acinar Cell Neoplasms,15,3.0
+Paragangliomas and Glomus Tumors,14,2.8
+Nevi and Melanomas,7,1.4
+Germ Cell Neoplasms,6,1.2
+Myomatous Neoplasms,6,1.2
+Complex Mixed and Stromal Neoplasms,5,1.0
+Thymic Epithelial Neoplasms,4,0.8
+Mature B-Cell Lymphomas,4,0.8
+"Soft Tissue Tumors and Sarcomas, NOS",3,0.6
+Mesothelial Neoplasms,3,0.6
+"Epithelial Neoplasms, NOS",2,0.4
+Lipomatous Neoplasms,2,0.4
+Fibromatous Neoplasms,2,0.4
