@@ -35,7 +35,9 @@ This repo is a **PEFT/LoRA adapter** (not a standalone model); load it on the 4-
 
 ## Results
 
-The internal AutoScientist held-out test is the **direct challenge criterion** (in-domain, HISTAI-derived digital report text). The two TCGA studies are **independent generalization tests**: TCGA is a different source, and its reports are scanned-PDF pathology reports converted to text by OCR — a genuinely different distribution from the digital training text.
+**The Cancer Genome Atlas (TCGA)** is the most widely used public cancer resource in oncology and computational pathology — a landmark NCI/NHGRI program that clinically and molecularly characterized ~20,000 tumors across 33 cancer types, and a de facto standard benchmark for pathology models. Validating on TCGA therefore tests PaRLA against the field's reference distribution.
+
+The internal AutoScientist held-out test is the **direct challenge criterion** (in-domain, HISTAI-derived digital report text). The two TCGA studies are **independent generalization tests**: TCGA is a different source from the HISTAI training data, and its reports are scanned-PDF pathology reports converted to text by OCR — a genuinely different distribution from the digital training text.
 
 ### Challenge criterion — internal held-out win rate
 
