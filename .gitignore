@@ -9,10 +9,11 @@ __pycache__/
 venv/
 figenv/
 
-# Raw inputs hosted externally (open-access on GDC); documented in data/README.md
+# Raw inputs / large datasets hosted externally; documented in data/README.md
 original_reports/        # raw TCGA Chandra OCR text
 gen_chandra_*.jsonl      # full base/PaRLA generations
 aligned_sample_500.jsonl # aligned raw report text + generations
+combined_adapted.json    # full 143MB SFT dataset — hosted on HF (data/sft_sample.jsonl is a 50-record sample)
 
 # Regenerable binary renders (SVG is the committed source of truth)
 *.png
