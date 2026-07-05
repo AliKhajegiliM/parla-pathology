@@ -6,6 +6,7 @@ The **adapted SFT dataset** used to train PaRLA is **[AliKhajegiliM/PaRLA-SFT](h
 
 - **`sft_sample.jsonl`** (committed here) — a 50-record sample so the schema is browsable without downloading the full set.
 - The full `combined_adapted.json` (143 MB) is not committed (exceeds GitHub's 100 MB file limit); download it from the HF dataset above.
+- **Kaggle release:** [adaption-combined-adapted-histai-no-skin](https://www.kaggle.com/datasets/alikhajegilimirabadi/adaption-combined-adapted-histai-no-skin) — a no-skin build of the same adapted dataset (skin/dermatopathology cases excluded).
 
 ## Evaluation data
 
