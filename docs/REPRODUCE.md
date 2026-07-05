@@ -51,7 +51,7 @@ Per-cancer CSVs for the five datasets are committed, so the C-index tables and f
      --n 500 --seed 42
    ```
 
-   Note: the released `judgments.jsonl` was produced by an in-session **GPT-5.5 Extra High judge run via Codex** (recorded as `codex_manual_read`). `compare_before_after.py` can also drive an API judge (`--judge-model`, `JUDGE_MODEL`, `OPENAI_API_KEY`); the released numbers come from the committed `judgments.jsonl`.
+   Note: the released `judgments.jsonl` was produced by a **GPT-5.5 Extra High judge run via Codex** (recorded as `codex_manual_read`). `compare_before_after.py` can also drive an API judge (`--judge-model`, `JUDGE_MODEL`, `OPENAI_API_KEY`); the released numbers come from the committed `judgments.jsonl`.
 
 4. **Cohort metadata** (contacts the live GDC API + TSS code table):
 

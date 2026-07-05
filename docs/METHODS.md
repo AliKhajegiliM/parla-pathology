@@ -31,7 +31,7 @@ Three distinct evaluations, in increasing order of distribution shift:
 
 - **Source text:** Chandra-extracted OCR text from scanned TCGA pathology-report PDFs.
 - **Sampling:** the 500 reports were randomly sampled with a fixed seed from all TCGA reports that had all three of: Chandra OCR text, a base Llama 70B generation, and a PaRLA generation. All 500 matched GDC case metadata (no missing cases, no duplicate IDs).
-- **Judge:** a high-effort, in-session **GPT-5.5 Extra High LLM-as-judge, run via Codex** (recorded as `codex_manual_read` in `data/judgments.jsonl`). Each case was judged against the OCR source text on diagnostic essence, faithfulness/hallucination control, prognostic/staging capture, reasoning quality, conclusion quality, and overall usefulness (0–5 each), plus a head-to-head winner (`after` = PaRLA, `before` = base, or `tie`).
+- **Judge:** a **GPT-5.5 Extra High LLM-as-judge, run via Codex** (recorded as `codex_manual_read` in `data/judgments.jsonl`). Each case was judged against the OCR source text on diagnostic essence, faithfulness/hallucination control, prognostic/staging capture, reasoning quality, conclusion quality, and overall usefulness (0–5 each), plus a head-to-head winner (`after` = PaRLA, `before` = base, or `tie`).
 - **Cohort characterization:** participant barcodes were mapped through the GDC cases API, the official TCGA Tissue Source Site (TSS) code table, and a cleaned center→TSS mapping to consolidate institution names (`src/summarize_tcga_validation_cohort.py`).
 
 ## External Validation 2 — downstream survival

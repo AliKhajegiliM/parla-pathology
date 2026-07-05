@@ -47,7 +47,7 @@ In the AutoScientist internal held-out evaluation, the adapted PaRLA model was p
 
 ### Generalization 1 — TCGA reports, LLM-as-judge (500 reports)
 
-On **500 independent TCGA pathology reports** (scanned PDFs OCR'd to text with Chandra), a high-effort in-session **GPT-5.5 Extra High LLM-as-judge (run via Codex)** compared PaRLA against the base model on diagnostic essence, prognostic/staging preservation, report-grounded reasoning, hallucination control, and conclusion quality. PaRLA won **83.8%** of head-to-head comparisons (base 6.6%, tie 9.6%).
+On **500 independent TCGA pathology reports** (scanned PDFs OCR'd to text with Chandra), a **GPT-5.5 Extra High LLM-as-judge (run via Codex)** compared PaRLA against the base model on diagnostic essence, prognostic/staging preservation, report-grounded reasoning, hallucination control, and conclusion quality. PaRLA won **83.8%** of head-to-head comparisons (base 6.6%, tie 9.6%).
 
 ![Pairwise win rate](assets/manual_pairwise_win_rate.svg)
 

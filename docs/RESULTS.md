@@ -8,7 +8,7 @@ Adapted PaRLA was preferred over base Llama 70B in **86%** of held-out cases (vs
 
 ## External Validation 1 — TCGA LLM-as-judge (n = 500)
 
-Judge: GPT-5.5 Extra High, run in-session via Codex. Source: `results/judge/`, `data/judgments.jsonl`.
+Judge: GPT-5.5 Extra High, run via Codex. Source: `results/judge/`, `data/judgments.jsonl`.
 
 ### Head-to-head win rate
 
