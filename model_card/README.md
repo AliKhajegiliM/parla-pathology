@@ -129,7 +129,7 @@ model = PeftModel.from_pretrained(base_model, adapter_id)
 ## Links and citation
 
 - **Training dataset (Hugging Face):** [AliKhajegiliM/PaRLA-SFT](https://huggingface.co/datasets/AliKhajegiliM/PaRLA-SFT) — adapted SFT data (24,370 HISTAI-derived examples)
-- **Training dataset (Kaggle):** [adaption-combined-adapted-histai-no-skin](https://www.kaggle.com/datasets/alikhajegilimirabadi/adaption-combined-adapted-histai-no-skin) — Kaggle release (skin/dermatopathology cases excluded)
+- **Training dataset (Kaggle mirror):** [alikhajegilimirabadi/adaption-combined-adapted-histai-no-skin](https://www.kaggle.com/datasets/alikhajegilimirabadi/adaption-combined-adapted-histai-no-skin) — the same adapted SFT dataset, mirrored on Kaggle
 - **Companion code + full experiments:** [github.com/AliKhajegiliM/parla-pathology](https://github.com/AliKhajegiliM/parla-pathology)
 - **Challenge:** [Adaption Labs AutoScientist Challenge](https://adaptionlabs.ai/blog/autoscientist-challenge)
 - **TCGA cohort metadata sources:** [GDC API](https://docs.gdc.cancer.gov/API/Users_Guide/Search_and_Retrieval/) · [TCGA barcode](https://docs.gdc.cancer.gov/Encyclopedia/pages/TCGA_Barcode/) · [TSS code table](https://gdc.cancer.gov/resources-tcga-users/tcga-code-tables/tissue-source-site-codes)
