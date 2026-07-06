@@ -153,7 +153,7 @@ model = PeftModel.from_pretrained(base_model, adapter_id)
 
 ## Demo
 
-Live demo: **[huggingface.co/spaces/AliKhajegiliM/PaRLA](https://huggingface.co/spaces/AliKhajegiliM/PaRLA)**. It shows 10 real TCGA cases (10 cancer types) with the base model and PaRLA side by side, the judge's verdict, and the facts each output missed, from the committed records. Source: [`demo/index.html`](https://github.com/AliKhajegiliM/parla-pathology/blob/main/demo/index.html).
+Live demo: **[huggingface.co/spaces/AliKhajegiliM/PaRLA](https://huggingface.co/spaces/AliKhajegiliM/PaRLA)**. It shows 16 real TCGA cases across 13 cancer types with the base model and PaRLA side by side, the judge's verdict, and the facts each output missed, from the committed records. Source: [`demo/index.html`](https://github.com/AliKhajegiliM/parla-pathology/blob/main/demo/index.html).
 
 ## Intended use and limitations
 

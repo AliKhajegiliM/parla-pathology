@@ -59,7 +59,7 @@ Load the model (4-bit base + adapter): see [examples/load_and_infer.py](examples
 
 ## Demo
 
-Live demo: **[huggingface.co/spaces/AliKhajegiliM/PaRLA](https://huggingface.co/spaces/AliKhajegiliM/PaRLA)**. It shows 10 real TCGA cases (10 cancer types) with the base model and PaRLA side by side, the judge's verdict, and the facts each output missed, from the committed records. Source: [`demo/index.html`](demo/index.html).
+Live demo: **[huggingface.co/spaces/AliKhajegiliM/PaRLA](https://huggingface.co/spaces/AliKhajegiliM/PaRLA)**. It shows 16 real TCGA cases across 13 cancer types with the base model and PaRLA side by side, the judge's verdict, and the facts each output missed, from the committed records. Source: [`demo/index.html`](demo/index.html).
 
 ## Data availability
 
