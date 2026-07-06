@@ -1,0 +1,38 @@
+{
+  "n": 500,
+  "win_counts": {
+    "parla": 419,
+    "base": 33,
+    "tie": 48
+  },
+  "win_rate_pct": {
+    "parla": 83.8,
+    "base": 6.6,
+    "tie": 9.6
+  },
+  "sign_test_z_decided": 18.1,
+  "sign_test_note": "z on decided (non-tie) cases; two-sided p is astronomically small (< 1e-50)",
+  "mean_major_omissions_per_report": {
+    "base": 3.99,
+    "parla": 1.36
+  },
+  "cases_with_hallucination_pct": {
+    "base": 12.6,
+    "parla": 14.0
+  },
+  "total_hallucination_items": {
+    "base": 67,
+    "parla": 85
+  },
+  "length_control": {
+    "matched_pairs": 500,
+    "parla_longer_pct": 83.2,
+    "mean_length_ratio": 1.39,
+    "subset_parla_not_longer": {
+      "n": 84,
+      "parla_win_pct": 56.0,
+      "base_win_pct": 11.0,
+      "tie_pct": 33.0
+    }
+  }
+}

@@ -29,9 +29,11 @@ tags:
 
 | Evaluation | Setting | Result |
 |---|---|---|
-| **Challenge criterion**: AutoScientist internal held-out | adapted vs. base Llama 70B, in-domain | **86%** win rate vs. 14% |
-| **External**: TCGA reports, GPT-5.5 Extra High (Codex) LLM-as-judge | PaRLA vs. base Llama 70B on 500 independent OCR'd reports | **PaRLA 83.8%** / base Llama 70B 6.6% / Tie 9.6% |
-| **External**: TCGA downstream survival | 5-fold test C-index, 5 cancer datasets | **+1.8 to +5.2** C-index points vs. full report |
+| **External, reproducible:** TCGA reports, GPT-5.5 Extra High (Codex) LLM-as-judge | PaRLA vs. base Llama 70B on 500 independent OCR'd reports | **PaRLA 83.8%** / base 6.6% / Tie 9.6% (sign test *p* < 1e-50) |
+| **External, reproducible:** TCGA downstream survival | 5-fold test C-index, 5 TCGA cohorts (2,819 patients) | **+1.8 to +5.2** C-index points vs. full report |
+| **Challenge criterion** (platform-reported): AutoScientist internal held-out | adapted vs. base Llama 70B, in-domain | **86%** win rate vs. 14% |
+
+*Both external results reproduce exactly from the released [`judgments.jsonl`](https://github.com/AliKhajegiliM/parla-pathology/blob/main/data/judgments.jsonl) and result CSVs. The internal 86% is the metric the challenge scores on; it is reported by the AutoScientist platform, whose raw per-case scores are held there.*
 
 This repo is a **PEFT/LoRA adapter** (not a standalone model); load it on the 4-bit base (see [How to use](#how-to-use)). It was fine-tuned on **[AliKhajegiliM/PaRLA-SFT](https://huggingface.co/datasets/AliKhajegiliM/PaRLA-SFT)**, 24,370 pathology-reasoning examples derived from the HISTAI dataset via the Adaption Data platform. Full methods, the 500 judge records, all result tables, and reproduction code live in the companion repository: **[github.com/AliKhajegiliM/parla-pathology](https://github.com/AliKhajegiliM/parla-pathology)**.
 
@@ -67,16 +69,32 @@ As a quantitative test of whether the abstraction preserves clinically actionabl
 
 ![Survival C-index by cancer](assets/survival_test_cindex_by_cancer.svg)
 
-| TCGA cohort | Patients (n) | Δ test C-index (PaRLA summary − full report) |
-|---|---:|---:|
-| Bladder (BLCA) | 378 | +1.8 |
-| Breast (BRCA) | 1,034 | +3.7 |
-| Kidney (KIRC + KIRP) | 805 | +0.0 |
-| Lung adenocarcinoma (LUAD) | 353 | +5.2 |
-| Sarcoma (SARC) | 249 | +5.2 |
-| **Total** | **2,819** | |
+| TCGA cohort | Patients (n) | Full report | PaRLA summary | Δ points |
+|---|---:|---:|---:|---:|
+| Bladder (BLCA) | 378 | 61.2 | 63.1 | +1.8 |
+| Breast (BRCA) | 1,034 | 60.8 | 64.5 | +3.7 |
+| Kidney (KIRC + KIRP) | 805 | 75.4 | 75.4 | +0.0 |
+| Lung adenocarcinoma (LUAD) | 353 | 63.6 | 68.8 | +5.2 |
+| Sarcoma (SARC) | 249 | 57.3 | 62.5 | +5.2 |
+| **Total** | **2,819** | | | |
 
-On these datasets, the compact PaRLA summary retained or improved survival signal relative to the full report, consistent with a pathology-specialized summarizer removing report noise while keeping survival-relevant variables (staging, biomarkers, molecular findings).
+On these datasets, the compact PaRLA summary retained or improved survival signal relative to the full report, consistent with a pathology-specialized summarizer removing report noise while keeping survival-relevant variables (staging, biomarkers, molecular findings). Per-fold values and 95% CIs are in the [companion repo](https://github.com/AliKhajegiliM/parla-pathology).
+
+### What the win looks like (base vs. PaRLA)
+
+Two real cases from the 500-report set, both judged a PaRLA win with no hallucinations:
+
+> **Breast, `TCGA-V7-A7HQ`.** Base Llama concludes: *invasive ductal carcinoma, grade 2, metastatic carcinoma in sentinel nodes, pT1c pN2a, ER/PR positive, HER2 not amplified.* PaRLA additionally recovers the **exact nodal burden (5 of 18 nodes)**, **ER 65% / PR 80% / HER2 not amplified by FISH**, **venous/lymphatic invasion**, and the surgically critical detail that the **inferior mastectomy margin is involved while a separately re-excised margin is negative**. Every added fact is in the synoptic report; none is invented.
+
+> **Bladder, `TCGA-DK-A1AC`.** Base Llama concludes: *high-grade invasive urothelial carcinoma with perivesical invasion (pT3b), plus prostate adenocarcinoma Gleason 3+3=6.* PaRLA additionally preserves the **bilateral pelvic node counts (0/11 and 0/11)**, the **prostate stage (pT2b, organ-confined, seminal vesicles free)**, **prostatic intraepithelial neoplasia**, and the benign ureter and vas-deferens segments, each present in this multi-part cystoprostatectomy report.
+
+Across all 500 reports, base Llama drops a mean of **3.99 major clinical facts per report; PaRLA drops 1.36**.
+
+### Is the win real? (robustness and honesty)
+
+- **Significance.** PaRLA wins 419, loses 33, ties 48 of 500. A sign test on the decided cases gives *p* < 1e-50, not a coin flip.
+- **Not just length.** PaRLA outputs are longer in 83.2% of cases (1.39× on average), a known confound for LLM judges. But even on the **84 cases where PaRLA is no longer than base**, PaRLA still wins **56%** (base 11%, tie 33%), so the preference survives length control. The omission metric above (3.99 vs 1.36) is length-independent.
+- **Honest about hallucination.** More detail carries more risk: PaRLA introduces an unsupported detail in **14.0%** of cases vs base **12.6%**, and base stays fractionally ahead on strict hallucination-control scoring. The net trade is favorable (2.6 fewer omissions per report for a small rise in unsupported detail), but for a healthcare model we flag it rather than bury it.
 
 ## What it is and why?
 

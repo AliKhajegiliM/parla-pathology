@@ -18,6 +18,15 @@ Judge: GPT-5.5 Extra High, run via Codex. Source: `results/judge/`, `data/judgme
 | Llama 70B | 33 | 6.6% |
 | Tie | 48 | 9.6% |
 
+### Robustness of the win (reproduce with `src/analyze_judgments.py`)
+
+- **Significance:** 419 wins / 33 losses / 48 ties. Sign test on decided cases: z = 18.1 (p < 1e-50).
+- **Length control:** PaRLA outputs are longer in 83.2% of cases (1.39x mean). On the 84 cases where PaRLA is *not* longer than base, PaRLA still wins 56% (base 11%, tie 33%), so the preference survives length control.
+- **Length-independent content signal:** base Llama drops a mean 3.99 major clinical facts per report; PaRLA drops 1.36.
+- **Hallucination trade-off (honest):** PaRLA introduces an unsupported detail in 14.0% of cases vs base 12.6% (85 vs 67 total items); net 2.6 fewer omissions per report for a small rise in unsupported detail.
+
+Full numbers: `results/judge/robustness_summary.json`.
+
 ### Per-criterion mean scores (0–5 scale, n = 500)
 
 | Criterion | Llama 70B | PaRLA | Δ (PaRLA − Llama) |
