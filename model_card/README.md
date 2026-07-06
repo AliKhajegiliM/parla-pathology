@@ -30,7 +30,7 @@ tags:
 | Evaluation | Setting | Result |
 |---|---|---|
 | **External, reproducible:** TCGA reports, GPT-5.5 Extra High (Codex) LLM-as-judge | PaRLA vs. base Llama 70B on 500 independent OCR'd reports | **PaRLA 83.8%** / base 6.6% / Tie 9.6% (sign test *p* < 1e-50) |
-| **External, reproducible:** TCGA downstream survival | 5-fold test C-index, 5 TCGA cohorts (2,819 patients) | improves 4 of 5; pooled **+3.2** C-index pts (*p* ≈ 0.02) |
+| **External, reproducible:** TCGA downstream survival | 5-fold test C-index, 5 TCGA cohorts (2,819 patients) | improves 4 of 5; pooled **+3.2** C-index pts (*p* ≈ 0.03) |
 | **Challenge criterion** (platform-reported): AutoScientist internal held-out | adapted vs. base Llama 70B, in-domain | **86%** win rate vs. 14% |
 
 *Both external results reproduce exactly from the released [`judgments.jsonl`](https://github.com/AliKhajegiliM/parla-pathology/blob/main/data/judgments.jsonl) and result CSVs (rerun [`analyze_judgments.py`](https://github.com/AliKhajegiliM/parla-pathology/blob/main/src/analyze_judgments.py)). The internal 86% is the metric the challenge scores on; it is reported by the AutoScientist platform and is not independently reproducible from this repo (raw per-case scores are held on the platform).*
@@ -78,7 +78,7 @@ As a quantitative test of whether the abstraction preserves clinically actionabl
 | Sarcoma (SARC) | 249 | 57.3 | 62.5 (±6.3) | +5.2 |
 | **Total** | **2,819** | | | |
 
-PaRLA summaries improve C-index in 4 of the 5 cohorts and leave kidney flat; none regress. Read honestly: the per-cohort 95% CIs overlap and **no single cohort reaches significance at 5 folds**, but the **pooled effect across all 25 fold-pairs is significant** (mean +3.2 points, paired *t*(24) = 2.27, *p* ≈ 0.02; 17 of 25 folds favor PaRLA). This is a modest, consistent preservation/gain of survival signal, not a large per-cohort effect. Per-fold values and CIs are in the [companion repo](https://github.com/AliKhajegiliM/parla-pathology).
+PaRLA summaries improve C-index in 4 of the 5 cohorts and leave kidney flat; none regress. Read honestly: the per-cohort 95% CIs (1.96×SE across 5 folds) overlap and **no single cohort reaches significance at 5 folds**, but the **pooled effect across all 25 fold-pairs is significant** (mean +3.2 points, paired *t*(24) = 2.27, *p* ≈ 0.03; 17 of 25 folds favor PaRLA). This is a modest, consistent preservation/gain of survival signal, not a large per-cohort effect. Per-fold values and CIs are in the [companion repo](https://github.com/AliKhajegiliM/parla-pathology).
 
 ### What the win looks like (base vs. PaRLA)
 

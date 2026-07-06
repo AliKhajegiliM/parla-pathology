@@ -14,7 +14,7 @@ Expected output (matches `robustness_summary.json` in this folder):
 - Hallucination: base 12.6% of cases, PaRLA 14.0% (67 vs 85 items)
 - Length control: PaRLA longer in 83.2% of cases (1.39x); on the 84 cases where PaRLA is not longer, it still wins 56%
 
-Survival significance (from `../survival/survival_fold_results_long.csv`): the pooled paired test across all 25 fold-pairs is significant (mean +3.2 points, t(24) = 2.27, p ≈ 0.02, 17/25 folds favor PaRLA); no single cohort is individually significant at 5 folds.
+Survival significance (from `../survival/survival_fold_results_long.csv`): the pooled paired test across all 25 fold-pairs is significant (mean +3.2 points, t(24) = 2.27, p ≈ 0.03, 17/25 folds favor PaRLA); no single cohort is individually significant at 5 folds.
 
 ## Files
 

@@ -24,6 +24,13 @@
     "base": 67,
     "parla": 85
   },
+  "parla_hallucination_by_type": {
+    "lymph-node count/denominator": 34,
+    "biomarker/molecular": 9,
+    "stage/grade/margin": 14,
+    "admin/status": 8,
+    "other": 20
+  },
   "length_control": {
     "matched_pairs": 500,
     "parla_longer_pct": 83.2,

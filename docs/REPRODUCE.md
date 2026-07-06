@@ -62,4 +62,4 @@ Per-cancer CSVs for the five datasets are committed, so the C-index tables and f
 ## Seeds
 
 - Alignment / 500-report sampling: `seed=42`, `n=500`.
-- Survival: results under `seed256` (per-fold `runs_log.csv` records the model seed and Cox hyperparameters).
+- Survival: `seed256` is the run/output directory label; the per-fold `runs_log.csv` records the actual model training seed (`seed=1`) and the Cox hyperparameters (lr 0.001, weight decay 0.01, 100 epochs, batch 32, hidden dim 128).

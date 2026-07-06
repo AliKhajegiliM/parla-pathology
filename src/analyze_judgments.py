@@ -37,6 +37,28 @@ def sign_test_z(wins: int, losses: int) -> float:
     return (wins - 0.5 - mu) / sd
 
 
+def hallucination_types(items: list[str]) -> dict:
+    """Categorize unsupported ('hallucination') items by clinical type via documented keywords."""
+    import re
+    pats = [
+        ("lymph-node count/denominator", r"lymph node|\bnode(s)?\b|nodal|\d+\s*/\s*\d+|denominator|metasta|\bpn\d"),
+        ("biomarker/molecular", r"\ber\b|\bpr\b|her2|receptor|ihc|immuno|ki-?67|\bcd\d|marker|fish|stain|molecular"),
+        ("stage/grade/margin", r"grade|stage|\bpt\d|gleason|differentiat|margin|invasion|size|depth"),
+        ("admin/status", r"pending|not specified|deferred|unknown|addend|status|report"),
+    ]
+    counts = {name: 0 for name, _ in pats}
+    counts["other"] = 0
+    for h in items:
+        hl = h.lower()
+        for name, pat in pats:
+            if re.search(pat, hl):
+                counts[name] += 1
+                break
+        else:
+            counts["other"] += 1
+    return counts
+
+
 def load_lengths(generations_dir: str, arm: str) -> dict[str, int]:
     """arm is 'before' or 'after'; matches gen_chandra_<arm>_*.jsonl in the dir."""
     lengths: dict[str, int] = {}
@@ -51,7 +73,8 @@ def main() -> None:
     ap = argparse.ArgumentParser()
     ap.add_argument("--judgments", type=Path, default=Path("../data/judgments.jsonl"))
     ap.add_argument("--generations-dir", default=None, help="dir holding gen_chandra_before_*.jsonl and gen_chandra_after_*.jsonl")
-    ap.add_argument("--lengths", type=Path, default=Path("../results/judge/generation_lengths.csv"),
+    ap.add_argument("--lengths", type=Path,
+                    default=Path(__file__).resolve().parent.parent / "results/judge/generation_lengths.csv",
                     help="committed per-report length table (report_id,base_len,parla_len); used if --generations-dir is not given")
     args = ap.parse_args()
 
@@ -74,6 +97,7 @@ def main() -> None:
         "mean_major_omissions_per_report": {"base": round(statistics.mean(before_om), 2), "parla": round(statistics.mean(after_om), 2)},
         "cases_with_hallucination_pct": {"base": round(100 * sum(1 for x in before_hal if x) / n, 1), "parla": round(100 * sum(1 for x in after_hal if x) / n, 1)},
         "total_hallucination_items": {"base": sum(before_hal), "parla": sum(after_hal)},
+        "parla_hallucination_by_type": hallucination_types([h for x in J for h in x.get("after_hallucinations", [])]),
     }
 
     bl = al = None
