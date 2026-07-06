@@ -7,7 +7,7 @@ Companion code and full experiments for **[PaRLA](https://huggingface.co/AliKhaj
 - **Model + weights (Hugging Face):** https://huggingface.co/AliKhajegiliM/PaRLA
 - **Model + weights (Kaggle mirror):** https://www.kaggle.com/models/alikhajegilimirabadi/parla
 - **Training dataset (Hugging Face):** https://huggingface.co/datasets/AliKhajegiliM/PaRLA-SFT (adapted SFT data, 24,370 HISTAI-derived examples)
-- **Training dataset (Kaggle mirror):** https://www.kaggle.com/datasets/alikhajegilimirabadi/adaption-combined-adapted-histai-no-skin (the same adapted dataset, mirrored on Kaggle)
+- **Training dataset (Kaggle mirror):** https://www.kaggle.com/datasets/alikhajegilimirabadi/adaption-combined-adapted-histai-no-skin
 - **Training data source (HISTAI):** https://huggingface.co/datasets/histai/HISTAI-metadata
 - **Live demo (HF Space):** https://huggingface.co/spaces/AliKhajegiliM/PaRLA
 - **This repo:** methods, the 500 LLM-as-judge records, all result tables, cohort metadata, and plotting code.
@@ -77,6 +77,6 @@ The adapted **SFT training dataset** (24,370 HISTAI-derived examples) is release
 }
 ```
 
-A machine-readable [CITATION.cff](CITATION.cff) is also provided (GitHub renders a "Cite this repository" button from it).
+A machine-readable [CITATION.cff](CITATION.cff) is also provided.
 
-**License: [CC BY-NC 4.0](LICENSE)** (attribution, non-commercial). The model, adapted dataset, code, and figures are released under Creative Commons Attribution-NonCommercial 4.0. Source terms also apply and are not overridden: the adapter is a Meta Llama 3.3 derivative (Meta Llama 3.3 Community License), and the data derive from HISTAI and TCGA (their source terms; TCGA/NCI GDC data-use policies).
+**License: [CC BY-NC 4.0](LICENSE).** The model, adapted dataset, code, and figures are released under Creative Commons Attribution-NonCommercial 4.0. Source terms also apply and are not overridden: the adapter is a Meta Llama 3.3 derivative (Meta Llama 3.3 Community License), and the data derive from HISTAI and TCGA (their source terms; TCGA/NCI GDC data-use policies).

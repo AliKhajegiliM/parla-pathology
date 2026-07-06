@@ -5,14 +5,14 @@ python -m venv .venv && source .venv/bin/activate
 pip install -r requirements.txt
 ```
 
-The committed `results/` and `data/judgments.jsonl` are the authoritative outputs; the steps below regenerate the figures and tables from them. Steps that need the large raw inputs (raw TCGA OCR text, full generations, model checkpoints) are marked; those inputs are not committed (see [../data/README.md](../data/README.md)).
+The committed `results/` and `data/judgments.jsonl` are the outputs; the steps below regenerate the figures and tables from them. Steps that need the large raw inputs (raw TCGA OCR text, full generations, model checkpoints) are marked; those inputs are not committed (see [../data/README.md](../data/README.md)).
 
 ## Figures from committed data (no large inputs needed)
 
 **Judge win-rate + category-score figures**: read `data/judgments.jsonl`:
 
 ```bash
-cp data/judgments.jsonl src/            # script reads ./judgments.jsonl
+cp data/judgments.jsonl src/
 cd src && python make_publication_plots_seaborn.py
 ```
 
@@ -25,17 +25,16 @@ python make_tcga_validation_diversity_plots.py \
   --out-dir ../figures
 ```
 
-The script uses the `cleaned_center` column already present in that CSV; `--center-map-json` is optional.
+The `cleaned_center` column is already present in that CSV; `--center-map-json` is optional.
 
 **Survival C-index figure**: reads the committed per-cancer fold CSVs:
 
 ```bash
-# point the script at the committed per-cancer results (all_tokens/ + generated_tokens/)
 cd results/survival/per_cancer
 python /path/to/repo/src/survival/make_survival_comparison_plot.py
 ```
 
-Per-cancer CSVs for the five datasets are committed, so the C-index tables and figure regenerate without the `*.pt` checkpoints.
+Per-cancer CSVs for the five datasets are committed; the C-index tables and figure regenerate without the `*.pt` checkpoints.
 
 ## Full pipeline (needs raw inputs, hosted externally)
 
@@ -51,7 +50,7 @@ Per-cancer CSVs for the five datasets are committed, so the C-index tables and f
      --n 500 --seed 42
    ```
 
-   Note: the released `judgments.jsonl` was produced by a **GPT-5.5 Extra High judge run via Codex** (recorded as `codex_manual_read`). `compare_before_after.py` can also drive an API judge (`--judge-model`, `JUDGE_MODEL`, `OPENAI_API_KEY`); the released numbers come from the committed `judgments.jsonl`.
+   The released `judgments.jsonl` was produced by a **GPT-5.5 Extra High judge run via Codex** (recorded as `codex_manual_read`). `compare_before_after.py` can also drive an API judge (`--judge-model`, `JUDGE_MODEL`, `OPENAI_API_KEY`); the released numbers come from the committed `judgments.jsonl`.
 
 4. **Cohort metadata** (contacts the live GDC API + TSS code table):
 

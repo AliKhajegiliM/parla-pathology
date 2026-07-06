@@ -40,13 +40,13 @@ This repo is a **PEFT/LoRA adapter** (not a standalone model); load it on the 4-
 
 ## Results
 
-**The Cancer Genome Atlas (TCGA)** is a widely used, standard public cancer dataset in oncology and pathology: an NCI/NHGRI program that characterized ~20,000 tumors across 33 cancer types. Validating on TCGA tests PaRLA on data independent of the HISTAI training source.
+**The Cancer Genome Atlas (TCGA)** is a public cancer dataset: an NCI/NHGRI program that characterized ~20,000 tumors across 33 cancer types. Validating on TCGA tests PaRLA on data independent of the HISTAI training source.
 
 The internal AutoScientist held-out test is the **direct challenge criterion** (in-domain, HISTAI-derived digital report text). The two TCGA studies are **independent generalization tests**: TCGA is a different source from the HISTAI training data, and its reports are scanned-PDF pathology reports converted to text by OCR, a different distribution from the digital training text.
 
 ### Challenge criterion: internal held-out win rate
 
-In the AutoScientist internal held-out evaluation, the adapted PaRLA model was preferred over the base Llama 70B model in **86% of cases (vs. 14%)**. This is the metric the challenge scores on, and confirms the LoRA adaptation shifted the model toward the intended clinical-pathology extraction behavior on the in-domain test set. (Reported from the AutoScientist internal evaluation; the raw per-case scores are not mirrored in this repo.)
+In the AutoScientist internal held-out evaluation, the adapted PaRLA model was preferred over the base Llama 70B model in **86% of cases (vs. 14%)**. Reported from the AutoScientist internal evaluation; the raw per-case scores are not mirrored in this repo.
 
 ![Internal held-out win rate](assets/internal_autoscientist_win_rate.svg)
 
@@ -56,7 +56,7 @@ On **500 independent TCGA pathology reports** (scanned PDFs OCR'd to text with C
 
 ![Pairwise win rate](assets/manual_pairwise_win_rate.svg)
 
-The largest per-criterion gains (0–5 scale, 95% CI over 500 reports) are in clinically meaningful criteria: **prognostic/staging capture (+0.79)**, **conclusion quality (+0.69)**, **overall usefulness (+0.72)**, and **reasoning quality (+0.46)**. The base model stays fractionally ahead on strict hallucination control (PaRLA is more detailed, so it has more opportunities to add unsupported detail), and diagnostic essence is a statistical tie. The gains are in preservation and integration of structured pathology evidence.
+The largest per-criterion gains (0–5 scale, 95% CI over 500 reports) are in **prognostic/staging capture (+0.79)**, **conclusion quality (+0.69)**, **overall usefulness (+0.72)**, and **reasoning quality (+0.46)**. The base model stays fractionally ahead on strict hallucination control (PaRLA is more detailed, so it has more opportunities to add unsupported detail), and diagnostic essence is a statistical tie. The gains are in preservation and integration of structured pathology evidence.
 
 ![Category ratings](assets/manual_category_scores.svg)
 
@@ -66,7 +66,7 @@ The 500-report cohort was randomly sampled with a fixed seed; all 500 matched GD
 
 ### Generalization 2: downstream survival prediction
 
-As a quantitative test of whether the abstraction preserves clinically actionable signal, both the **full report** and the **PaRLA summary** were encoded as **mean-pooled token embeddings** from the *same* 4-bit base Llama 70B, then fed to the **same Cox proportional-hazards survival model** trained under **5-fold cross-validation** with **identical hyperparameters, configuration, and random seed** for both arms. Only the input representation differs, so any change in C-index is attributable to the representation alone. Metric is test C-index (0–100; 50 ≈ random). The task was run on **five TCGA cohorts totaling 2,819 patients**: bladder (BLCA), breast (BRCA), kidney (KIRC + KIRP), lung adenocarcinoma (LUAD), and sarcoma (SARC):
+As a quantitative test of whether the abstraction preserves clinically actionable signal, both the **full report** and the **PaRLA summary** were encoded as **mean-pooled token embeddings** from the *same* 4-bit base Llama 70B, then fed to the **same Cox proportional-hazards survival model** trained under **5-fold cross-validation** with **identical hyperparameters, configuration, and random seed** for both arms. Only the input representation differs. Metric is test C-index (0–100; 50 ≈ random). The task was run on **five TCGA cohorts totaling 2,819 patients**: bladder (BLCA), breast (BRCA), kidney (KIRC + KIRP), lung adenocarcinoma (LUAD), and sarcoma (SARC):
 
 ![Survival C-index by cancer](assets/survival_test_cindex_by_cancer.svg)
 
@@ -79,11 +79,11 @@ As a quantitative test of whether the abstraction preserves clinically actionabl
 | Sarcoma (SARC) | 249 | 57.3 | 62.5 (±6.3) | +5.2 |
 | **Total** | **2,819** | | | |
 
-PaRLA summaries improve C-index in 4 of the 5 cohorts and leave kidney flat; none regress. The **pooled effect across all 25 fold-pairs is significant** (mean +3.2 points, paired *t*(24) = 2.27, *p* ≈ 0.03; 17 of 25 folds favor PaRLA). This is a modest, consistent preservation/gain of survival signal. Per-fold values are in the [companion repo](https://github.com/AliKhajegiliM/parla-pathology).
+PaRLA summaries improve C-index in 4 of the 5 cohorts and leave kidney flat; none regress. The **pooled effect across all 25 fold-pairs is significant** (mean +3.2 points, paired *t*(24) = 2.27, *p* ≈ 0.03; 17 of 25 folds favor PaRLA). Per-fold values are in the [companion repo](https://github.com/AliKhajegiliM/parla-pathology).
 
 ### Example cases (base vs. PaRLA)
 
-Two real cases from the 500-report set, both judged a PaRLA win with no hallucinations. The **PaRLA** row shows the clinically critical facts it recovers on top of the base model.
+Two real cases from the 500-report set, both judged a PaRLA win with no hallucinations. The **PaRLA** row shows the facts it recovers on top of the base model.
 
 **Breast, `TCGA-V7-A7HQ`**
 
@@ -113,7 +113,7 @@ The **[interactive demo](https://huggingface.co/spaces/AliKhajegiliM/PaRLA)** le
 
 ## What it is and why?
 
-Pathology reports are long, heterogeneous, and institution-specific; the clinically important variables (biomarker status, immunophenotype, molecular alterations, margins, nodal ratios, invasion, metastasis, treatment response, uncertainty) are scattered across final diagnosis, synoptic sections, gross descriptions, addenda, IHC, and molecular blocks, and OCR adds noise. Generic LLM summaries capture the headline diagnosis but drop this structured evidence. PaRLA is prompted and adapted to reason like a surgical pathologist building a tumor-board synthesis and to compress the report into a **clinically enriched representation** useful for biomarker extraction, cohort phenotyping, and downstream modeling.
+Pathology reports are long, heterogeneous, and institution-specific; the clinically important variables (biomarker status, immunophenotype, molecular alterations, margins, nodal ratios, invasion, metastasis, treatment response, uncertainty) are scattered across final diagnosis, synoptic sections, gross descriptions, addenda, IHC, and molecular blocks, and OCR adds noise. PaRLA is prompted and adapted to reason like a surgical pathologist building a tumor-board synthesis and to compress the report into a **clinically enriched representation** useful for biomarker extraction, cohort phenotyping, and downstream modeling.
 
 ## Generation style
 
@@ -170,9 +170,9 @@ model = PeftModel.from_pretrained(base_model, adapter_id)
 
 ## Links and citation
 
-- **Weights (Kaggle mirror):** [alikhajegilimirabadi/parla](https://www.kaggle.com/models/alikhajegilimirabadi/parla) (the LoRA adapter, mirrored on Kaggle; the adapter also lives in this Hugging Face repo)
+- **Weights (Kaggle mirror):** [alikhajegilimirabadi/parla](https://www.kaggle.com/models/alikhajegilimirabadi/parla) (the LoRA adapter, mirrored on Kaggle)
 - **Training dataset (Hugging Face):** [AliKhajegiliM/PaRLA-SFT](https://huggingface.co/datasets/AliKhajegiliM/PaRLA-SFT) (adapted SFT data, 24,370 HISTAI-derived examples)
-- **Training dataset (Kaggle mirror):** [alikhajegilimirabadi/adaption-combined-adapted-histai-no-skin](https://www.kaggle.com/datasets/alikhajegilimirabadi/adaption-combined-adapted-histai-no-skin) (the same adapted SFT dataset, mirrored on Kaggle)
+- **Training dataset (Kaggle mirror):** [alikhajegilimirabadi/adaption-combined-adapted-histai-no-skin](https://www.kaggle.com/datasets/alikhajegilimirabadi/adaption-combined-adapted-histai-no-skin) (the same adapted SFT dataset)
 - **Training data source (HISTAI):** [histai/HISTAI-metadata](https://huggingface.co/datasets/histai/HISTAI-metadata)
 - **Live demo (HF Space):** [huggingface.co/spaces/AliKhajegiliM/PaRLA](https://huggingface.co/spaces/AliKhajegiliM/PaRLA)
 - **Companion code + full experiments:** [github.com/AliKhajegiliM/parla-pathology](https://github.com/AliKhajegiliM/parla-pathology)

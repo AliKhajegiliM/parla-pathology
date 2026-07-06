@@ -4,7 +4,6 @@ run one pathology report through the reasoning / final_conclusion prompt.
 
 Requires a CUDA GPU with enough memory for 4-bit Llama-3.3-70B, plus:
     pip install transformers peft accelerate bitsandbytes
-    (install a suitable torch build first)
 """
 from __future__ import annotations
 

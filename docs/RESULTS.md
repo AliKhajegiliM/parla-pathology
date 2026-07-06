@@ -4,7 +4,7 @@ All numbers below are reproduced from the committed files in `results/` and `dat
 
 ## Internal AutoScientist held-out (challenge criterion)
 
-Adapted PaRLA was preferred over base Llama 70B in **86%** of held-out cases (vs. 14%) in the AutoScientist internal evaluation on the HISTAI-derived in-domain test set. This is the metric the challenge scores on. The raw per-case scores from the AutoScientist platform are not mirrored in this repo.
+Adapted PaRLA was preferred over base Llama 70B in **86%** of held-out cases (vs. 14%) in the AutoScientist internal evaluation on the HISTAI-derived in-domain test set. The raw per-case scores from the AutoScientist platform are not mirrored in this repo.
 
 ## External Validation 1: TCGA LLM-as-judge (n = 500)
 
@@ -23,7 +23,7 @@ Judge: GPT-5.5 Extra High, run via Codex. Source: `results/judge/`, `data/judgme
 - **Significance:** 419 wins / 33 losses / 48 ties. Sign test on decided cases: z = 18.1 (p < 1e-50).
 - **Length control:** PaRLA outputs are longer in 83.2% of cases (1.39x mean). On the 84 cases where PaRLA is *not* longer than base, PaRLA still wins 56% (base 11%, tie 33%).
 - **Length-independent content signal:** base Llama drops a mean 3.99 major clinical facts per report; PaRLA drops 1.36.
-- **Hallucination trade-off:** PaRLA introduces an unsupported detail in 14.0% of cases vs base 12.6% (85 vs 67 total items); net 2.6 fewer omissions per report. By clinical type (keyword categorization in `analyze_judgments.py`, reproducible), PaRLA's 85 unsupported items are 34 lymph-node counts/denominators, 14 stage/grade/margin, 9 biomarker/molecular, 8 admin/status, and 20 other. The node-count/denominator error in multi-part specimens is the top failure mode (it affects N-stage), so nodal ratios should be human-verified.
+- **Hallucination trade-off:** PaRLA introduces an unsupported detail in 14.0% of cases vs base 12.6% (85 vs 67 total items); net 2.6 fewer omissions per report. By clinical type (keyword categorization in `analyze_judgments.py`), PaRLA's 85 unsupported items are 34 lymph-node counts/denominators, 14 stage/grade/margin, 9 biomarker/molecular, 8 admin/status, and 20 other. The node-count/denominator error in multi-part specimens is the top failure mode (it affects N-stage), so nodal ratios should be human-verified.
 
 Full numbers: `results/judge/robustness_summary.json` (regenerate with `python src/analyze_judgments.py`; length control uses the committed `results/judge/generation_lengths.csv`).
 
@@ -42,7 +42,7 @@ Full numbers: `results/judge/robustness_summary.json` (regenerate with `python s
 | Reasoning: hallucination control | 4.85 | 4.80 | −0.05 |
 | Conclusion: hallucination control | 4.92 | 4.86 | −0.05 |
 
-PaRLA's gains concentrate in the clinically meaningful axes (prognostic/staging, conclusion, overall usefulness, reasoning). Diagnostic essence is a statistical tie; the base model is fractionally ahead on strict hallucination control because PaRLA is more detailed. Full per-criterion 95% CIs are in `results/judge/figure_category_scores.csv`.
+The gains are in prognostic/staging, conclusion, overall usefulness, and reasoning. Diagnostic essence is a statistical tie; the base model is fractionally ahead on strict hallucination control because PaRLA is more detailed. Full per-criterion 95% CIs are in `results/judge/figure_category_scores.csv`.
 
 ### Cohort diversity (n = 500)
 

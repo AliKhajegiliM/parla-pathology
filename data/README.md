@@ -4,13 +4,13 @@
 
 The **adapted SFT dataset** used to train PaRLA is **[AliKhajegiliM/PaRLA-SFT](https://huggingface.co/datasets/AliKhajegiliM/PaRLA-SFT)** on Hugging Face: 24,370 pathology-reasoning examples derived from the **[HISTAI](https://huggingface.co/datasets/histai/HISTAI-metadata)** dataset via the **Adaption Data platform**. The SFT pair is `enhanced_prompt` → `enhanced_completion`.
 
-- **`sft_sample.jsonl`** (committed here): a 50-record sample so the schema is browsable without downloading the full set.
-- The full `combined_adapted.json` (143 MB) is not committed (exceeds GitHub's 100 MB file limit); download it from the HF dataset above.
-- **Kaggle mirror:** [adaption-combined-adapted-histai-no-skin](https://www.kaggle.com/datasets/alikhajegilimirabadi/adaption-combined-adapted-histai-no-skin): the same adapted dataset, mirrored on Kaggle. The "no-skin" in the slug is a naming artifact; the contents match the HF release.
+- **`sft_sample.jsonl`** (committed here): a 50-record sample.
+- The full `combined_adapted.json` (143 MB) is not committed; download it from the HF dataset above.
+- **Kaggle mirror:** [adaption-combined-adapted-histai-no-skin](https://www.kaggle.com/datasets/alikhajegilimirabadi/adaption-combined-adapted-histai-no-skin): the same adapted dataset, mirrored on Kaggle. The contents match the HF release.
 
 ## Evaluation data
 
-- **`judgments.jsonl`**: 500 records from the GPT-5.5 Extra High (Codex) LLM-as-judge external validation. Each record has the report ID, per-criterion 0–5 scores for the base (`before`) and PaRLA (`after`) outputs, the head-to-head winner, judge confidence, a free-text reason, and lists of major omissions, hallucinations, and key original facts. It is the source for the numbers in [../docs/RESULTS.md](../docs/RESULTS.md). It contains short extracted facts rather than full report text.
+- **`judgments.jsonl`**: 500 records from the GPT-5.5 Extra High (Codex) LLM-as-judge external validation. Each record has the report ID, per-criterion 0–5 scores for the base (`before`) and PaRLA (`after`) outputs, the head-to-head winner, judge confidence, a free-text reason, and lists of major omissions, hallucinations, and key original facts. It is the source for the numbers in [../docs/RESULTS.md](../docs/RESULTS.md).
 
 ## Not committed (hosted externally / regenerable)
 
