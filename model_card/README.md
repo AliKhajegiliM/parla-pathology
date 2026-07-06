@@ -100,6 +100,10 @@ Two real cases from the 500-report set, both judged a PaRLA win with no hallucin
 
 Every added fact is present in the source report. Across all 500 reports, base Llama drops a mean of **3.99 major clinical facts per report; PaRLA drops 1.36**.
 
+### Live demo
+
+The two cases above are static; the **[live demo](https://huggingface.co/spaces/AliKhajegiliM/PaRLA)** lets you click through 16 cases across 13 cancer types, each with the base and PaRLA outputs and the judge's verdict. Source: [`demo/index.html`](https://github.com/AliKhajegiliM/parla-pathology/blob/main/demo/index.html).
+
 ### Robustness checks
 
 - **Significance.** PaRLA wins 419, loses 33, ties 48 of 500. A sign test on the decided cases gives *p* < 1e-50.
@@ -150,10 +154,6 @@ base_model = AutoModelForCausalLM.from_pretrained(
 )
 model = PeftModel.from_pretrained(base_model, adapter_id)
 ```
-
-## Demo
-
-Live demo: **[huggingface.co/spaces/AliKhajegiliM/PaRLA](https://huggingface.co/spaces/AliKhajegiliM/PaRLA)**. It shows 16 real TCGA cases across 13 cancer types with the base model and PaRLA side by side, the judge's verdict, and the facts each output missed, from the committed records. Source: [`demo/index.html`](https://github.com/AliKhajegiliM/parla-pathology/blob/main/demo/index.html).
 
 ## Intended use and limitations
 
