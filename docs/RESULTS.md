@@ -6,7 +6,7 @@ All numbers below are reproduced from the committed files in `results/` and `dat
 
 Adapted PaRLA was preferred over base Llama 70B in **86%** of held-out cases (vs. 14%) in the AutoScientist internal evaluation on the HISTAI-derived in-domain test set. This is the metric the challenge scores on. The raw per-case scores from the AutoScientist platform are not mirrored in this repo.
 
-## External Validation 1 — TCGA LLM-as-judge (n = 500)
+## External Validation 1: TCGA LLM-as-judge (n = 500)
 
 Judge: GPT-5.5 Extra High, run via Codex. Source: `results/judge/`, `data/judgments.jsonl`.
 
@@ -43,7 +43,7 @@ PaRLA's gains concentrate in the clinically meaningful axes (prognostic/staging,
 
 All 500 sampled reports matched GDC case metadata. Full breakdown: `results/cohort/`.
 
-## External Validation 2 — downstream survival (test C-index, 0–100)
+## External Validation 2: downstream survival (test C-index, 0–100)
 
 Both the full report and the PaRLA summary were embedded with the same 4-bit base Llama 70B encoder; 5-fold C-index. Run on **five TCGA cohorts totaling 2,819 patients**. Patient counts are unique `case_id`s and are identical for both arms. Source: `results/survival/`.
 

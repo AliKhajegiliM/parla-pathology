@@ -5,18 +5,18 @@ python -m venv .venv && source .venv/bin/activate
 pip install -r requirements.txt
 ```
 
-The committed `results/` and `data/judgments.jsonl` are the authoritative outputs; the steps below regenerate the figures and tables from them. Steps that need the large raw inputs (raw TCGA OCR text, full generations, model checkpoints) are marked — those inputs are not committed (see [../data/README.md](../data/README.md)).
+The committed `results/` and `data/judgments.jsonl` are the authoritative outputs; the steps below regenerate the figures and tables from them. Steps that need the large raw inputs (raw TCGA OCR text, full generations, model checkpoints) are marked; those inputs are not committed (see [../data/README.md](../data/README.md)).
 
 ## Figures from committed data (no large inputs needed)
 
-**Judge win-rate + category-score figures** — read `data/judgments.jsonl`:
+**Judge win-rate + category-score figures**: read `data/judgments.jsonl`:
 
 ```bash
 cp data/judgments.jsonl src/            # script reads ./judgments.jsonl
 cd src && python make_publication_plots_seaborn.py
 ```
 
-**TCGA cohort-diversity figures** — read the cached cleaned metadata:
+**TCGA cohort-diversity figures**: read the cached cleaned metadata:
 
 ```bash
 cd src
@@ -27,7 +27,7 @@ python make_tcga_validation_diversity_plots.py \
 
 The script uses the `cleaned_center` column already present in that CSV; `--center-map-json` is optional.
 
-**Survival C-index figure** — reads the committed per-cancer fold CSVs:
+**Survival C-index figure**: reads the committed per-cancer fold CSVs:
 
 ```bash
 # point the script at the committed per-cancer results (all_tokens/ + generated_tokens/)
