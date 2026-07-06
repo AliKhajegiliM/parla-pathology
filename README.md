@@ -41,7 +41,6 @@ The internal held-out test is the direct challenge criterion. The two TCGA studi
 ├── docs/                        # METHODS, RESULTS, REPRODUCE
 ├── model_card/                  # mirror of the Hugging Face card
 ├── demo/index.html              # no-GPU interactive before/after demo (self-contained)
-├── SOCIAL.md                    # ready-to-publish launch post
 └── examples/load_and_infer.py   # minimal load + single-report inference
 ```
 
