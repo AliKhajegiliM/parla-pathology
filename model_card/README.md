@@ -78,7 +78,7 @@ As a quantitative test of whether the abstraction preserves clinically actionabl
 | Sarcoma (SARC) | 249 | 57.3 | 62.5 (±6.3) | +5.2 |
 | **Total** | **2,819** | | | |
 
-PaRLA summaries improve C-index in 4 of the 5 cohorts and leave kidney flat; none regress. The per-cohort 95% CIs (1.96×SE across 5 folds) overlap and **no single cohort reaches significance at 5 folds**, but the **pooled effect across all 25 fold-pairs is significant** (mean +3.2 points, paired *t*(24) = 2.27, *p* ≈ 0.03; 17 of 25 folds favor PaRLA). This is a modest, consistent preservation/gain of survival signal. Per-fold values and CIs are in the [companion repo](https://github.com/AliKhajegiliM/parla-pathology).
+PaRLA summaries improve C-index in 4 of the 5 cohorts and leave kidney flat; none regress. The **pooled effect across all 25 fold-pairs is significant** (mean +3.2 points, paired *t*(24) = 2.27, *p* ≈ 0.03; 17 of 25 folds favor PaRLA). This is a modest, consistent preservation/gain of survival signal. Per-fold values are in the [companion repo](https://github.com/AliKhajegiliM/parla-pathology).
 
 ### Example cases (base vs. PaRLA)
 

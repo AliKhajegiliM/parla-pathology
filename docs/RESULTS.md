@@ -65,4 +65,4 @@ Both the full report and the PaRLA summary were embedded with the same 4-bit bas
 | Sarcoma (SARC) | 249 | 57.3 | 62.5 (±6.3) | +5.2 |
 | **Total** | **2,819** | | | |
 
-**Significance:** per-cohort 95% CIs (1.96×SE across the 5 folds) overlap and no single cohort reaches significance at 5 folds (best is sarcoma, paired t(4)=2.72, n.s.). The pooled paired test across all 25 fold-pairs is significant: mean +3.2 points, t(24)=2.27, p ≈ 0.03, with 17/25 folds favoring PaRLA. Reproduce from `results/survival/survival_fold_results_long.csv`. Per-fold values and per-cancer outputs are in `results/survival/`.
+**Significance:** the pooled paired test across all 25 fold-pairs is significant: mean +3.2 points, t(24)=2.27, p ≈ 0.03, with 17/25 folds favoring PaRLA. Significance is assessed on the pooled folds; per-cohort tests on 5 folds each are underpowered. Reproduce from `results/survival/survival_fold_results_long.csv`. Per-fold values and per-cancer outputs are in `results/survival/`.

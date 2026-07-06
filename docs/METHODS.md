@@ -41,7 +41,7 @@ Three distinct evaluations, in increasing order of distribution shift:
 - Both representations were **mean-pooled token embeddings** and fed to the **same Cox proportional-hazards survival model**, trained under **5-fold cross-validation** with **identical hyperparameters, configuration, and random seed** for both arms: Cox loss, AdamW, lr 0.001, weight decay 0.01, 100 epochs, batch size 32, hidden dim 128, feature size 8192, seed 1. Only the input representation differs. Metric: **test C-index** (0–100; 50 ≈ random ranking).
 - The task covered **five TCGA cohorts totaling 2,819 patients**: bladder BLCA (378), breast BRCA (1,034), kidney KIRC + KIRP (805), lung adenocarcinoma LUAD (353), and sarcoma SARC (249). Patient counts are unique `case_id`s, identical for both arms. Per-fold and per-cancer outputs are in `results/survival/`.
 - **Arm directories:** the two arms live under `results/survival/per_cancer/all_tokens/model_after_bs32/` (full-report embeddings) and `.../generated_tokens/model_after_base_bs32/` (PaRLA-summary embeddings). Both use the identical base 4-bit Llama 70B encoder, mean pooling, Cox model, hyperparameters, and seed (per the `runs_log.csv` in each fold directory); only the input text differs.
-- **Significance:** per-cohort 95% CIs overlap and no single cohort is individually significant at 5 folds; the pooled paired test across the 25 fold-pairs is significant (mean +3.2 points, t(24)=2.27, p ≈ 0.03, 17/25 folds favor PaRLA). This is a modest pooled effect.
+- **Significance:** assessed on the pooled 25 fold-pairs (per-cohort tests on 5 folds each are underpowered). The pooled paired test is significant: mean +3.2 points, t(24)=2.27, p ≈ 0.03, 17/25 folds favor PaRLA. A modest pooled effect.
 
 ## Reproducibility notes
 
