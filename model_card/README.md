@@ -61,17 +61,18 @@ The 500-report cohort was randomly sampled with a fixed seed; all 500 matched GD
 
 ### Generalization 2 — downstream survival prediction
 
-As a quantitative test of whether the abstraction preserves clinically actionable signal, both the **full report** and the **PaRLA summary** were encoded as **mean-pooled token embeddings** from the *same* 4-bit base Llama 70B, then fed to the **same Cox proportional-hazards survival model** trained under **5-fold cross-validation** with **identical hyperparameters, configuration, and random seed** for both arms. Only the input representation differs, so any change in C-index is attributable to the representation alone. Metric is test C-index (0–100; 50 ≈ random). Five cancer datasets are shown:
+As a quantitative test of whether the abstraction preserves clinically actionable signal, both the **full report** and the **PaRLA summary** were encoded as **mean-pooled token embeddings** from the *same* 4-bit base Llama 70B, then fed to the **same Cox proportional-hazards survival model** trained under **5-fold cross-validation** with **identical hyperparameters, configuration, and random seed** for both arms. Only the input representation differs, so any change in C-index is attributable to the representation alone. Metric is test C-index (0–100; 50 ≈ random). The task was run on **five TCGA cohorts totaling 2,819 patients** — bladder (BLCA), breast (BRCA), kidney (KIRC + KIRP), lung adenocarcinoma (LUAD), and sarcoma (SARC):
 
 ![Survival C-index by cancer](assets/survival_test_cindex_by_cancer.svg)
 
-| Cancer dataset | Δ test C-index, PaRLA summary − full report |
-|---|---:|
-| Bladder | +1.8 |
-| Breast | +3.7 |
-| Kidney | +0.0 |
-| Lung | +5.2 |
-| Sarcoma | +5.2 |
+| TCGA cohort | Patients (n) | Δ test C-index (PaRLA summary − full report) |
+|---|---:|---:|
+| Bladder — BLCA | 378 | +1.8 |
+| Breast — BRCA | 1,034 | +3.7 |
+| Kidney — KIRC + KIRP | 805 | +0.0 |
+| Lung adenocarcinoma — LUAD | 353 | +5.2 |
+| Sarcoma — SARC | 249 | +5.2 |
+| **Total** | **2,819** | |
 
 On these datasets, the compact PaRLA summary retained or improved survival signal relative to the full report — consistent with a pathology-specialized summarizer removing report noise while keeping survival-relevant variables (staging, biomarkers, molecular findings).
 

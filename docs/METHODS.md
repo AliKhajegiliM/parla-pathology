@@ -38,7 +38,7 @@ Three distinct evaluations, in increasing order of distribution shift:
 
 - Two representations of each report were embedded with the **same 4-bit base Llama 70B encoder**: (a) the full report text, and (b) the PaRLA-generated summary. The encoder is held constant, so the only variable is the representation.
 - Both representations were **mean-pooled token embeddings** and fed to the **same Cox proportional-hazards survival model**, trained under **5-fold cross-validation** with **identical hyperparameters, configuration, and random seed** for both arms: Cox loss, AdamW, lr 0.001, weight decay 0.01, 100 epochs, batch size 32, hidden dim 128, feature size 8192, seed 1. Only the input representation differs. Metric: **test C-index** (0–100; 50 ≈ random ranking).
-- Per-fold and per-cancer outputs for the five cancer datasets are in `results/survival/`.
+- The task covered **five TCGA cohorts totaling 2,819 patients**: bladder BLCA (378), breast BRCA (1,034), kidney KIRC + KIRP (805), lung adenocarcinoma LUAD (353), and sarcoma SARC (249). Patient counts are unique `case_id`s, identical for both arms. Per-fold and per-cancer outputs are in `results/survival/`.
 
 ## Reproducibility notes
 

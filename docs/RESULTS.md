@@ -45,14 +45,15 @@ All 500 sampled reports matched GDC case metadata. Full breakdown: `results/coho
 
 ## External Validation 2 — downstream survival (test C-index, 0–100)
 
-Both the full report and the PaRLA summary were embedded with the same 4-bit base Llama 70B encoder; 5-fold C-index. Source: `results/survival/`.
+Both the full report and the PaRLA summary were embedded with the same 4-bit base Llama 70B encoder; 5-fold C-index. Run on **five TCGA cohorts totaling 2,819 patients**. Patient counts are unique `case_id`s and are identical for both arms. Source: `results/survival/`.
 
-| Cancer dataset | Full report | PaRLA summary | Δ points |
-|---|---:|---:|---:|
-| Bladder (BLCA) | 61.2 | 63.1 | +1.8 |
-| Breast (BRCA) | 60.8 | 64.5 | +3.7 |
-| Kidney (KIRC/KIRP) | 75.4 | 75.4 | +0.0 |
-| Lung adeno (LUAD) | 63.6 | 68.8 | +5.2 |
-| Sarcoma (SARC) | 57.3 | 62.5 | +5.2 |
+| TCGA cohort | Patients (n) | Full report | PaRLA summary | Δ points |
+|---|---:|---:|---:|---:|
+| Bladder (BLCA) | 378 | 61.2 | 63.1 | +1.8 |
+| Breast (BRCA) | 1,034 | 60.8 | 64.5 | +3.7 |
+| Kidney (KIRC + KIRP) | 805 | 75.4 | 75.4 | +0.0 |
+| Lung adeno (LUAD) | 353 | 63.6 | 68.8 | +5.2 |
+| Sarcoma (SARC) | 249 | 57.3 | 62.5 | +5.2 |
+| **Total** | **2,819** | | | |
 
 On these five cancer datasets, the compact PaRLA summary retained or improved survival signal relative to the full report, consistent with removing report noise while keeping survival-relevant variables. Per-fold values are in `results/survival/survival_fold_results_long.csv` and `results/survival/per_cancer/`.
