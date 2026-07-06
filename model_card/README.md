@@ -39,9 +39,9 @@ This repo is a **PEFT/LoRA adapter** (not a standalone model); load it on the 4-
 
 ## Results
 
-**The Cancer Genome Atlas (TCGA)** is the most widely used public cancer resource in oncology and computational pathology: a landmark NCI/NHGRI program that clinically and molecularly characterized ~20,000 tumors across 33 cancer types, and a de facto standard benchmark for pathology models. Validating on TCGA therefore tests PaRLA against the field's reference distribution.
+**The Cancer Genome Atlas (TCGA)** is a widely used, standard public cancer dataset in oncology and pathology: an NCI/NHGRI program that characterized ~20,000 tumors across 33 cancer types. Validating on TCGA tests PaRLA on data independent of the HISTAI training source.
 
-The internal AutoScientist held-out test is the **direct challenge criterion** (in-domain, HISTAI-derived digital report text). The two TCGA studies are **independent generalization tests**: TCGA is a different source from the HISTAI training data, and its reports are scanned-PDF pathology reports converted to text by OCR, a genuinely different distribution from the digital training text.
+The internal AutoScientist held-out test is the **direct challenge criterion** (in-domain, HISTAI-derived digital report text). The two TCGA studies are **independent generalization tests**: TCGA is a different source from the HISTAI training data, and its reports are scanned-PDF pathology reports converted to text by OCR, a different distribution from the digital training text.
 
 ### Challenge criterion: internal held-out win rate
 
@@ -55,11 +55,11 @@ On **500 independent TCGA pathology reports** (scanned PDFs OCR'd to text with C
 
 ![Pairwise win rate](assets/manual_pairwise_win_rate.svg)
 
-The largest per-criterion gains (0–5 scale, 95% CI over 500 reports) are exactly the clinically meaningful ones: **prognostic/staging capture (+0.79)**, **conclusion quality (+0.69)**, **overall usefulness (+0.72)**, and **reasoning quality (+0.46)**. The base model stays fractionally ahead on strict hallucination control (PaRLA is more detailed, so it has more opportunities to add unsupported detail), and diagnostic essence is a statistical tie. The win is preservation and integration of structured pathology evidence, not generic fluency.
+The largest per-criterion gains (0–5 scale, 95% CI over 500 reports) are in clinically meaningful criteria: **prognostic/staging capture (+0.79)**, **conclusion quality (+0.69)**, **overall usefulness (+0.72)**, and **reasoning quality (+0.46)**. The base model stays fractionally ahead on strict hallucination control (PaRLA is more detailed, so it has more opportunities to add unsupported detail), and diagnostic essence is a statistical tie. The gains are in preservation and integration of structured pathology evidence.
 
 ![Category ratings](assets/manual_category_scores.svg)
 
-The 500-report cohort was randomly sampled with a fixed seed; all 500 matched GDC case metadata and span **32 TCGA cancer cohorts, 92 contributing centers, 34 primary sites, and 19 disease types**, evidence that the win is not specific to one cancer or institution. Full cohort tables are in the [companion repo](https://github.com/AliKhajegiliM/parla-pathology).
+The 500-report cohort was randomly sampled with a fixed seed; all 500 matched GDC case metadata and span **32 TCGA cancer cohorts, 92 contributing centers, 34 primary sites, and 19 disease types**. Full cohort tables are in the [companion repo](https://github.com/AliKhajegiliM/parla-pathology).
 
 ![TCGA validation cohort breadth](assets/tcga_validation_diversity_summary.svg)
 
@@ -78,9 +78,9 @@ As a quantitative test of whether the abstraction preserves clinically actionabl
 | Sarcoma (SARC) | 249 | 57.3 | 62.5 (±6.3) | +5.2 |
 | **Total** | **2,819** | | | |
 
-PaRLA summaries improve C-index in 4 of the 5 cohorts and leave kidney flat; none regress. Read honestly: the per-cohort 95% CIs (1.96×SE across 5 folds) overlap and **no single cohort reaches significance at 5 folds**, but the **pooled effect across all 25 fold-pairs is significant** (mean +3.2 points, paired *t*(24) = 2.27, *p* ≈ 0.03; 17 of 25 folds favor PaRLA). This is a modest, consistent preservation/gain of survival signal, not a large per-cohort effect. Per-fold values and CIs are in the [companion repo](https://github.com/AliKhajegiliM/parla-pathology).
+PaRLA summaries improve C-index in 4 of the 5 cohorts and leave kidney flat; none regress. The per-cohort 95% CIs (1.96×SE across 5 folds) overlap and **no single cohort reaches significance at 5 folds**, but the **pooled effect across all 25 fold-pairs is significant** (mean +3.2 points, paired *t*(24) = 2.27, *p* ≈ 0.03; 17 of 25 folds favor PaRLA). This is a modest, consistent preservation/gain of survival signal. Per-fold values and CIs are in the [companion repo](https://github.com/AliKhajegiliM/parla-pathology).
 
-### What the win looks like (base vs. PaRLA)
+### Example cases (base vs. PaRLA)
 
 Two real cases from the 500-report set, both judged a PaRLA win with no hallucinations. The **PaRLA** row shows the clinically critical facts it recovers on top of the base model.
 
@@ -98,13 +98,13 @@ Two real cases from the 500-report set, both judged a PaRLA win with no hallucin
 | ⬜ **Base Llama 70B** | High-grade invasive urothelial carcinoma, perivesical invasion (pT3b); prostate adenocarcinoma Gleason 3+3=6. |
 | 🟦 **PaRLA** *(adds)* | **Bilateral pelvic node counts (0/11 and 0/11)**; **prostate stage pT2b** (organ-confined, seminal vesicles free); **prostatic intraepithelial neoplasia**; benign ureter and vas-deferens segments. |
 
-Every added fact is present in the source report; none is invented. Across all 500 reports, base Llama drops a mean of **3.99 major clinical facts per report; PaRLA drops 1.36**.
+Every added fact is present in the source report. Across all 500 reports, base Llama drops a mean of **3.99 major clinical facts per report; PaRLA drops 1.36**.
 
-### Is the win real? (robustness and honesty)
+### Robustness checks
 
-- **Significance.** PaRLA wins 419, loses 33, ties 48 of 500. A sign test on the decided cases gives *p* < 1e-50, not a coin flip.
+- **Significance.** PaRLA wins 419, loses 33, ties 48 of 500. A sign test on the decided cases gives *p* < 1e-50.
 - **Not just length.** PaRLA outputs are longer in 83.2% of cases (1.39× on average), a known confound for LLM judges. But even on the **84 cases where PaRLA is no longer than base**, PaRLA still wins **56%** (base 11%, tie 33%), so the preference survives length control. The omission metric above (3.99 vs 1.36) is length-independent.
-- **Honest about hallucination.** More detail carries more risk: PaRLA adds an unsupported detail in **14.0%** of cases vs base **12.6%** (85 vs 67 total items), and base stays fractionally ahead on strict hallucination-control scoring. The most common error type is **lymph-node counts/denominators in multi-part specimens (34 of 85 items)**, which drive N-stage, so we flag nodal ratios as the field most needing human re-verification. The net trade is still favorable (2.6 fewer omissions per report), but for a healthcare model we quantify and locate it rather than bury it.
+- **Hallucination.** More detail carries more risk: PaRLA adds an unsupported detail in **14.0%** of cases vs base **12.6%** (85 vs 67 total items), and base stays fractionally ahead on strict hallucination-control scoring. The most common error type is **lymph-node counts/denominators in multi-part specimens (34 of 85 items)**, which drive N-stage, so nodal ratios are the field most needing human re-verification. The net trade is favorable (2.6 fewer omissions per report).
 
 ## What it is and why?
 

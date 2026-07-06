@@ -21,9 +21,9 @@ Judge: GPT-5.5 Extra High, run via Codex. Source: `results/judge/`, `data/judgme
 ### Robustness of the win (reproduce with `src/analyze_judgments.py`)
 
 - **Significance:** 419 wins / 33 losses / 48 ties. Sign test on decided cases: z = 18.1 (p < 1e-50).
-- **Length control:** PaRLA outputs are longer in 83.2% of cases (1.39x mean). On the 84 cases where PaRLA is *not* longer than base, PaRLA still wins 56% (base 11%, tie 33%), so the preference survives length control.
+- **Length control:** PaRLA outputs are longer in 83.2% of cases (1.39x mean). On the 84 cases where PaRLA is *not* longer than base, PaRLA still wins 56% (base 11%, tie 33%).
 - **Length-independent content signal:** base Llama drops a mean 3.99 major clinical facts per report; PaRLA drops 1.36.
-- **Hallucination trade-off (honest):** PaRLA introduces an unsupported detail in 14.0% of cases vs base 12.6% (85 vs 67 total items); net 2.6 fewer omissions per report. By clinical type (keyword categorization in `analyze_judgments.py`, reproducible), PaRLA's 85 unsupported items are 34 lymph-node counts/denominators, 14 stage/grade/margin, 9 biomarker/molecular, 8 admin/status, and 20 other. The node-count/denominator error in multi-part specimens is the top failure mode (it affects N-stage), so nodal ratios should be human-verified.
+- **Hallucination trade-off:** PaRLA introduces an unsupported detail in 14.0% of cases vs base 12.6% (85 vs 67 total items); net 2.6 fewer omissions per report. By clinical type (keyword categorization in `analyze_judgments.py`, reproducible), PaRLA's 85 unsupported items are 34 lymph-node counts/denominators, 14 stage/grade/margin, 9 biomarker/molecular, 8 admin/status, and 20 other. The node-count/denominator error in multi-part specimens is the top failure mode (it affects N-stage), so nodal ratios should be human-verified.
 
 Full numbers: `results/judge/robustness_summary.json` (regenerate with `python src/analyze_judgments.py`; length control uses the committed `results/judge/generation_lengths.csv`).
 
@@ -65,4 +65,4 @@ Both the full report and the PaRLA summary were embedded with the same 4-bit bas
 | Sarcoma (SARC) | 249 | 57.3 | 62.5 (±6.3) | +5.2 |
 | **Total** | **2,819** | | | |
 
-**Significance (honest):** per-cohort 95% CIs (1.96×SE across the 5 folds) overlap and no single cohort reaches significance at 5 folds (best is sarcoma, paired t(4)=2.72, n.s.). The pooled paired test across all 25 fold-pairs is significant: mean +3.2 points, t(24)=2.27, p ≈ 0.03, with 17/25 folds favoring PaRLA. So PaRLA gives a modest, consistent preservation/gain of survival signal, not a large per-cohort effect. Reproduce from `results/survival/survival_fold_results_long.csv`. Per-fold values and per-cancer outputs are in `results/survival/`.
+**Significance:** per-cohort 95% CIs (1.96×SE across the 5 folds) overlap and no single cohort reaches significance at 5 folds (best is sarcoma, paired t(4)=2.72, n.s.). The pooled paired test across all 25 fold-pairs is significant: mean +3.2 points, t(24)=2.27, p ≈ 0.03, with 17/25 folds favoring PaRLA. Reproduce from `results/survival/survival_fold_results_long.csv`. Per-fold values and per-cancer outputs are in `results/survival/`.

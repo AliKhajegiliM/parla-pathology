@@ -31,7 +31,7 @@ The internal held-out test is the direct challenge criterion. The two TCGA studi
 │   ├── summarize_tcga_validation_cohort.py     # GDC barcode → TSS/center/site metadata
 │   └── survival/make_survival_comparison_plot.py
 ├── data/
-│   ├── judgments.jsonl          # 500 GPT-5.5 (Codex) judge records, the evidence file
+│   ├── judgments.jsonl          # 500 GPT-5.5 (Codex) judge records
 │   └── sft_sample.jsonl         # 50-record sample of the SFT dataset (full set on HF)
 ├── results/
 │   ├── judge/                   # win rates + per-criterion category deltas (n=500)
@@ -55,13 +55,13 @@ pip install -r requirements.txt
 
 Load the model (4-bit base + adapter): see [examples/load_and_infer.py](examples/load_and_infer.py).
 
-## Demo (no GPU)
+## Demo
 
-[`demo/index.html`](demo/index.html) is a self-contained page that lets a reviewer click through real cases and compare the base model vs. PaRLA side by side, with the judge's verdict and the exact facts each output missed. It runs entirely on precomputed committed records: open the file locally, deploy it as a static [Hugging Face Space](https://huggingface.co/docs/hub/spaces-sdks-static), or enable GitHub Pages. No model download or GPU required.
+[`demo/index.html`](demo/index.html) is a self-contained page showing real cases with the base model and PaRLA side by side, the judge's verdict, and the facts each output missed. It uses only the committed records; open it locally, or deploy it as a static [Hugging Face Space](https://huggingface.co/docs/hub/spaces-sdks-static) or via GitHub Pages.
 
 ## Data availability
 
-The adapted **SFT training dataset** (24,370 HISTAI-derived examples) is released as a Hugging Face dataset: [AliKhajegiliM/PaRLA-SFT](https://huggingface.co/datasets/AliKhajegiliM/PaRLA-SFT); a 50-record sample is in `data/sft_sample.jsonl`. `data/judgments.jsonl` (the 500 judge records that back every external number) is included. The raw TCGA report OCR text, the full base/PaRLA generations, and the survival model checkpoints (`*.pt`) are **not** committed; TCGA/GDC reports are open-access and downloadable from the [GDC Data Portal](https://portal.gdc.cancer.gov/); see [data/README.md](data/README.md) for how each artifact is regenerated. Per-cancer survival result CSVs are committed so the C-index tables and figure reproduce without the checkpoints.
+The adapted **SFT training dataset** (24,370 HISTAI-derived examples) is released as a Hugging Face dataset: [AliKhajegiliM/PaRLA-SFT](https://huggingface.co/datasets/AliKhajegiliM/PaRLA-SFT); a 50-record sample is in `data/sft_sample.jsonl`. `data/judgments.jsonl` (the 500 judge records behind the external results) is included. The raw TCGA report OCR text, the full base/PaRLA generations, and the survival model checkpoints (`*.pt`) are **not** committed; TCGA/GDC reports are open-access and downloadable from the [GDC Data Portal](https://portal.gdc.cancer.gov/); see [data/README.md](data/README.md) for how each artifact is regenerated. Per-cancer survival result CSVs are committed so the C-index tables and figure reproduce without the checkpoints.
 
 ## Citation
 
