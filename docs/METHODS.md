@@ -2,7 +2,7 @@
 
 ## Model
 
-- **Base:** `togethercomputer/Meta-Llama-3.3-70B-Instruct-Reference`, loaded in **4-bit NF4** (`bnb_4bit_compute_dtype=bfloat16`).
+- **Base:** `togethercomputer/Meta-Llama-3.3-70B-Instruct-Reference`, loaded in **4-bit NF4** (`bnb_4bit_compute_dtype=bfloat16`) for all experiments; the model also loads at original precision (bf16/fp16).
 - **Adaptation:** PEFT/LoRA adapter (PEFT 0.15.1), released on Hugging Face as `AliKhajegiliM/PaRLA`.
 - **Training source:** the **[HISTAI](https://huggingface.co/datasets/histai/HISTAI-metadata)** pathology dataset, available as digital pathology report text (not OCR). The adapted SFT set ([`AliKhajegiliM/PaRLA-SFT`](https://huggingface.co/datasets/AliKhajegiliM/PaRLA-SFT), 24,370 examples generated via the Adaption Data platform) pairs an `enhanced_prompt` (instruction + case findings) with an `enhanced_completion` (reasoning + conclusion). PaRLA is adapted to transform a report into a `<reasoning>` block and a `<final_conclusion>` block.
 

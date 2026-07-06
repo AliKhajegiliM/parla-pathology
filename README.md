@@ -55,7 +55,7 @@ python -m venv .venv && source .venv/bin/activate
 pip install -r requirements.txt
 ```
 
-Load the model (4-bit base + adapter): see [examples/load_and_infer.py](examples/load_and_infer.py).
+Load the adapter on the base Llama-3.3-70B (the example uses 4-bit NF4; the model also loads at original precision): see [examples/load_and_infer.py](examples/load_and_infer.py).
 
 ## Demo
 

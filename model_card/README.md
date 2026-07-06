@@ -36,7 +36,7 @@ tags:
 
 *Both external results reproduce exactly from the released [`judgments.jsonl`](https://github.com/AliKhajegiliM/parla-pathology/blob/main/data/judgments.jsonl) and result CSVs (rerun [`analyze_judgments.py`](https://github.com/AliKhajegiliM/parla-pathology/blob/main/src/analyze_judgments.py)). The internal 86% is the metric the challenge scores on; it is reported by the AutoScientist platform and is not independently reproducible from this repo (raw per-case scores are held on the platform).*
 
-This repo is a **PEFT/LoRA adapter** (not a standalone model); load it on the 4-bit base (see [How to use](#how-to-use)). It was fine-tuned on **[AliKhajegiliM/PaRLA-SFT](https://huggingface.co/datasets/AliKhajegiliM/PaRLA-SFT)**, 24,370 pathology-reasoning examples derived from the [HISTAI](https://huggingface.co/datasets/histai/HISTAI-metadata) dataset via the Adaption Data platform. Full methods, the 500 judge records, all result tables, and reproduction code live in the companion repository: **[github.com/AliKhajegiliM/parla-pathology](https://github.com/AliKhajegiliM/parla-pathology)**.
+Load it on the base Llama-3.3-70B (see [How to use](#how-to-use)). It was fine-tuned on **[AliKhajegiliM/PaRLA-SFT](https://huggingface.co/datasets/AliKhajegiliM/PaRLA-SFT)**, 24,370 pathology-reasoning examples derived from the [HISTAI](https://huggingface.co/datasets/histai/HISTAI-metadata) dataset via the Adaption Data platform. Full methods, the 500 judge records, all result tables, and reproduction code live in the companion repository: **[github.com/AliKhajegiliM/parla-pathology](https://github.com/AliKhajegiliM/parla-pathology)**.
 
 ## Results
 
@@ -130,7 +130,7 @@ Final integrated diagnostic, biomarker, and prognosis-relevant conclusion.
 
 The prompt directs the model to integrate diagnosis, histology, grade, tumor extent and stage-relevant spread, margins, lymphovascular/perineural invasion, nodal burden, metastatic sites, treatment effect, biomarkers, and molecular findings; and to preserve explicitly negative, equivocal, or unassessable findings exactly as stated, without inventing or resolving anything the report leaves open. The exact generation prompts are in the companion repo ([docs/PROMPTS.md](https://github.com/AliKhajegiliM/parla-pathology/blob/main/docs/PROMPTS.md)).
 
-All experiments above used **4-bit (NF4) quantized Llama 70B** for both PaRLA and the base comparator.
+The adapter loads on the base model at any precision; all experiments above used **4-bit (NF4) quantized Llama 70B** for both PaRLA and the base comparator.
 
 ## How to use
 
@@ -155,6 +155,8 @@ base_model = AutoModelForCausalLM.from_pretrained(
 )
 model = PeftModel.from_pretrained(base_model, adapter_id)
 ```
+
+To load at original precision, omit `quantization_config` and pass `torch_dtype="bfloat16"` instead. All results reported here used 4-bit NF4.
 
 ## Intended use and limitations
 
