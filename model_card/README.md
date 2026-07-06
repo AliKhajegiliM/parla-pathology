@@ -151,6 +151,10 @@ base_model = AutoModelForCausalLM.from_pretrained(
 model = PeftModel.from_pretrained(base_model, adapter_id)
 ```
 
+## Demo
+
+[`demo/index.html`](https://github.com/AliKhajegiliM/parla-pathology/blob/main/demo/index.html) in the companion repo is a self-contained page showing real cases with the base model and PaRLA side by side, the judge's verdict, and the facts each output missed. It uses only the committed records; open it locally, or deploy it as a static Hugging Face Space or via GitHub Pages.
+
 ## Intended use and limitations
 
 **Intended for research use** in pathology report abstraction, clinical biomarker/molecular extraction, cohort phenotyping, prognosis-oriented summarization, and downstream modeling from pathology text (including OCR-derived reports).
