@@ -21,14 +21,16 @@ tags:
 - healthcare
 ---
 
-# PaRLA — a LoRA Llama-70B that beats base Llama on pathology report abstraction
+# PaRLA: a LoRA Llama-70B that beats base Llama on pathology report abstraction
+
+![PaRLA demo banner](assets/parla_social_banner.svg)
 
 **PaRLA** is a LoRA adapter for `Llama-3.3-70B` that turns long, noisy pathology reports into structured, evidence-grounded clinical reasoning and a final integrated conclusion. It was adapted for the [Adaption Labs AutoScientist Challenge](https://adaptionlabs.ai/blog/autoscientist-challenge) (Healthcare) and **beats the base model on the challenge's held-out test set — then generalizes to independent TCGA data** on both an LLM-as-judge comparison and a downstream survival benchmark.
 
 | Evaluation | Setting | Result |
 |---|---|---|
 | **Challenge criterion** — AutoScientist internal held-out | adapted vs. base Llama 70B, in-domain | **86%** win rate vs. 14% |
-| **External** — TCGA reports, GPT-5.5 Extra High (Codex) LLM-as-judge | 500 independent OCR'd reports | **PaRLA 83.8%** / Llama 6.6% / Tie 9.6% |
+| **External** — TCGA reports, GPT-5.5 Extra High (Codex) LLM-as-judge | PaRLA vs. base Llama 70B on 500 independent OCR'd reports | **PaRLA 83.8%** / base Llama 70B 6.6% / Tie 9.6% |
 | **External** — TCGA downstream survival | 5-fold test C-index, 5 cancer datasets | **+1.8 to +5.2** C-index points vs. full report |
 
 This repo is a **PEFT/LoRA adapter** (not a standalone model); load it on the 4-bit base — see [How to use](#how-to-use). It was fine-tuned on **[AliKhajegiliM/PaRLA-SFT](https://huggingface.co/datasets/AliKhajegiliM/PaRLA-SFT)**, 24,370 pathology-reasoning examples derived from the HISTAI dataset via the Adaption Data platform. Full methods, the 500 judge records, all result tables, and reproduction code live in the companion repository: **[github.com/AliKhajegiliM/parla-pathology](https://github.com/AliKhajegiliM/parla-pathology)**.
@@ -39,15 +41,15 @@ This repo is a **PEFT/LoRA adapter** (not a standalone model); load it on the 4-
 
 The internal AutoScientist held-out test is the **direct challenge criterion** (in-domain, HISTAI-derived digital report text). The two TCGA studies are **independent generalization tests**: TCGA is a different source from the HISTAI training data, and its reports are scanned-PDF pathology reports converted to text by OCR — a genuinely different distribution from the digital training text.
 
-### Challenge criterion — internal held-out win rate
+### Challenge criterion: internal held-out win rate
 
 In the AutoScientist internal held-out evaluation, the adapted PaRLA model was preferred over the base Llama 70B model in **86% of cases (vs. 14%)**. This is the metric the challenge scores on, and confirms the LoRA adaptation shifted the model toward the intended clinical-pathology extraction behavior on the in-domain test set. (Reported from the AutoScientist internal evaluation; the raw per-case scores are not mirrored in this repo.)
 
 ![Internal held-out win rate](assets/internal_autoscientist_win_rate.svg)
 
-### Generalization 1 — TCGA reports, LLM-as-judge (500 reports)
+### Generalization 1: TCGA reports, LLM-as-judge (500 reports)
 
-On **500 independent TCGA pathology reports** (scanned PDFs OCR'd to text with Chandra), a **GPT-5.5 Extra High LLM-as-judge (run via Codex)** compared PaRLA against the base model on diagnostic essence, prognostic/staging preservation, report-grounded reasoning, hallucination control, and conclusion quality. PaRLA won **83.8%** of head-to-head comparisons (base 6.6%, tie 9.6%).
+On **500 independent TCGA pathology reports** (scanned PDFs OCR'd to text with Chandra), a **GPT-5.5 Extra High LLM-as-judge (run via Codex)** compared PaRLA against the base model on diagnostic essence, prognostic/staging preservation, report-grounded reasoning, hallucination control, and conclusion quality. PaRLA won **83.8%** of head-to-head comparisons against the base Llama 70B model (base Llama 70B 6.6%, tie 9.6%).
 
 ![Pairwise win rate](assets/manual_pairwise_win_rate.svg)
 
@@ -59,7 +61,7 @@ The 500-report cohort was randomly sampled with a fixed seed; all 500 matched GD
 
 ![TCGA validation cohort breadth](assets/tcga_validation_diversity_summary.svg)
 
-### Generalization 2 — downstream survival prediction
+### Generalization 2: downstream survival prediction
 
 As a quantitative test of whether the abstraction preserves clinically actionable signal, both the **full report** and the **PaRLA summary** were encoded as **mean-pooled token embeddings** from the *same* 4-bit base Llama 70B, then fed to the **same Cox proportional-hazards survival model** trained under **5-fold cross-validation** with **identical hyperparameters, configuration, and random seed** for both arms. Only the input representation differs, so any change in C-index is attributable to the representation alone. Metric is test C-index (0–100; 50 ≈ random). The task was run on **five TCGA cohorts totaling 2,819 patients** — bladder (BLCA), breast (BRCA), kidney (KIRC + KIRP), lung adenocarcinoma (LUAD), and sarcoma (SARC):
 
@@ -76,7 +78,7 @@ As a quantitative test of whether the abstraction preserves clinically actionabl
 
 On these datasets, the compact PaRLA summary retained or improved survival signal relative to the full report — consistent with a pathology-specialized summarizer removing report noise while keeping survival-relevant variables (staging, biomarkers, molecular findings).
 
-## What it is and why
+## What it is and why?
 
 Pathology reports are long, heterogeneous, and institution-specific; the clinically important variables (biomarker status, immunophenotype, molecular alterations, margins, nodal ratios, invasion, metastasis, treatment response, uncertainty) are scattered across final diagnosis, synoptic sections, gross descriptions, addenda, IHC, and molecular blocks, and OCR adds noise. Generic LLM summaries capture the headline diagnosis but drop this structured evidence. PaRLA is prompted and adapted to reason like a surgical pathologist building a tumor-board synthesis and to compress the report into a **clinically enriched representation** useful for biomarker extraction, cohort phenotyping, and downstream modeling.
 

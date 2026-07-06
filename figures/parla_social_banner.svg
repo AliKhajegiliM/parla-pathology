@@ -1,0 +1,72 @@
+<svg width="1600" height="900" viewBox="0 0 1600 900" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .title { font: 700 88px Arial, Helvetica, sans-serif; fill: #0072B2; }
+      .h1 { font: 700 38px Arial, Helvetica, sans-serif; fill: #111111; }
+      .body { font: 400 22px Arial, Helvetica, sans-serif; fill: #555555; }
+      .small { font: 700 16px Arial, Helvetica, sans-serif; }
+      .step-title { font: 700 23px Arial, Helvetica, sans-serif; }
+      .step-body { font: 400 17px Arial, Helvetica, sans-serif; }
+      .metric { font: 700 39px Arial, Helvetica, sans-serif; fill: #111111; }
+      .metric-label { font: 700 17px Arial, Helvetica, sans-serif; fill: #111111; }
+      .metric-sublabel { font: 400 16px Arial, Helvetica, sans-serif; fill: #555555; }
+      .footer { font: 700 19px Arial, Helvetica, sans-serif; fill: #111111; }
+    </style>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#EEF2F5" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="1600" height="900" fill="#F8FAFC"/>
+  <rect width="1600" height="900" fill="url(#grid)"/>
+  <circle cx="50" cy="865" r="210" fill="#EEF1F4"/>
+  <text x="82" y="148" style="font:700 104px Arial, Helvetica, sans-serif; fill:#0072B2;">PaRLA</text>
+  <text x="84" y="224" style="font:700 40px Arial, Helvetica, sans-serif; fill:#111111;">LoRA Llama-70B for clinical pathology abstraction</text>
+  <text x="86" y="258" class="body">Extracts biomarkers, molecular findings, staging/prognostic variables, treatment effect,</text>
+  <text x="86" y="286" class="body">and uncertainty from pathology report text.</text>
+  <g>
+    <rect x="82" y="315" width="250" height="35" rx="17" fill="#E7F3FA" stroke="#DDE4EA"/><text x="100" y="338" class="small" fill="#005E93">24,370 adapted SFT examples</text>
+    <rect x="344" y="315" width="224" height="35" rx="17" fill="#F3F5F7" stroke="#DDE4EA"/><text x="362" y="338" class="small" fill="#555555">TCGA external validation</text>
+  </g>
+  <rect x="115" y="450" width="245" height="104" rx="24" fill="#FFFFFF" stroke="#C9C9C9" stroke-width="3"/>
+  <text x="137" y="492" class="step-title" fill="#111111">HISTAI</text>
+  <text x="137" y="528" class="step-body" fill="#555555">digital pathology text</text>
+  <text x="368" y="510" style="font:700 25px Arial, Helvetica, sans-serif; fill:#0072B2;">→</text>
+  <rect x="394" y="450" width="245" height="104" rx="24" fill="#FFFFFF" stroke="#0072B2" stroke-width="3"/>
+  <image href="data:image/png;base64,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" x="414" y="474" width="34" height="34" preserveAspectRatio="xMidYMid meet"/>
+  <text x="458" y="492" class="step-title" fill="#111111">Adaptive Data</text>
+  <text x="458" y="528" class="step-body" fill="#555555">targeted SFT examples</text>
+  <text x="647" y="510" style="font:700 25px Arial, Helvetica, sans-serif; fill:#0072B2;">→</text>
+  <rect x="673" y="450" width="245" height="104" rx="24" fill="#FFFFFF" stroke="#0072B2" stroke-width="3"/>
+  <text x="695" y="492" class="step-title" fill="#111111">AutoScientist</text>
+  <text x="695" y="528" class="step-body" fill="#555555">LoRA fine-tuning loop</text>
+  <text x="926" y="510" style="font:700 25px Arial, Helvetica, sans-serif; fill:#0072B2;">→</text>
+  <rect x="952" y="450" width="245" height="104" rx="24" fill="#FFFFFF" stroke="#0072B2" stroke-width="3"/>
+  <text x="974" y="492" class="step-title" fill="#111111">PaRLA</text>
+  <text x="974" y="528" class="step-body" fill="#555555">clinical-pathology extractor</text>
+  <text x="1205" y="510" style="font:700 25px Arial, Helvetica, sans-serif; fill:#0072B2;">→</text>
+  <rect x="1231" y="450" width="245" height="104" rx="24" fill="#FFFFFF" stroke="#C9C9C9" stroke-width="3"/>
+  <text x="1253" y="492" class="step-title" fill="#111111">Validation</text>
+  <text x="1253" y="528" class="step-body" fill="#555555">internal + TCGA external</text>
+  <rect x="82" y="625" width="330" height="148" rx="22" fill="#FFFFFF" stroke="#DDE4EA" stroke-width="2"/>
+  <rect x="82" y="625" width="9" height="148" rx="8" fill="#0072B2"/>
+  <text x="247" y="688" class="metric" text-anchor="middle">86%</text>
+  <text x="247" y="730" class="metric-label" text-anchor="middle">Internal validation win rate</text>
+  <text x="247" y="756" class="metric-sublabel" text-anchor="middle">vs. base Llama 70B</text>
+  <rect x="440" y="625" width="330" height="148" rx="22" fill="#FFFFFF" stroke="#DDE4EA" stroke-width="2"/>
+  <rect x="440" y="625" width="9" height="148" rx="8" fill="#0072B2"/>
+  <text x="605" y="688" class="metric" text-anchor="middle">83.8%</text>
+  <text x="605" y="730" class="metric-label" text-anchor="middle">External validation win rate</text>
+  <text x="605" y="756" class="metric-sublabel" text-anchor="middle">vs. base Llama 70B, n = 500</text>
+  <rect x="798" y="625" width="330" height="148" rx="22" fill="#FFFFFF" stroke="#DDE4EA" stroke-width="2"/>
+  <rect x="798" y="625" width="9" height="148" rx="8" fill="#0072B2"/>
+  <text x="963" y="688" class="metric" text-anchor="middle">32 / 92</text>
+  <text x="963" y="730" class="metric-label" text-anchor="middle">Cohorts / cleaned centers</text>
+  <text x="963" y="756" class="metric-sublabel" text-anchor="middle">TCGA external validation</text>
+  <rect x="1156" y="625" width="330" height="148" rx="22" fill="#FFFFFF" stroke="#DDE4EA" stroke-width="2"/>
+  <rect x="1156" y="625" width="9" height="148" rx="8" fill="#0072B2"/>
+  <text x="1321" y="688" class="metric" text-anchor="middle">+1.8–5.2</text>
+  <text x="1321" y="730" class="metric-label" text-anchor="middle">C-index gain vs. full report</text>
+  <text x="1321" y="756" class="metric-sublabel" text-anchor="middle">survival benchmark, n = 2,819</text>
+  <rect x="84" y="812" width="1432" height="48" rx="24" fill="#FFFFFF" stroke="#DDE4EA"/>
+  <text x="112" y="843" class="footer">Train: HISTAI originally digital reports  →  Adapt: Adaptive Data + AutoScientist LoRA  →  Validate: internal held-out + external TCGA reports</text>
+</svg>
