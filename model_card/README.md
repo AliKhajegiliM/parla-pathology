@@ -151,6 +151,7 @@ model = PeftModel.from_pretrained(base_model, adapter_id)
 
 ## Links and citation
 
+- **Weights (Kaggle mirror):** [alikhajegilimirabadi/parla](https://www.kaggle.com/models/alikhajegilimirabadi/parla) (the LoRA adapter, mirrored on Kaggle; the adapter also lives in this Hugging Face repo)
 - **Training dataset (Hugging Face):** [AliKhajegiliM/PaRLA-SFT](https://huggingface.co/datasets/AliKhajegiliM/PaRLA-SFT) (adapted SFT data, 24,370 HISTAI-derived examples)
 - **Training dataset (Kaggle mirror):** [alikhajegilimirabadi/adaption-combined-adapted-histai-no-skin](https://www.kaggle.com/datasets/alikhajegilimirabadi/adaption-combined-adapted-histai-no-skin) (the same adapted SFT dataset, mirrored on Kaggle)
 - **Companion code + full experiments:** [github.com/AliKhajegiliM/parla-pathology](https://github.com/AliKhajegiliM/parla-pathology)

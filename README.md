@@ -5,6 +5,7 @@
 Companion code and full experiments for **[PaRLA](https://huggingface.co/AliKhajegiliM/PaRLA)**, a LoRA adapter for `Llama-3.3-70B` that turns long, noisy pathology reports into structured clinical reasoning and a final integrated conclusion. Built for the [Adaption Labs AutoScientist Challenge](https://adaptionlabs.ai/blog/autoscientist-challenge) (Healthcare).
 
 - **Model + weights (Hugging Face):** https://huggingface.co/AliKhajegiliM/PaRLA
+- **Model + weights (Kaggle mirror):** https://www.kaggle.com/models/alikhajegilimirabadi/parla
 - **Training dataset (Hugging Face):** https://huggingface.co/datasets/AliKhajegiliM/PaRLA-SFT (adapted SFT data, 24,370 HISTAI-derived examples)
 - **Training dataset (Kaggle mirror):** https://www.kaggle.com/datasets/alikhajegilimirabadi/adaption-combined-adapted-histai-no-skin (the same adapted dataset, mirrored on Kaggle)
 - **This repo:** methods, the 500 LLM-as-judge records, all result tables, cohort metadata, and plotting code.

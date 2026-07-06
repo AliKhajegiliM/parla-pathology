@@ -34,8 +34,8 @@ I adapted Llama-3.3-70B with LoRA on the Adaption Data platform (from the HISTAI
 
 Everything is open and reproducible: adapter weights, the adapted SFT dataset, the 500 judge records, all result tables, plotting code, and a no-GPU before/after demo.
 
-🤖 Model: https://huggingface.co/AliKhajegiliM/PaRLA
-🧬 Dataset: https://huggingface.co/datasets/AliKhajegiliM/PaRLA-SFT
+🤖 Model (HF): https://huggingface.co/AliKhajegiliM/PaRLA · (Kaggle): https://www.kaggle.com/models/alikhajegilimirabadi/parla
+🧬 Dataset (HF): https://huggingface.co/datasets/AliKhajegiliM/PaRLA-SFT · (Kaggle): https://www.kaggle.com/datasets/alikhajegilimirabadi/adaption-combined-adapted-histai-no-skin
 💻 Code + experiments: https://github.com/AliKhajegiliM/parla-pathology
 
 Built for the adaption-labs AutoScientist Challenge (Healthcare). #AutoScientist #Pathology #LLM #Healthcare #Oncology
