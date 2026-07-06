@@ -128,7 +128,7 @@ Final integrated diagnostic, biomarker, and prognosis-relevant conclusion.
 </final_conclusion>
 ```
 
-The prompt directs the model to integrate diagnosis, histology, grade, tumor extent and stage-relevant spread, margins, lymphovascular/perineural invasion, nodal burden, metastatic sites, treatment effect, biomarkers, and molecular findings; and to preserve explicitly negative, equivocal, or unassessable findings exactly as stated, without inventing or resolving anything the report leaves open. The full prompt is in the [companion repo](https://github.com/AliKhajegiliM/parla-pathology).
+The prompt directs the model to integrate diagnosis, histology, grade, tumor extent and stage-relevant spread, margins, lymphovascular/perineural invasion, nodal burden, metastatic sites, treatment effect, biomarkers, and molecular findings; and to preserve explicitly negative, equivocal, or unassessable findings exactly as stated, without inventing or resolving anything the report leaves open. The exact generation prompts are in the companion repo ([docs/PROMPTS.md](https://github.com/AliKhajegiliM/parla-pathology/blob/main/docs/PROMPTS.md)).
 
 All experiments above used **4-bit (NF4) quantized Llama 70B** for both PaRLA and the base comparator.
 

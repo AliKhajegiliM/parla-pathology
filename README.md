@@ -40,13 +40,13 @@ The internal held-out test is the direct challenge criterion. The two TCGA studi
 │   ├── cohort/                  # TCGA cohort diversity (cleaned CSVs + summary)
 │   └── survival/                # C-index tables + per-cancer fold CSVs (5 datasets)
 ├── figures/                     # all 9 vector figures used on the model card
-├── docs/                        # METHODS, RESULTS, REPRODUCE
+├── docs/                        # METHODS, RESULTS, REPRODUCE, PROMPTS
 ├── model_card/                  # mirror of the Hugging Face card
 ├── demo/index.html              # no-GPU interactive before/after demo (self-contained)
 └── examples/load_and_infer.py   # minimal load + single-report inference
 ```
 
-See [docs/METHODS.md](docs/METHODS.md), [docs/RESULTS.md](docs/RESULTS.md), and [docs/REPRODUCE.md](docs/REPRODUCE.md).
+See [docs/METHODS.md](docs/METHODS.md), [docs/RESULTS.md](docs/RESULTS.md), [docs/REPRODUCE.md](docs/REPRODUCE.md), and [docs/PROMPTS.md](docs/PROMPTS.md) (the exact generation prompts).
 
 ## Quickstart
 
@@ -76,7 +76,5 @@ The adapted **SFT training dataset** (24,370 HISTAI-derived examples) is release
   note         = {Developed as part of the Adaption Labs AutoScientist Challenge}
 }
 ```
-
-A machine-readable [CITATION.cff](CITATION.cff) is also provided.
 
 **License: [CC BY-NC 4.0](LICENSE).** The model, adapted dataset, code, and figures are released under Creative Commons Attribution-NonCommercial 4.0. Source terms also apply and are not overridden: the adapter is a Meta Llama 3.3 derivative (Meta Llama 3.3 Community License), and the data derive from HISTAI and TCGA (their source terms; TCGA/NCI GDC data-use policies).
