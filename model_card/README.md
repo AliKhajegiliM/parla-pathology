@@ -153,7 +153,7 @@ model = PeftModel.from_pretrained(base_model, adapter_id)
 
 ## Demo
 
-[`demo/index.html`](https://github.com/AliKhajegiliM/parla-pathology/blob/main/demo/index.html) in the companion repo is a self-contained page showing real cases with the base model and PaRLA side by side, the judge's verdict, and the facts each output missed. It uses only the committed records; open it locally, or deploy it as a static Hugging Face Space or via GitHub Pages.
+Live demo: **[huggingface.co/spaces/AliKhajegiliM/PaRLA](https://huggingface.co/spaces/AliKhajegiliM/PaRLA)**. It shows 10 real TCGA cases (10 cancer types) with the base model and PaRLA side by side, the judge's verdict, and the facts each output missed, from the committed records. Source: [`demo/index.html`](https://github.com/AliKhajegiliM/parla-pathology/blob/main/demo/index.html).
 
 ## Intended use and limitations
 
@@ -173,6 +173,7 @@ model = PeftModel.from_pretrained(base_model, adapter_id)
 - **Training dataset (Hugging Face):** [AliKhajegiliM/PaRLA-SFT](https://huggingface.co/datasets/AliKhajegiliM/PaRLA-SFT) (adapted SFT data, 24,370 HISTAI-derived examples)
 - **Training dataset (Kaggle mirror):** [alikhajegilimirabadi/adaption-combined-adapted-histai-no-skin](https://www.kaggle.com/datasets/alikhajegilimirabadi/adaption-combined-adapted-histai-no-skin) (the same adapted SFT dataset, mirrored on Kaggle)
 - **Training data source (HISTAI):** [histai/HISTAI-metadata](https://huggingface.co/datasets/histai/HISTAI-metadata)
+- **Live demo (HF Space):** [huggingface.co/spaces/AliKhajegiliM/PaRLA](https://huggingface.co/spaces/AliKhajegiliM/PaRLA)
 - **Companion code + full experiments:** [github.com/AliKhajegiliM/parla-pathology](https://github.com/AliKhajegiliM/parla-pathology)
 - **Challenge:** [Adaption Labs AutoScientist Challenge](https://adaptionlabs.ai/blog/autoscientist-challenge)
 - **TCGA cohort metadata sources:** [GDC API](https://docs.gdc.cancer.gov/API/Users_Guide/Search_and_Retrieval/) · [TCGA barcode](https://docs.gdc.cancer.gov/Encyclopedia/pages/TCGA_Barcode/) · [TSS code table](https://gdc.cancer.gov/resources-tcga-users/tcga-code-tables/tissue-source-site-codes)

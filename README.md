@@ -9,6 +9,7 @@ Companion code and full experiments for **[PaRLA](https://huggingface.co/AliKhaj
 - **Training dataset (Hugging Face):** https://huggingface.co/datasets/AliKhajegiliM/PaRLA-SFT (adapted SFT data, 24,370 HISTAI-derived examples)
 - **Training dataset (Kaggle mirror):** https://www.kaggle.com/datasets/alikhajegilimirabadi/adaption-combined-adapted-histai-no-skin (the same adapted dataset, mirrored on Kaggle)
 - **Training data source (HISTAI):** https://huggingface.co/datasets/histai/HISTAI-metadata
+- **Live demo (HF Space):** https://huggingface.co/spaces/AliKhajegiliM/PaRLA
 - **This repo:** methods, the 500 LLM-as-judge records, all result tables, cohort metadata, and plotting code.
 
 ## Headline results
@@ -58,7 +59,7 @@ Load the model (4-bit base + adapter): see [examples/load_and_infer.py](examples
 
 ## Demo
 
-[`demo/index.html`](demo/index.html) is a self-contained page showing real cases with the base model and PaRLA side by side, the judge's verdict, and the facts each output missed. It uses only the committed records; open it locally, or deploy it as a static [Hugging Face Space](https://huggingface.co/docs/hub/spaces-sdks-static) or via GitHub Pages.
+Live demo: **[huggingface.co/spaces/AliKhajegiliM/PaRLA](https://huggingface.co/spaces/AliKhajegiliM/PaRLA)**. It shows 10 real TCGA cases (10 cancer types) with the base model and PaRLA side by side, the judge's verdict, and the facts each output missed, from the committed records. Source: [`demo/index.html`](demo/index.html).
 
 ## Data availability
 
