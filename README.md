@@ -8,6 +8,7 @@ Companion code and full experiments for **[PaRLA](https://huggingface.co/AliKhaj
 - **Model + weights (Kaggle mirror):** https://www.kaggle.com/models/alikhajegilimirabadi/parla
 - **Training dataset (Hugging Face):** https://huggingface.co/datasets/AliKhajegiliM/PaRLA-SFT (adapted SFT data, 24,370 HISTAI-derived examples)
 - **Training dataset (Kaggle mirror):** https://www.kaggle.com/datasets/alikhajegilimirabadi/adaption-combined-adapted-histai-no-skin (the same adapted dataset, mirrored on Kaggle)
+- **Training data source (HISTAI):** https://huggingface.co/datasets/histai/HISTAI-metadata
 - **This repo:** methods, the 500 LLM-as-judge records, all result tables, cohort metadata, and plotting code.
 
 ## Headline results

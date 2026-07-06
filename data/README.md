@@ -2,7 +2,7 @@
 
 ## Training data (SFT)
 
-The **adapted SFT dataset** used to train PaRLA is **[AliKhajegiliM/PaRLA-SFT](https://huggingface.co/datasets/AliKhajegiliM/PaRLA-SFT)** on Hugging Face: 24,370 pathology-reasoning examples derived from the **HISTAI** dataset via the **Adaption Data platform**. The SFT pair is `enhanced_prompt` → `enhanced_completion`.
+The **adapted SFT dataset** used to train PaRLA is **[AliKhajegiliM/PaRLA-SFT](https://huggingface.co/datasets/AliKhajegiliM/PaRLA-SFT)** on Hugging Face: 24,370 pathology-reasoning examples derived from the **[HISTAI](https://huggingface.co/datasets/histai/HISTAI-metadata)** dataset via the **Adaption Data platform**. The SFT pair is `enhanced_prompt` → `enhanced_completion`.
 
 - **`sft_sample.jsonl`** (committed here): a 50-record sample so the schema is browsable without downloading the full set.
 - The full `combined_adapted.json` (143 MB) is not committed (exceeds GitHub's 100 MB file limit); download it from the HF dataset above.

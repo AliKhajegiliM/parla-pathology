@@ -4,7 +4,7 @@
 
 - **Base:** `togethercomputer/Meta-Llama-3.3-70B-Instruct-Reference`, loaded in **4-bit NF4** (`bnb_4bit_compute_dtype=bfloat16`).
 - **Adaptation:** PEFT/LoRA adapter (PEFT 0.15.1), released on Hugging Face as `AliKhajegiliM/PaRLA`.
-- **Training source:** the **HISTAI** pathology dataset, available as digital pathology report text (not OCR). The adapted SFT set ([`AliKhajegiliM/PaRLA-SFT`](https://huggingface.co/datasets/AliKhajegiliM/PaRLA-SFT), 24,370 examples generated via the Adaption Data platform) pairs an `enhanced_prompt` (instruction + case findings) with an `enhanced_completion` (reasoning + conclusion). PaRLA is adapted to transform a report into a `<reasoning>` block and a `<final_conclusion>` block.
+- **Training source:** the **[HISTAI](https://huggingface.co/datasets/histai/HISTAI-metadata)** pathology dataset, available as digital pathology report text (not OCR). The adapted SFT set ([`AliKhajegiliM/PaRLA-SFT`](https://huggingface.co/datasets/AliKhajegiliM/PaRLA-SFT), 24,370 examples generated via the Adaption Data platform) pairs an `enhanced_prompt` (instruction + case findings) with an `enhanced_completion` (reasoning + conclusion). PaRLA is adapted to transform a report into a `<reasoning>` block and a `<final_conclusion>` block.
 
 Both PaRLA and the base comparator run on the **same 4-bit quantized Llama 70B backbone**, so quantization is held constant across every comparison below.
 

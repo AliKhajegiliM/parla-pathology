@@ -35,7 +35,7 @@ tags:
 
 *Both external results reproduce exactly from the released [`judgments.jsonl`](https://github.com/AliKhajegiliM/parla-pathology/blob/main/data/judgments.jsonl) and result CSVs (rerun [`analyze_judgments.py`](https://github.com/AliKhajegiliM/parla-pathology/blob/main/src/analyze_judgments.py)). The internal 86% is the metric the challenge scores on; it is reported by the AutoScientist platform and is not independently reproducible from this repo (raw per-case scores are held on the platform).*
 
-This repo is a **PEFT/LoRA adapter** (not a standalone model); load it on the 4-bit base (see [How to use](#how-to-use)). It was fine-tuned on **[AliKhajegiliM/PaRLA-SFT](https://huggingface.co/datasets/AliKhajegiliM/PaRLA-SFT)**, 24,370 pathology-reasoning examples derived from the HISTAI dataset via the Adaption Data platform. Full methods, the 500 judge records, all result tables, and reproduction code live in the companion repository: **[github.com/AliKhajegiliM/parla-pathology](https://github.com/AliKhajegiliM/parla-pathology)**.
+This repo is a **PEFT/LoRA adapter** (not a standalone model); load it on the 4-bit base (see [How to use](#how-to-use)). It was fine-tuned on **[AliKhajegiliM/PaRLA-SFT](https://huggingface.co/datasets/AliKhajegiliM/PaRLA-SFT)**, 24,370 pathology-reasoning examples derived from the [HISTAI](https://huggingface.co/datasets/histai/HISTAI-metadata) dataset via the Adaption Data platform. Full methods, the 500 judge records, all result tables, and reproduction code live in the companion repository: **[github.com/AliKhajegiliM/parla-pathology](https://github.com/AliKhajegiliM/parla-pathology)**.
 
 ## Results
 
@@ -168,6 +168,7 @@ model = PeftModel.from_pretrained(base_model, adapter_id)
 - **Weights (Kaggle mirror):** [alikhajegilimirabadi/parla](https://www.kaggle.com/models/alikhajegilimirabadi/parla) (the LoRA adapter, mirrored on Kaggle; the adapter also lives in this Hugging Face repo)
 - **Training dataset (Hugging Face):** [AliKhajegiliM/PaRLA-SFT](https://huggingface.co/datasets/AliKhajegiliM/PaRLA-SFT) (adapted SFT data, 24,370 HISTAI-derived examples)
 - **Training dataset (Kaggle mirror):** [alikhajegilimirabadi/adaption-combined-adapted-histai-no-skin](https://www.kaggle.com/datasets/alikhajegilimirabadi/adaption-combined-adapted-histai-no-skin) (the same adapted SFT dataset, mirrored on Kaggle)
+- **Training data source (HISTAI):** [histai/HISTAI-metadata](https://huggingface.co/datasets/histai/HISTAI-metadata)
 - **Companion code + full experiments:** [github.com/AliKhajegiliM/parla-pathology](https://github.com/AliKhajegiliM/parla-pathology)
 - **Challenge:** [Adaption Labs AutoScientist Challenge](https://adaptionlabs.ai/blog/autoscientist-challenge)
 - **TCGA cohort metadata sources:** [GDC API](https://docs.gdc.cancer.gov/API/Users_Guide/Search_and_Retrieval/) · [TCGA barcode](https://docs.gdc.cancer.gov/Encyclopedia/pages/TCGA_Barcode/) · [TSS code table](https://gdc.cancer.gov/resources-tcga-users/tcga-code-tables/tissue-source-site-codes)
