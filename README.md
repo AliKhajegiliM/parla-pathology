@@ -39,6 +39,8 @@ The internal held-out test is the direct challenge criterion. The two TCGA studi
 ├── figures/                     # all 9 vector figures used on the model card
 ├── docs/                        # METHODS, RESULTS, REPRODUCE
 ├── model_card/                  # mirror of the Hugging Face card
+├── demo/index.html              # no-GPU interactive before/after demo (self-contained)
+├── SOCIAL.md                    # ready-to-publish launch post
 └── examples/load_and_infer.py   # minimal load + single-report inference
 ```
 
@@ -52,6 +54,10 @@ pip install -r requirements.txt
 ```
 
 Load the model (4-bit base + adapter): see [examples/load_and_infer.py](examples/load_and_infer.py).
+
+## Demo (no GPU)
+
+[`demo/index.html`](demo/index.html) is a self-contained page that lets a reviewer click through real cases and compare the base model vs. PaRLA side by side, with the judge's verdict and the exact facts each output missed. It runs entirely on precomputed committed records: open the file locally, deploy it as a static [Hugging Face Space](https://huggingface.co/docs/hub/spaces-sdks-static), or enable GitHub Pages. No model download or GPU required.
 
 ## Data availability
 
