@@ -8,7 +8,7 @@ year: 2026
 date-released: 2026-07-05
 url: "https://huggingface.co/AliKhajegiliM/PaRLA"
 repository-code: "https://github.com/AliKhajegiliM/parla-pathology"
-license: MIT
+license: CC-BY-NC-4.0
 keywords:
   - pathology
   - oncology

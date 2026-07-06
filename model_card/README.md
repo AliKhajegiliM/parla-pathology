@@ -4,6 +4,7 @@
 base_model: togethercomputer/Meta-Llama-3.3-70B-Instruct-Reference
 library_name: peft
 pipeline_tag: text-generation
+license: cc-by-nc-4.0
 datasets:
 - AliKhajegiliM/PaRLA-SFT
 tags:
@@ -165,7 +166,7 @@ model = PeftModel.from_pretrained(base_model, adapter_id)
 
 **Evaluation caveat.** The external LLM-as-judge result is a single high-effort GPT-5.5 (Codex) pass, not a multi-judge or human-pathologist adjudication, and the length control addresses verbosity but not formatting-preference bias. It is a strong structured comparison, not a regulatory validation.
 
-**Research use only; respect the source licenses.** This model and its associated data are released for research purposes only. The work is derived from the **HISTAI** (training) and **TCGA** (external validation) pathology datasets and is intended to comply with their original data-use licenses. Anyone using this model or the associated data must likewise comply with the original TCGA (NCI GDC) and HISTAI license terms, in addition to the Meta Llama 3.3 Community License that governs the adapter.
+**License: CC BY-NC 4.0.** The model, its adapted dataset, code, and figures are released under [Creative Commons Attribution-NonCommercial 4.0](https://creativecommons.org/licenses/by-nc/4.0/): attribution required, non-commercial use only. Two source terms also apply and are not overridden by this license: the adapter is a derivative of Meta Llama 3.3 and remains subject to the Meta Llama 3.3 Community License, and the training and validation data derive from the HISTAI and TCGA datasets and remain subject to their source terms (the HISTAI license; TCGA/NCI GDC data-use policies).
 
 ## Links and citation
 
