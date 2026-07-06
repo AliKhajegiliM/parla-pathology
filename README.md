@@ -1,6 +1,6 @@
 # PaRLA: pathology report abstraction with a LoRA Llama-70B
 
-![PaRLA banner](figures/parla_social_banner.svg)
+<video src="https://github.com/AliKhajegiliM/parla-pathology/raw/main/demo/parla_demo.mp4" controls width="100%"></video>
 
 Companion code and full experiments for **[PaRLA](https://huggingface.co/AliKhajegiliM/PaRLA)**, a LoRA adapter for `Llama-3.3-70B` that turns long, noisy pathology reports into structured clinical reasoning and a final integrated conclusion. Built for the [Adaption Labs AutoScientist Challenge](https://adaptionlabs.ai/blog/autoscientist-challenge) (Healthcare).
 
@@ -59,9 +59,7 @@ Load the model (4-bit base + adapter): see [examples/load_and_infer.py](examples
 
 ## Demo
 
-<video src="https://github.com/AliKhajegiliM/parla-pathology/raw/main/demo/parla_demo.mp4" controls width="100%"></video>
-
-Walkthrough video above ([direct link](demo/parla_demo.mp4)). The **[interactive demo](https://huggingface.co/spaces/AliKhajegiliM/PaRLA)** shows 16 real TCGA cases across 13 cancer types with the base model and PaRLA side by side, the judge's verdict, and the facts each output missed, from the committed records. Source: [`demo/index.html`](demo/index.html).
+The **[interactive demo](https://huggingface.co/spaces/AliKhajegiliM/PaRLA)** shows 16 real TCGA cases across 13 cancer types with the base model and PaRLA side by side, the judge's verdict, and the facts each output missed, from the committed records. Source: [`demo/index.html`](demo/index.html).
 
 ## Data availability
 
