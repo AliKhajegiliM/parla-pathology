@@ -67,4 +67,16 @@ The adapted **SFT training dataset** (24,370 HISTAI-derived examples) is release
 
 ## Citation
 
-See [CITATION.cff](CITATION.cff). **Research use only.** Code is released under the MIT License ([LICENSE](LICENSE)); the LoRA adapter follows the Meta Llama 3.3 Community License. The work is derived from the HISTAI (training) and TCGA (external validation) datasets and is intended to comply with their original licenses; users of the model or associated data must comply with the original HISTAI and TCGA/GDC license terms too.
+```bibtex
+@misc{khajegili2026parla,
+  title        = {PaRLA: A LoRA Llama 3.3 70B for Summarizing Pathology Reports},
+  author       = {Khajegili Mirabadi, Ali},
+  year         = {2026},
+  howpublished = {\url{https://huggingface.co/AliKhajegiliM/PaRLA}},
+  note         = {Developed as part of the Adaption Labs AutoScientist Challenge}
+}
+```
+
+A machine-readable [CITATION.cff](CITATION.cff) is also provided (GitHub renders a "Cite this repository" button from it).
+
+**Research use only.** Code is released under the MIT License ([LICENSE](LICENSE)); the LoRA adapter follows the Meta Llama 3.3 Community License. The work is derived from the HISTAI (training) and TCGA (external validation) datasets and is intended to comply with their original licenses; users of the model or associated data must comply with the original HISTAI and TCGA/GDC license terms too.
