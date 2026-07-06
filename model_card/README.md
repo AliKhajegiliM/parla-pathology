@@ -23,7 +23,7 @@ tags:
 
 # PaRLA: a LoRA Llama-70B that beats base Llama on pathology report abstraction
 
-<video src="https://huggingface.co/AliKhajegiliM/PaRLA/resolve/main/assets/parla_demo.mp4" autoplay loop muted playsinline controls width="100%"></video>
+[![PaRLA banner](../figures/parla_social_banner.svg)](https://huggingface.co/AliKhajegiliM/PaRLA)
 
 **PaRLA** is a LoRA adapter for `Llama-3.3-70B` that turns long, noisy pathology reports into structured, evidence-grounded clinical reasoning and a final integrated conclusion. It was adapted for the [Adaption Labs AutoScientist Challenge](https://adaptionlabs.ai/blog/autoscientist-challenge) (Healthcare) and **beats the base model on the challenge's held-out test set, then generalizes to independent TCGA data** on both an LLM-as-judge comparison and a downstream survival benchmark.
 

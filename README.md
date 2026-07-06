@@ -1,6 +1,8 @@
 # PaRLA: pathology report abstraction with a LoRA Llama-70B
 
-<video src="https://github.com/AliKhajegiliM/parla-pathology/raw/main/demo/parla_demo.mp4" controls width="100%"></video>
+[![PaRLA banner](figures/parla_social_banner.svg)](https://github.com/AliKhajegiliM/parla-pathology/raw/main/demo/parla_demo.mp4)
+
+▶ [Watch the demo walkthrough](https://github.com/AliKhajegiliM/parla-pathology/raw/main/demo/parla_demo.mp4) · [interactive demo](https://huggingface.co/spaces/AliKhajegiliM/PaRLA)
 
 Companion code and full experiments for **[PaRLA](https://huggingface.co/AliKhajegiliM/PaRLA)**, a LoRA adapter for `Llama-3.3-70B` that turns long, noisy pathology reports into structured clinical reasoning and a final integrated conclusion. Built for the [Adaption Labs AutoScientist Challenge](https://adaptionlabs.ai/blog/autoscientist-challenge) (Healthcare).
 
