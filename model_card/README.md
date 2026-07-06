@@ -25,21 +25,21 @@ tags:
 
 ![PaRLA demo banner](assets/parla_social_banner.svg)
 
-**PaRLA** is a LoRA adapter for `Llama-3.3-70B` that turns long, noisy pathology reports into structured, evidence-grounded clinical reasoning and a final integrated conclusion. It was adapted for the [Adaption Labs AutoScientist Challenge](https://adaptionlabs.ai/blog/autoscientist-challenge) (Healthcare) and **beats the base model on the challenge's held-out test set — then generalizes to independent TCGA data** on both an LLM-as-judge comparison and a downstream survival benchmark.
+**PaRLA** is a LoRA adapter for `Llama-3.3-70B` that turns long, noisy pathology reports into structured, evidence-grounded clinical reasoning and a final integrated conclusion. It was adapted for the [Adaption Labs AutoScientist Challenge](https://adaptionlabs.ai/blog/autoscientist-challenge) (Healthcare) and **beats the base model on the challenge's held-out test set, then generalizes to independent TCGA data** on both an LLM-as-judge comparison and a downstream survival benchmark.
 
 | Evaluation | Setting | Result |
 |---|---|---|
-| **Challenge criterion** — AutoScientist internal held-out | adapted vs. base Llama 70B, in-domain | **86%** win rate vs. 14% |
-| **External** — TCGA reports, GPT-5.5 Extra High (Codex) LLM-as-judge | PaRLA vs. base Llama 70B on 500 independent OCR'd reports | **PaRLA 83.8%** / base Llama 70B 6.6% / Tie 9.6% |
-| **External** — TCGA downstream survival | 5-fold test C-index, 5 cancer datasets | **+1.8 to +5.2** C-index points vs. full report |
+| **Challenge criterion**: AutoScientist internal held-out | adapted vs. base Llama 70B, in-domain | **86%** win rate vs. 14% |
+| **External**: TCGA reports, GPT-5.5 Extra High (Codex) LLM-as-judge | PaRLA vs. base Llama 70B on 500 independent OCR'd reports | **PaRLA 83.8%** / base Llama 70B 6.6% / Tie 9.6% |
+| **External**: TCGA downstream survival | 5-fold test C-index, 5 cancer datasets | **+1.8 to +5.2** C-index points vs. full report |
 
-This repo is a **PEFT/LoRA adapter** (not a standalone model); load it on the 4-bit base — see [How to use](#how-to-use). It was fine-tuned on **[AliKhajegiliM/PaRLA-SFT](https://huggingface.co/datasets/AliKhajegiliM/PaRLA-SFT)**, 24,370 pathology-reasoning examples derived from the HISTAI dataset via the Adaption Data platform. Full methods, the 500 judge records, all result tables, and reproduction code live in the companion repository: **[github.com/AliKhajegiliM/parla-pathology](https://github.com/AliKhajegiliM/parla-pathology)**.
+This repo is a **PEFT/LoRA adapter** (not a standalone model); load it on the 4-bit base (see [How to use](#how-to-use)). It was fine-tuned on **[AliKhajegiliM/PaRLA-SFT](https://huggingface.co/datasets/AliKhajegiliM/PaRLA-SFT)**, 24,370 pathology-reasoning examples derived from the HISTAI dataset via the Adaption Data platform. Full methods, the 500 judge records, all result tables, and reproduction code live in the companion repository: **[github.com/AliKhajegiliM/parla-pathology](https://github.com/AliKhajegiliM/parla-pathology)**.
 
 ## Results
 
-**The Cancer Genome Atlas (TCGA)** is the most widely used public cancer resource in oncology and computational pathology — a landmark NCI/NHGRI program that clinically and molecularly characterized ~20,000 tumors across 33 cancer types, and a de facto standard benchmark for pathology models. Validating on TCGA therefore tests PaRLA against the field's reference distribution.
+**The Cancer Genome Atlas (TCGA)** is the most widely used public cancer resource in oncology and computational pathology: a landmark NCI/NHGRI program that clinically and molecularly characterized ~20,000 tumors across 33 cancer types, and a de facto standard benchmark for pathology models. Validating on TCGA therefore tests PaRLA against the field's reference distribution.
 
-The internal AutoScientist held-out test is the **direct challenge criterion** (in-domain, HISTAI-derived digital report text). The two TCGA studies are **independent generalization tests**: TCGA is a different source from the HISTAI training data, and its reports are scanned-PDF pathology reports converted to text by OCR — a genuinely different distribution from the digital training text.
+The internal AutoScientist held-out test is the **direct challenge criterion** (in-domain, HISTAI-derived digital report text). The two TCGA studies are **independent generalization tests**: TCGA is a different source from the HISTAI training data, and its reports are scanned-PDF pathology reports converted to text by OCR, a genuinely different distribution from the digital training text.
 
 ### Challenge criterion: internal held-out win rate
 
@@ -53,30 +53,30 @@ On **500 independent TCGA pathology reports** (scanned PDFs OCR'd to text with C
 
 ![Pairwise win rate](assets/manual_pairwise_win_rate.svg)
 
-The largest per-criterion gains (0–5 scale, 95% CI over 500 reports) are exactly the clinically meaningful ones — **prognostic/staging capture (+0.79)**, **conclusion quality (+0.69)**, **overall usefulness (+0.72)**, and **reasoning quality (+0.46)**. The base model stays fractionally ahead on strict hallucination control (PaRLA is more detailed, so it has more opportunities to add unsupported detail), and diagnostic essence is a statistical tie. The win is preservation and integration of structured pathology evidence, not generic fluency.
+The largest per-criterion gains (0–5 scale, 95% CI over 500 reports) are exactly the clinically meaningful ones: **prognostic/staging capture (+0.79)**, **conclusion quality (+0.69)**, **overall usefulness (+0.72)**, and **reasoning quality (+0.46)**. The base model stays fractionally ahead on strict hallucination control (PaRLA is more detailed, so it has more opportunities to add unsupported detail), and diagnostic essence is a statistical tie. The win is preservation and integration of structured pathology evidence, not generic fluency.
 
 ![Category ratings](assets/manual_category_scores.svg)
 
-The 500-report cohort was randomly sampled with a fixed seed; all 500 matched GDC case metadata and span **32 TCGA cancer cohorts, 92 contributing centers, 34 primary sites, and 19 disease types** — evidence that the win is not specific to one cancer or institution. Full cohort tables are in the [companion repo](https://github.com/AliKhajegiliM/parla-pathology).
+The 500-report cohort was randomly sampled with a fixed seed; all 500 matched GDC case metadata and span **32 TCGA cancer cohorts, 92 contributing centers, 34 primary sites, and 19 disease types**, evidence that the win is not specific to one cancer or institution. Full cohort tables are in the [companion repo](https://github.com/AliKhajegiliM/parla-pathology).
 
 ![TCGA validation cohort breadth](assets/tcga_validation_diversity_summary.svg)
 
 ### Generalization 2: downstream survival prediction
 
-As a quantitative test of whether the abstraction preserves clinically actionable signal, both the **full report** and the **PaRLA summary** were encoded as **mean-pooled token embeddings** from the *same* 4-bit base Llama 70B, then fed to the **same Cox proportional-hazards survival model** trained under **5-fold cross-validation** with **identical hyperparameters, configuration, and random seed** for both arms. Only the input representation differs, so any change in C-index is attributable to the representation alone. Metric is test C-index (0–100; 50 ≈ random). The task was run on **five TCGA cohorts totaling 2,819 patients** — bladder (BLCA), breast (BRCA), kidney (KIRC + KIRP), lung adenocarcinoma (LUAD), and sarcoma (SARC):
+As a quantitative test of whether the abstraction preserves clinically actionable signal, both the **full report** and the **PaRLA summary** were encoded as **mean-pooled token embeddings** from the *same* 4-bit base Llama 70B, then fed to the **same Cox proportional-hazards survival model** trained under **5-fold cross-validation** with **identical hyperparameters, configuration, and random seed** for both arms. Only the input representation differs, so any change in C-index is attributable to the representation alone. Metric is test C-index (0–100; 50 ≈ random). The task was run on **five TCGA cohorts totaling 2,819 patients**: bladder (BLCA), breast (BRCA), kidney (KIRC + KIRP), lung adenocarcinoma (LUAD), and sarcoma (SARC):
 
 ![Survival C-index by cancer](assets/survival_test_cindex_by_cancer.svg)
 
 | TCGA cohort | Patients (n) | Δ test C-index (PaRLA summary − full report) |
 |---|---:|---:|
-| Bladder — BLCA | 378 | +1.8 |
-| Breast — BRCA | 1,034 | +3.7 |
-| Kidney — KIRC + KIRP | 805 | +0.0 |
-| Lung adenocarcinoma — LUAD | 353 | +5.2 |
-| Sarcoma — SARC | 249 | +5.2 |
+| Bladder (BLCA) | 378 | +1.8 |
+| Breast (BRCA) | 1,034 | +3.7 |
+| Kidney (KIRC + KIRP) | 805 | +0.0 |
+| Lung adenocarcinoma (LUAD) | 353 | +5.2 |
+| Sarcoma (SARC) | 249 | +5.2 |
 | **Total** | **2,819** | |
 
-On these datasets, the compact PaRLA summary retained or improved survival signal relative to the full report — consistent with a pathology-specialized summarizer removing report noise while keeping survival-relevant variables (staging, biomarkers, molecular findings).
+On these datasets, the compact PaRLA summary retained or improved survival signal relative to the full report, consistent with a pathology-specialized summarizer removing report noise while keeping survival-relevant variables (staging, biomarkers, molecular findings).
 
 ## What it is and why?
 
@@ -95,7 +95,7 @@ Final integrated diagnostic, biomarker, and prognosis-relevant conclusion.
 </final_conclusion>
 ```
 
-The prompt directs the model to integrate diagnosis, histology, grade, tumor extent and stage-relevant spread, margins, lymphovascular/perineural invasion, nodal burden, metastatic sites, treatment effect, biomarkers, and molecular findings — and to preserve explicitly negative, equivocal, or unassessable findings exactly as stated, without inventing or resolving anything the report leaves open. The full prompt is in the [companion repo](https://github.com/AliKhajegiliM/parla-pathology).
+The prompt directs the model to integrate diagnosis, histology, grade, tumor extent and stage-relevant spread, margins, lymphovascular/perineural invasion, nodal burden, metastatic sites, treatment effect, biomarkers, and molecular findings; and to preserve explicitly negative, equivocal, or unassessable findings exactly as stated, without inventing or resolving anything the report leaves open. The full prompt is in the [companion repo](https://github.com/AliKhajegiliM/parla-pathology).
 
 All experiments above used **4-bit (NF4) quantized Llama 70B** for both PaRLA and the base comparator.
 
@@ -133,8 +133,8 @@ model = PeftModel.from_pretrained(base_model, adapter_id)
 
 ## Links and citation
 
-- **Training dataset (Hugging Face):** [AliKhajegiliM/PaRLA-SFT](https://huggingface.co/datasets/AliKhajegiliM/PaRLA-SFT) — adapted SFT data (24,370 HISTAI-derived examples)
-- **Training dataset (Kaggle mirror):** [alikhajegilimirabadi/adaption-combined-adapted-histai-no-skin](https://www.kaggle.com/datasets/alikhajegilimirabadi/adaption-combined-adapted-histai-no-skin) — the same adapted SFT dataset, mirrored on Kaggle
+- **Training dataset (Hugging Face):** [AliKhajegiliM/PaRLA-SFT](https://huggingface.co/datasets/AliKhajegiliM/PaRLA-SFT) (adapted SFT data, 24,370 HISTAI-derived examples)
+- **Training dataset (Kaggle mirror):** [alikhajegilimirabadi/adaption-combined-adapted-histai-no-skin](https://www.kaggle.com/datasets/alikhajegilimirabadi/adaption-combined-adapted-histai-no-skin) (the same adapted SFT dataset, mirrored on Kaggle)
 - **Companion code + full experiments:** [github.com/AliKhajegiliM/parla-pathology](https://github.com/AliKhajegiliM/parla-pathology)
 - **Challenge:** [Adaption Labs AutoScientist Challenge](https://adaptionlabs.ai/blog/autoscientist-challenge)
 - **TCGA cohort metadata sources:** [GDC API](https://docs.gdc.cancer.gov/API/Users_Guide/Search_and_Retrieval/) · [TCGA barcode](https://docs.gdc.cancer.gov/Encyclopedia/pages/TCGA_Barcode/) · [TSS code table](https://gdc.cancer.gov/resources-tcga-users/tcga-code-tables/tissue-source-site-codes)
