@@ -82,13 +82,23 @@ PaRLA summaries improve C-index in 4 of the 5 cohorts and leave kidney flat; non
 
 ### What the win looks like (base vs. PaRLA)
 
-Two real cases from the 500-report set, both judged a PaRLA win with no hallucinations:
+Two real cases from the 500-report set, both judged a PaRLA win with no hallucinations. The **PaRLA** row shows the clinically critical facts it recovers on top of the base model.
 
-> **Breast, `TCGA-V7-A7HQ`.** Base Llama concludes: *invasive ductal carcinoma, grade 2, metastatic carcinoma in sentinel nodes, pT1c pN2a, ER/PR positive, HER2 not amplified.* PaRLA additionally recovers the **exact nodal burden (5 of 18 nodes)**, **ER 65% / PR 80% / HER2 not amplified by FISH**, **venous/lymphatic invasion**, and the surgically critical detail that the **inferior mastectomy margin is involved while a separately re-excised margin is negative**. Every added fact is in the synoptic report; none is invented.
+**Breast, `TCGA-V7-A7HQ`**
 
-> **Bladder, `TCGA-DK-A1AC`.** Base Llama concludes: *high-grade invasive urothelial carcinoma with perivesical invasion (pT3b), plus prostate adenocarcinoma Gleason 3+3=6.* PaRLA additionally preserves the **bilateral pelvic node counts (0/11 and 0/11)**, the **prostate stage (pT2b, organ-confined, seminal vesicles free)**, **prostatic intraepithelial neoplasia**, and the benign ureter and vas-deferens segments, each present in this multi-part cystoprostatectomy report.
+| Model | Conclusion captures |
+|---|---|
+| ⬜ **Base Llama 70B** | Invasive ductal carcinoma, grade 2; metastatic carcinoma in sentinel nodes; pT1c pN2a; ER/PR positive; HER2 not amplified. |
+| 🟦 **PaRLA** *(adds)* | Exact nodal burden **5 of 18 nodes**; **ER 65% / PR 80% / HER2 not amplified by FISH**; **venous/lymphatic invasion**; **inferior mastectomy margin involved** with a separately re-excised negative margin. |
 
-Across all 500 reports, base Llama drops a mean of **3.99 major clinical facts per report; PaRLA drops 1.36**.
+**Bladder, `TCGA-DK-A1AC`**
+
+| Model | Conclusion captures |
+|---|---|
+| ⬜ **Base Llama 70B** | High-grade invasive urothelial carcinoma, perivesical invasion (pT3b); prostate adenocarcinoma Gleason 3+3=6. |
+| 🟦 **PaRLA** *(adds)* | **Bilateral pelvic node counts (0/11 and 0/11)**; **prostate stage pT2b** (organ-confined, seminal vesicles free); **prostatic intraepithelial neoplasia**; benign ureter and vas-deferens segments. |
+
+Every added fact is present in the source report; none is invented. Across all 500 reports, base Llama drops a mean of **3.99 major clinical facts per report; PaRLA drops 1.36**.
 
 ### Is the win real? (robustness and honesty)
 
