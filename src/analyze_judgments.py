@@ -51,6 +51,8 @@ def main() -> None:
     ap = argparse.ArgumentParser()
     ap.add_argument("--judgments", type=Path, default=Path("../data/judgments.jsonl"))
     ap.add_argument("--generations-dir", default=None, help="dir holding gen_chandra_before_*.jsonl and gen_chandra_after_*.jsonl")
+    ap.add_argument("--lengths", type=Path, default=Path("../results/judge/generation_lengths.csv"),
+                    help="committed per-report length table (report_id,base_len,parla_len); used if --generations-dir is not given")
     args = ap.parse_args()
 
     J = load_judgments(args.judgments)
@@ -74,8 +76,15 @@ def main() -> None:
         "total_hallucination_items": {"base": sum(before_hal), "parla": sum(after_hal)},
     }
 
+    bl = al = None
     if args.generations_dir:
         bl, al = load_lengths(args.generations_dir, "before"), load_lengths(args.generations_dir, "after")
+    elif args.lengths and args.lengths.exists():
+        bl, al = {}, {}
+        import csv as _csv
+        for row in _csv.DictReader(open(args.lengths)):
+            bl[row["report_id"]] = int(row["base_len"]); al[row["report_id"]] = int(row["parla_len"])
+    if bl and al:
         pairs = [(x["report_id"], x["winner"]) for x in J if x["report_id"] in bl and x["report_id"] in al]
         longer = sum(1 for rid, _ in pairs if al[rid] > bl[rid])
         ratio = statistics.mean([al[rid] for rid, _ in pairs]) / statistics.mean([bl[rid] for rid, _ in pairs])
@@ -93,7 +102,7 @@ def main() -> None:
             },
         }
     else:
-        out["length_control"] = "not computed (pass --generations-dir with the generation shards)"
+        out["length_control"] = "not computed (needs --lengths CSV or --generations-dir)"
 
     print(json.dumps(out, indent=2))
 

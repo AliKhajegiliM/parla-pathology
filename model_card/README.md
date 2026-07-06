@@ -30,10 +30,10 @@ tags:
 | Evaluation | Setting | Result |
 |---|---|---|
 | **External, reproducible:** TCGA reports, GPT-5.5 Extra High (Codex) LLM-as-judge | PaRLA vs. base Llama 70B on 500 independent OCR'd reports | **PaRLA 83.8%** / base 6.6% / Tie 9.6% (sign test *p* < 1e-50) |
-| **External, reproducible:** TCGA downstream survival | 5-fold test C-index, 5 TCGA cohorts (2,819 patients) | **+1.8 to +5.2** C-index points vs. full report |
+| **External, reproducible:** TCGA downstream survival | 5-fold test C-index, 5 TCGA cohorts (2,819 patients) | improves 4 of 5; pooled **+3.2** C-index pts (*p* ≈ 0.02) |
 | **Challenge criterion** (platform-reported): AutoScientist internal held-out | adapted vs. base Llama 70B, in-domain | **86%** win rate vs. 14% |
 
-*Both external results reproduce exactly from the released [`judgments.jsonl`](https://github.com/AliKhajegiliM/parla-pathology/blob/main/data/judgments.jsonl) and result CSVs. The internal 86% is the metric the challenge scores on; it is reported by the AutoScientist platform, whose raw per-case scores are held there.*
+*Both external results reproduce exactly from the released [`judgments.jsonl`](https://github.com/AliKhajegiliM/parla-pathology/blob/main/data/judgments.jsonl) and result CSVs (rerun [`analyze_judgments.py`](https://github.com/AliKhajegiliM/parla-pathology/blob/main/src/analyze_judgments.py)). The internal 86% is the metric the challenge scores on; it is reported by the AutoScientist platform and is not independently reproducible from this repo (raw per-case scores are held on the platform).*
 
 This repo is a **PEFT/LoRA adapter** (not a standalone model); load it on the 4-bit base (see [How to use](#how-to-use)). It was fine-tuned on **[AliKhajegiliM/PaRLA-SFT](https://huggingface.co/datasets/AliKhajegiliM/PaRLA-SFT)**, 24,370 pathology-reasoning examples derived from the HISTAI dataset via the Adaption Data platform. Full methods, the 500 judge records, all result tables, and reproduction code live in the companion repository: **[github.com/AliKhajegiliM/parla-pathology](https://github.com/AliKhajegiliM/parla-pathology)**.
 
@@ -69,16 +69,16 @@ As a quantitative test of whether the abstraction preserves clinically actionabl
 
 ![Survival C-index by cancer](assets/survival_test_cindex_by_cancer.svg)
 
-| TCGA cohort | Patients (n) | Full report | PaRLA summary | Δ points |
+| TCGA cohort | Patients (n) | Full report | PaRLA summary (95% CI) | Δ points |
 |---|---:|---:|---:|---:|
-| Bladder (BLCA) | 378 | 61.2 | 63.1 | +1.8 |
-| Breast (BRCA) | 1,034 | 60.8 | 64.5 | +3.7 |
-| Kidney (KIRC + KIRP) | 805 | 75.4 | 75.4 | +0.0 |
-| Lung adenocarcinoma (LUAD) | 353 | 63.6 | 68.8 | +5.2 |
-| Sarcoma (SARC) | 249 | 57.3 | 62.5 | +5.2 |
+| Bladder (BLCA) | 378 | 61.2 | 63.1 (±7.6) | +1.8 |
+| Breast (BRCA) | 1,034 | 60.8 | 64.5 (±3.7) | +3.7 |
+| Kidney (KIRC + KIRP) | 805 | 75.4 | 75.4 (±4.1) | +0.0 |
+| Lung adenocarcinoma (LUAD) | 353 | 63.6 | 68.8 (±4.6) | +5.2 |
+| Sarcoma (SARC) | 249 | 57.3 | 62.5 (±6.3) | +5.2 |
 | **Total** | **2,819** | | | |
 
-On these datasets, the compact PaRLA summary retained or improved survival signal relative to the full report, consistent with a pathology-specialized summarizer removing report noise while keeping survival-relevant variables (staging, biomarkers, molecular findings). Per-fold values and 95% CIs are in the [companion repo](https://github.com/AliKhajegiliM/parla-pathology).
+PaRLA summaries improve C-index in 4 of the 5 cohorts and leave kidney flat; none regress. Read honestly: the per-cohort 95% CIs overlap and **no single cohort reaches significance at 5 folds**, but the **pooled effect across all 25 fold-pairs is significant** (mean +3.2 points, paired *t*(24) = 2.27, *p* ≈ 0.02; 17 of 25 folds favor PaRLA). This is a modest, consistent preservation/gain of survival signal, not a large per-cohort effect. Per-fold values and CIs are in the [companion repo](https://github.com/AliKhajegiliM/parla-pathology).
 
 ### What the win looks like (base vs. PaRLA)
 
@@ -94,7 +94,7 @@ Across all 500 reports, base Llama drops a mean of **3.99 major clinical facts p
 
 - **Significance.** PaRLA wins 419, loses 33, ties 48 of 500. A sign test on the decided cases gives *p* < 1e-50, not a coin flip.
 - **Not just length.** PaRLA outputs are longer in 83.2% of cases (1.39× on average), a known confound for LLM judges. But even on the **84 cases where PaRLA is no longer than base**, PaRLA still wins **56%** (base 11%, tie 33%), so the preference survives length control. The omission metric above (3.99 vs 1.36) is length-independent.
-- **Honest about hallucination.** More detail carries more risk: PaRLA introduces an unsupported detail in **14.0%** of cases vs base **12.6%**, and base stays fractionally ahead on strict hallucination-control scoring. The net trade is favorable (2.6 fewer omissions per report for a small rise in unsupported detail), but for a healthcare model we flag it rather than bury it.
+- **Honest about hallucination.** More detail carries more risk: PaRLA adds an unsupported detail in **14.0%** of cases vs base **12.6%** (85 vs 67 total items), and base stays fractionally ahead on strict hallucination-control scoring. The most common error type is **lymph-node counts/denominators in multi-part specimens (34 of 85 items)**, which drive N-stage, so we flag nodal ratios as the field most needing human re-verification. The net trade is still favorable (2.6 fewer omissions per report), but for a healthcare model we quantify and locate it rather than bury it.
 
 ## What it is and why?
 
@@ -145,7 +145,11 @@ model = PeftModel.from_pretrained(base_model, adapter_id)
 
 **Intended for research use** in pathology report abstraction, clinical biomarker/molecular extraction, cohort phenotyping, prognosis-oriented summarization, and downstream modeling from pathology text (including OCR-derived reports).
 
-**Not a clinical device.** PaRLA is not a substitute for a pathologist, oncologist, or validated decision-support system, and must not drive patient care without expert review. It can omit facts or state unsupported details, especially on ambiguous, fragmented, or OCR-degraded reports. The manual LLM-as-judge scoring is a structured comparative assessment, not a regulatory validation; the survival benchmark measures signal preservation, not deployment readiness. The adapter inherits the limitations and biases of the base Llama 70B model and its training corpus.
+**Not a clinical device.** PaRLA is not a substitute for a pathologist, oncologist, or validated decision-support system, and must not drive patient care without expert review. It can omit facts or state unsupported details, especially on ambiguous, fragmented, or OCR-degraded reports. The survival benchmark measures signal preservation, not deployment readiness. The adapter inherits the limitations and biases of the base Llama 70B model and its training corpus.
+
+**Reliability by field.** Grounded in the hallucination analysis above, PaRLA is most reliable on diagnosis, histologic grade, receptor/HER2 status, and margin status; it most often errs on **lymph-node counts and denominators in multi-part specimens**, so nodal ratios and multi-part specimen numbering should be human-verified before use.
+
+**Evaluation caveat.** The external LLM-as-judge result is a single high-effort GPT-5.5 (Codex) pass, not a multi-judge or human-pathologist adjudication, and the length control addresses verbosity but not formatting-preference bias. It is a strong structured comparison, not a regulatory validation.
 
 **Research use only; respect the source licenses.** This model and its associated data are released for research purposes only. The work is derived from the **HISTAI** (training) and **TCGA** (external validation) pathology datasets and is intended to comply with their original data-use licenses. Anyone using this model or the associated data must likewise comply with the original TCGA (NCI GDC) and HISTAI license terms, in addition to the Meta Llama 3.3 Community License that governs the adapter.
 
