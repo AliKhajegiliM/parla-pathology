@@ -102,7 +102,9 @@ Every added fact is present in the source report. Across all 500 reports, base L
 
 ### Live demo
 
-The two cases above are static; the **[live demo](https://huggingface.co/spaces/AliKhajegiliM/PaRLA)** lets you click through 16 cases across 13 cancer types, each with the base and PaRLA outputs and the judge's verdict. Source: [`demo/index.html`](https://github.com/AliKhajegiliM/parla-pathology/blob/main/demo/index.html).
+<video src="https://huggingface.co/AliKhajegiliM/PaRLA/resolve/main/assets/parla_demo.mp4" autoplay loop muted playsinline controls width="100%"></video>
+
+The clip above is a walkthrough; the **[interactive demo](https://huggingface.co/spaces/AliKhajegiliM/PaRLA)** lets you click through 16 cases across 13 cancer types, each with the base and PaRLA outputs and the judge's verdict. Source: [`demo/index.html`](https://github.com/AliKhajegiliM/parla-pathology/blob/main/demo/index.html).
 
 ### Robustness checks
 
